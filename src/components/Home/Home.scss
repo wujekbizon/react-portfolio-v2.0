@@ -1,0 +1,25 @@
+.title h1 {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  font-family: 'Bellefair', serif;
+  font-size: 45px;
+  color: hsl(231 77% 90%);
+  opacity: 0;
+  animation: fadeInLeft 1.5s 1s forwards;
+}
+
+.name {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  font-size: 75px;
+  opacity: 0;
+  animation: fadeInUp 1.5s 1s forwards;
+}
+
+.logo {
+  width: 32%;
+  opacity: 0;
+  animation: jackInTheBox 1.5s 1.5s forwards;
+}

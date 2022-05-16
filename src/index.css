@@ -1,0 +1,10 @@
+html {
+  font-size: 62.5%
+}
+
+body {
+  margin: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: hsl(0 0% 100%);
+  background: hsl(230 35% 7%);
+}
