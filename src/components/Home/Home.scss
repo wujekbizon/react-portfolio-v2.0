@@ -3,10 +3,10 @@
   top: 10%;
   left: 25%;
   font-family: 'Bellefair', serif;
-  font-size: 45px;
-  color: hsl(231 77% 90%);
+  font-size: 40px;
+  color: hsl(231 77% 80%);
   opacity: 0;
-  animation: fadeInLeft 1.5s 1s forwards;
+  animation: fadeInLeft 1.5s 0.8s forwards;
 }
 
 .name {
@@ -14,12 +14,23 @@
   top: 40%;
   left: 35%;
   font-size: 75px;
+  letter-spacing: 2px;
   opacity: 0;
-  animation: fadeInUp 1.5s 1s forwards;
+  animation: fadeInUp 1.5s 1.25s forwards;
 }
 
 .logo {
-  width: 32%;
+  width: 28%;
   opacity: 0;
-  animation: jackInTheBox 1.5s 1.5s forwards;
+  animation: fadeInRight 1.5s 1.5s forwards;
+}
+
+.jobs {
+  position: absolute;
+  bottom: 49%;
+  left: 42%;
+  color: hsl(231 77% 80%);
+  font-size: 30px;
+  opacity: 0;
+  animation: fadeIn 1.6s 2.7s forwards;
 }

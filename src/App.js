@@ -1,12 +1,16 @@
 import './App.scss';
+import { Routes, Route } from 'react-router-dom';
+
 // Components
 import Home from './components/Home/Home.js';
 
 const App = () => {
   return (
-    <div>
-      <Home />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </>
   );
 };
 
