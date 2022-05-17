@@ -7,8 +7,6 @@ import {
 import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Logo from '../../assets/images/logo_sub-v3.png';
-// components
-import Sidebar from '../Sidebar/Sidebar';
 
 const Home = () => {
   const nameArray = [
@@ -28,7 +26,6 @@ const Home = () => {
   ];
   return (
     <>
-      <Sidebar />
       <div className="title">
         <h1>Welcome to my Portfolio!</h1>
       </div>

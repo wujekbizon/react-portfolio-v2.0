@@ -1,0 +1,19 @@
+#about-content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 28px;
+  font-weight: 200;
+  background: hsl(230 35% 4%);
+  border-radius: 15px;
+  box-shadow: 0 5px 10px 0 rgba(210, 216, 249, 0.25);
+  opacity: 0;
+  animation: fadeInLeft 2.2s 1.5s forwards;
+}
+
+#dropdown-header {
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: hsl(231 77% 90%);
+}
