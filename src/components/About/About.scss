@@ -10,3 +10,122 @@
     animation: fadeInDown 2s 1s forwards;
   }
 }
+
+.skills {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  display: block;
+  width: 600px;
+  height: 405px;
+  background: hsl(230 35% 4%);
+  border-radius: 15px;
+  box-shadow: 0 5px 10px 0 rgba(210, 216, 249, 0.25);
+  opacity: 0;
+  animation: fadeInRight 2.2s 1.5s forwards;
+  font-size: 45px;
+  padding: 1rem 0 0 3.5rem;
+  color: hsl(0 0% 100%);
+
+  p {
+    margin: 0;
+  }
+}
+
+.javascript:hover {
+  transform: scale(1.1);
+  color: #f0db4f;
+}
+
+.typescript:hover {
+  transform: scale(1.1);
+  color: #007acc;
+}
+
+.react:hover {
+  transform: scale(1.1);
+  color: #61dbfb;
+}
+
+.redux:hover {
+  transform: scale(1.1);
+  color: #764abc;
+}
+
+.css:hover {
+  transform: scale(1.1);
+  color: #264de4;
+}
+
+.sass:hover {
+  transform: scale(1.1);
+  color: #cd6799;
+}
+
+.html:hover {
+  transform: scale(1.1);
+  color: #e34c26;
+}
+
+.node:hover {
+  transform: scale(1.1);
+  color: #3c873a;
+}
+
+.mongoDb:hover {
+  transform: scale(1.1);
+  color: #4db33d;
+}
+
+.git:hover {
+  transform: scale(1.1);
+  color: #f1502f;
+}
+
+.gitHub:hover {
+  transform: scale(1.1);
+  color: #171515;
+}
+
+.bootstrap:hover {
+  transform: scale(1.1);
+  color: #563d7c;
+}
+
+.bulma:hover {
+  transform: scale(1.1);
+  color: #00d1b2;
+}
+
+.npm:hover {
+  transform: scale(1.1);
+  color: #cc3534;
+}
+
+.vercel:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+.code:hover {
+  transform: scale(1.1);
+  color: #0078d7;
+}
+
+h2 {
+  position: absolute;
+  top: 14%;
+  right: 26%;
+  font-family: 'Barlow' sans-serif;
+  font-size: 45px;
+  opacity: 0;
+  animation: fadeInDown 2s 1s forwards;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-column-gap: 25px;
+  grid-row-gap: 48px;
+  cursor: pointer;
+}

@@ -15,6 +15,10 @@
       font-size: 27px;
       margin: 0 60px;
 
+      svg {
+        color: rgba(210, 216, 249, 0.5);
+      }
+
       i {
         transition: all 0.3s ease-out;
       }
@@ -69,6 +73,12 @@
       &:after {
         content: 'CONTACT';
         margin-left: -20px;
+      }
+    }
+
+    a.active {
+      svg {
+        color: hsl(0 0% 100%);
       }
     }
   }
