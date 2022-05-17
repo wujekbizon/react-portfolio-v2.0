@@ -1,29 +1,30 @@
 import './Sidebar.scss';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faHouseLaptop } from '@fortawesome/free-solid-svg-icons';
+import {
+  faHouseLaptop,
+  faHouseUser,
+  faEnvelope,
+  faDiagramProject,
+} from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => {
   return (
     <div className="nav-bar">
-      <div>
-        <nav>
-          <NavLink to="/">
-            <FontAwesomeIcon icon={faHouseLaptop} />
-          </NavLink>
-        </nav>
-      </div>
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href="https://www.linkedin.com/in/grzegorz-wolfinger-b88856229/"
-      >
-        <FontAwesomeIcon icon={faLinkedin} />
-      </a>
-      <a target="_blank" rel="noreferrer" href="https://github.com/wujekbizon">
-        <FontAwesomeIcon icon={faGithub} />
-      </a>
+      <nav>
+        <NavLink to="/" activeclassname="active">
+          <FontAwesomeIcon icon={faHouseLaptop} color="hsl(231 77% 90%" />
+        </NavLink>
+        <NavLink to="/about" className="about-link">
+          <FontAwesomeIcon icon={faHouseUser} color="hsl(231 77% 90%" />
+        </NavLink>
+        <NavLink to="/projects" className="projects-link">
+          <FontAwesomeIcon icon={faDiagramProject} color="hsl(231 77% 90%" />
+        </NavLink>
+        <NavLink to="/contact" className="contact-link">
+          <FontAwesomeIcon icon={faEnvelope} color="hsl(231 77% 90%" />
+        </NavLink>
+      </nav>
     </div>
   );
 };

@@ -2,35 +2,57 @@
   position: absolute;
   top: 10%;
   left: 25%;
-  font-family: 'Bellefair', serif;
   font-size: 40px;
-  color: hsl(231 77% 80%);
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: hsl(231 77% 90%);
   opacity: 0;
-  animation: fadeInLeft 1.5s 0.8s forwards;
+  animation: zoomIn 5.5s 1s backwards;
 }
 
 .name {
   position: absolute;
   top: 40%;
-  left: 35%;
+  left: 30%;
   font-size: 75px;
   letter-spacing: 2px;
   opacity: 0;
-  animation: fadeInUp 1.5s 1.25s forwards;
+  animation: fadeInUp 2s 1.25s forwards;
 }
 
 .logo {
   width: 28%;
   opacity: 0;
-  animation: fadeInRight 1.5s 1.5s forwards;
+  animation: fadeInRight 2s 1.5s forwards;
 }
 
 .jobs {
   position: absolute;
-  bottom: 49%;
-  left: 42%;
-  color: hsl(231 77% 80%);
+  bottom: 45%;
+  left: 40%;
+  color: hsl(231 77% 90%);
   font-size: 30px;
+  letter-spacing: 1px;
   opacity: 0;
-  animation: fadeIn 1.6s 2.7s forwards;
+  animation: fadeIn 2s 2.7s forwards;
+}
+
+.social-media {
+  position: absolute;
+  left: 30%;
+  bottom: 20%;
+
+  a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 45px;
+    box-shadow: 0 5px 10px 0 rgba(210, 216, 249, 0.25);
+    transition: transform 300ms, box-shadow 300ms;
+
+    &:hover svg {
+      // color: rgba(238, 90, 36, 1);
+      transform: scale(1.1);
+      box-shadow: 0 5px 30px 0 rgba(210, 216, 249, 0.25);
+    }
+  }
 }
