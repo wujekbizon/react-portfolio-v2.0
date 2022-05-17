@@ -18,13 +18,13 @@
   font-family: 'Barlow', sans-serif;
   letter-spacing: 1px;
   opacity: 0;
-  animation: fadeInUp 2s 2.3s forwards;
+  animation: fadeInUp 2.2s 2.3s forwards;
 }
 
 .logo {
   width: 28%;
   opacity: 0;
-  animation: fadeInRight 2s 2.3s forwards;
+  animation: fadeInRight 2.2s 2.3s forwards;
 }
 
 .jobs {
@@ -60,4 +60,34 @@
 #media {
   opacity: 0;
   animation: fadeInUp 2s 3s forwards;
+}
+
+.resume {
+  display: block;
+  position: absolute;
+  bottom: 16%;
+  right: 30%;
+  width: 130px;
+  height: 45px;
+  padding-top: 8px;
+  border-bottom: 3px solid hsl(230 35% 4%);
+  border-top: 3px solid hsl(230 35% 4%);
+  border-radius: 7px;
+  background: hsl(231 77% 90%);
+  text-align: center;
+  box-shadow: 0 5px 10px 0 rgba(210, 216, 249, 0.25);
+  opacity: 0;
+  animation: fadeInUp 2s 3s forwards;
+
+  a {
+    font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    color: hsl(230 35% 4%);
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 30px 0 rgba(210, 216, 249, 0.2);
+  }
 }

@@ -28,6 +28,7 @@ const Home = () => {
   ];
   return (
     <>
+      <Sidebar />
       <div className="title">
         <h1>Welcome to my Portfolio!</h1>
       </div>
@@ -36,7 +37,7 @@ const Home = () => {
         <img className="logo" src={Logo} alt="wolfinger" />
       </div>
       <div className="jobs">Full Stack Developer | Software Engineer</div>
-      <Sidebar />
+
       <div className="social-media" id="media">
         <a
           target="_blank"
@@ -61,6 +62,11 @@ const Home = () => {
         </a>
         <a target="_blank" rel="noreferrer" href="/contact">
           <FontAwesomeIcon icon={faSquareEnvelope} color="hsl(231 77% 90%" />
+        </a>
+      </div>
+      <div className="resume">
+        <a href="https://drive.google.com/file/d/1un5VGs5CcW6A3_w9H4ivNc6CxdSHqPsR/view?usp=sharing">
+          Curriculum Vitae
         </a>
       </div>
     </>
