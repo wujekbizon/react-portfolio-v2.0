@@ -8,6 +8,8 @@
   nav {
     display: flex;
     align-items: center;
+    opacity: 0;
+    animation: fadeInDown 2s 3s forwards;
 
     a {
       font-size: 27px;
