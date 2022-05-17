@@ -34,55 +34,55 @@ const About = () => {
       <div className="skills">
         <div className="grid">
           <p className="javascript">
-            <FontAwesomeIcon icon={faJsSquare} />
+            <FontAwesomeIcon icon={faJsSquare} color="#f0db4f" />
           </p>
           <p className="react">
-            <FontAwesomeIcon icon={faReact} />
+            <FontAwesomeIcon icon={faReact} color="#61dbfb" />
           </p>
           <p className="css">
-            <FontAwesomeIcon icon={faCss3} />
+            <FontAwesomeIcon icon={faCss3} color="#264de4" />
           </p>
           <p className="html">
-            <FontAwesomeIcon icon={faHtml5} />
+            <FontAwesomeIcon icon={faHtml5} color="#e34c26" />
           </p>
           <p className="typescript">
-            <SiTypescript />
+            <SiTypescript color="#007acc" />
           </p>
 
           <p className="redux">
-            <SiRedux />
+            <SiRedux color="#764abc" />
           </p>
 
           <p className="sass">
-            <FontAwesomeIcon icon={faSass} />
+            <FontAwesomeIcon icon={faSass} color="#cd6799" />
           </p>
 
           <p className="node">
-            <FontAwesomeIcon icon={faNodeJs} />
+            <FontAwesomeIcon icon={faNodeJs} color="#3c873a" />
           </p>
           <p className="mongoDb">
-            <SiMongodb />
+            <SiMongodb color="#4db33d" />
           </p>
           <p className="git">
-            <FontAwesomeIcon icon={faGitAlt} />
+            <FontAwesomeIcon icon={faGitAlt} color="#f1502f" />
           </p>
           <p className="gitHub">
-            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faGithub} color="hsl(0 0% 100%)" />
           </p>
           <p className="bootstrap">
-            <FontAwesomeIcon icon={faBootstrap} />
+            <FontAwesomeIcon icon={faBootstrap} color="#563d7c" />
           </p>
           <p className="bulma">
-            <SiBulma />
+            <SiBulma color="#00d1b2" />
           </p>
           <p className="npm">
-            <FontAwesomeIcon icon={faNpm} />
+            <FontAwesomeIcon icon={faNpm} color="#cc3534" />
           </p>
           <p className="vercel">
-            <SiVercel />
+            <SiVercel color="hsl(0 0% 100%)" />
           </p>
           <p className="code">
-            <SiVisualstudiocode />
+            <SiVisualstudiocode color="#0078d7" />
           </p>
         </div>
       </div>

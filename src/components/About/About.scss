@@ -1,6 +1,6 @@
 .about-page {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 20%;
 
   h1 {
@@ -17,105 +17,344 @@
   right: 10%;
   display: block;
   width: 600px;
-  height: 405px;
+  height: 415px;
   background: hsl(230 35% 4%);
   border-radius: 15px;
   box-shadow: 0 5px 10px 0 rgba(210, 216, 249, 0.25);
   opacity: 0;
   animation: fadeInRight 2.2s 1.5s forwards;
-  font-size: 45px;
-  padding: 1rem 0 0 3.5rem;
+  font-size: 40px;
+  padding: 2.5rem 0 0 6.5rem;
   color: hsl(0 0% 100%);
 
-  p {
-    margin: 0;
+  span {
+    font-size: 14px;
   }
+}
+
+p {
+  margin: 0;
+}
+
+p:after {
+  content: '';
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  left: -35px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
 }
 
 .javascript:hover {
   transform: scale(1.1);
   color: #f0db4f;
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.javascript {
+  &:after {
+    content: 'JAVASCRIPT';
+  }
 }
 
 .typescript:hover {
   transform: scale(1.1);
   color: #007acc;
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.typescript {
+  &:after {
+    content: 'TYPESCRIPT';
+  }
 }
 
 .react:hover {
   transform: scale(1.1);
   color: #61dbfb;
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.react {
+  &:after {
+    content: 'REACT';
+  }
 }
 
 .redux:hover {
   transform: scale(1.1);
   color: #764abc;
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.redux {
+  &:after {
+    content: 'REDUX';
+  }
 }
 
 .css:hover {
   transform: scale(1.1);
   color: #264de4;
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.css {
+  &:after {
+    content: 'CSS 3';
+  }
 }
 
 .sass:hover {
   transform: scale(1.1);
   color: #cd6799;
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+p.sass {
+  &:after {
+    content: 'SASS';
+  }
 }
 
 .html:hover {
   transform: scale(1.1);
   color: #e34c26;
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.html {
+  &:after {
+    content: 'HTML 5';
+  }
 }
 
 .node:hover {
   transform: scale(1.1);
   color: #3c873a;
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.node {
+  &:after {
+    content: 'NODE JS';
+  }
 }
 
 .mongoDb:hover {
   transform: scale(1.1);
   color: #4db33d;
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.mongoDb {
+  &:after {
+    content: 'MONGO DB';
+  }
 }
 
 .git:hover {
   transform: scale(1.1);
   color: #f1502f;
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.git {
+  &:after {
+    content: 'GIT';
+  }
 }
 
 .gitHub:hover {
   transform: scale(1.1);
-  color: #171515;
+  color: hsl(0 0% 100%);
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.gitHub {
+  &:after {
+    content: 'GIT HUB';
+  }
 }
 
 .bootstrap:hover {
   transform: scale(1.1);
   color: #563d7c;
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.bootstrap {
+  &:after {
+    content: 'BOOTSTRAP';
+  }
 }
 
 .bulma:hover {
   transform: scale(1.1);
   color: #00d1b2;
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.bulma {
+  &:after {
+    content: 'BULMA';
+  }
 }
 
 .npm:hover {
   transform: scale(1.1);
   color: #cc3534;
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.npm {
+  &:after {
+    content: 'NPM';
+  }
 }
 
 .vercel:hover {
   transform: scale(1.1);
-  color: black;
+  color: hsl(0 0% 100%);
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.vercel {
+  &:after {
+    content: 'VERCEL';
+  }
 }
 
 .code:hover {
   transform: scale(1.1);
   color: #0078d7;
+
+  svg {
+    opacity: 0;
+  }
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+p.code {
+  &:after {
+    content: 'VISUAL STUDIO CODE';
+  }
 }
 
 h2 {
   position: absolute;
-  top: 14%;
-  right: 26%;
+  top: 19%;
+  right: 25%;
   font-family: 'Barlow' sans-serif;
   font-size: 45px;
   opacity: 0;
