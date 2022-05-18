@@ -7,6 +7,10 @@
   border-radius: 20px;
   color: hsl(230 35% 4%);
   padding: 25px !important;
+  border: 1px solid hsl(230 35% 4%);
+  box-shadow: 0 5px 10px 0 rgba(210, 216, 249, 0.5);
+  opacity: 0;
+  animation: backInLeft 1.8s 1.6s forwards;
 
   h1 {
     margin: 35px;
