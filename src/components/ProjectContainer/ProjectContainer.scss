@@ -14,9 +14,9 @@
   }
 
   h3 {
-    margin-top: 15px;
-    text-align: center;
+    margin-top: 10px;
     font-size: 15px;
+    opacity: 0.6;
   }
 
   h4 {
@@ -25,10 +25,18 @@
 
   ul {
     list-style-type: none;
-
-    font-size: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-bottom: 45px;
   }
   p {
-    font-size: 16px;
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  // class that I will use later to do fun stuff
+  .active {
+    text-decoration: underline;
   }
 }

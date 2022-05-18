@@ -1,5 +1,5 @@
 import './Projects.scss';
-import MtgCounter from '../Container/MtgCounter';
+import MtgCounter from './MtgCounter/MtgCounter';
 
 const Projects = () => {
   return (
