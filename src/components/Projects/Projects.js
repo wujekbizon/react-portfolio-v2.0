@@ -1,7 +1,15 @@
 import './Projects.scss';
+import MtgCounter from '../Container/MtgCounter';
 
 const Projects = () => {
-  return <h1>ALL MY PROJECTS</h1>;
+  return (
+    <div>
+      <div className="projects-page">
+        <h1>MY PROJECTS</h1>
+      </div>
+      <MtgCounter />
+    </div>
+  );
 };
 
 export default Projects;

@@ -1,0 +1,11 @@
+.projects-page {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  opacity: 0;
+  animation: fadeInDown 2s 1s forwards;
+
+  h1 {
+    font-size: 45px;
+  }
+}

@@ -63,9 +63,10 @@ const About = () => {
           <p className="mongoDb">
             <SiMongodb color="#4db33d" />
           </p>
-          <p className="git">
-            <FontAwesomeIcon icon={faGitAlt} color="#f1502f" />
+          <p className="code">
+            <SiVisualstudiocode color="#0078d7" />
           </p>
+
           <p className="gitHub">
             <FontAwesomeIcon icon={faGithub} color="hsl(0 0% 100%)" />
           </p>
@@ -75,14 +76,16 @@ const About = () => {
           <p className="bulma">
             <SiBulma color="#00d1b2" />
           </p>
-          <p className="npm">
-            <FontAwesomeIcon icon={faNpm} color="#cc3534" />
-          </p>
+
           <p className="vercel">
             <SiVercel color="hsl(0 0% 100%)" />
           </p>
-          <p className="code">
-            <SiVisualstudiocode color="#0078d7" />
+
+          <p className="npm">
+            <FontAwesomeIcon icon={faNpm} color="#cc3534" />
+          </p>
+          <p className="git">
+            <FontAwesomeIcon icon={faGitAlt} color="#f1502f" />
           </p>
         </div>
       </div>

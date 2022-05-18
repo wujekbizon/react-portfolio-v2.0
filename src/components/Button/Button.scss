@@ -1,0 +1,28 @@
+.btn {
+  position: relative;
+  right: 10px;
+  bottom: 10px;
+  display: block;
+  width: 180px;
+  height: 60px;
+  background-color: hsl(230 35% 7%);
+  color: hsl(0 0% 100%);
+  text-align: center;
+  padding-top: 17px;
+  font-size: 25px;
+  backface-visibility: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+  color: hsl(0 0% 100%);
+  transform: translate(10px, 10px);
+  background-color: hsl(230 35% 4%);
+}
+
+.box {
+  display: block;
+  width: 180px;
+  height: 60px;
+  border: 1px solid hsl(230 35% 4%);
+}

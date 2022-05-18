@@ -5,17 +5,17 @@ const aboutMe = [
   {
     title: 'Background',
     content:
-      "I'm looking for a position as an entry-level web developer. I enjoy bridging the gap between engineering and design — combining my technical knowledge with my keen eye for design to create a beautiful product.",
+      "I'm looking for a position as an entry-level web developer. I enjoy bridging the gap between engineering and design — combining my technical knowledge with my keen eye for designing, to create a beautiful , user friendly products that are scalable and efficient.",
   },
   {
     title: 'My goal',
     content:
-      'My career goal as a software developer is to become an expert in a programming languages JavaScript, Typescript , master them and other frameworks (React.js, Node.js, Express.js. I want to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.',
+      'My career goal as a software developer is to become an expert in a programming languages JavaScript and Typescript master them and other frameworks (React.js, Node.js, Express.js). I’m excited to work on new projects, because I learn something new every time.',
   },
   {
     title: 'Who Am I ?',
     content:
-      'If I need to define myself in one sentence that would be a family person, father of three lovely kids, good husband, a MtG Card game fanatic, JavaScript enthusiast, and someone who cares what it does!!',
+      'I love building stuff! If I need to define myself in one sentence that would be a family person, father of three lovely kids, good husband, a MtG Card game fanatic, JavaScript enthusiast, and someone who cares what it does!!',
   },
 ];
 
