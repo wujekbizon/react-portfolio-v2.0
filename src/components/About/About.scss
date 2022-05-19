@@ -7,7 +7,7 @@
     font-family: 'Barlow' sans-serif;
     font-size: 35px;
     opacity: 0;
-    animation: fadeIn 2s 3.5s forwards;
+    animation: fadeIn 2s 2.3s forwards;
     text-decoration: underline;
   }
 }
@@ -23,7 +23,7 @@
   border-radius: 20px;
   box-shadow: 0 5px 15px 0 rgba(210, 216, 249, 0.35);
   opacity: 0;
-  animation: backInRight 3s 2.8s forwards;
+  animation: backInRight 2s 1.5s forwards;
   font-size: 40px;
   padding: 2.5rem 0 0 6.5rem;
   color: hsl(0 0% 100%);
@@ -359,7 +359,7 @@ h2 {
   font-family: 'Barlow' sans-serif;
   font-size: 35px;
   opacity: 0;
-  animation: fadeIn 2s 5.5s forwards;
+  animation: fadeIn 2s 3s forwards;
   text-decoration: underline;
 }
 
@@ -370,5 +370,5 @@ h2 {
   grid-row-gap: 48px;
   cursor: pointer;
   opacity: 0;
-  animation: fadeIn 3s 4s forwards;
+  animation: fadeIn 3s 3.3s forwards;
 }
