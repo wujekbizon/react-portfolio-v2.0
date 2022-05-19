@@ -57,12 +57,16 @@ const Home = () => {
         >
           <FontAwesomeIcon icon={faFacebookSquare} color="hsl(231 77% 90%" />
         </a>
-        <a target="_blank" rel="noreferrer" href="/contact">
+        <a href="/contact">
           <FontAwesomeIcon icon={faSquareEnvelope} color="hsl(231 77% 90%" />
         </a>
       </div>
       <div id="resume">
-        <a href="https://drive.google.com/file/d/1un5VGs5CcW6A3_w9H4ivNc6CxdSHqPsR/view?usp=sharing">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://drive.google.com/file/d/1un5VGs5CcW6A3_w9H4ivNc6CxdSHqPsR/view?usp=sharing"
+        >
           Curriculum Vitae
         </a>
       </div>
