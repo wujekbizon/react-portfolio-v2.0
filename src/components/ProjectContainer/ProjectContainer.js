@@ -42,7 +42,6 @@ const ProjectContainer = ({
         </ul>
         <p>{description}</p>
         <ul className="items">{renderedItems}</ul>
-
         <Button content={content} url={url} />
       </div>
     </div>

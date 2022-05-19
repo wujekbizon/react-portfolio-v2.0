@@ -1,0 +1,24 @@
+.badge {
+  display: block;
+  width: 90px;
+  height: 25px;
+  border: 1px solid hsl(230 35% 4%);
+  background: hsl(230 35% 7%);
+  color: hsl(0 0% 100%);
+  text-align: center;
+  font-size: 14px;
+  padding-top: 2px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.components {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+// class to use later
+.onSkill {
+  letter-spacing: 1px;
+}

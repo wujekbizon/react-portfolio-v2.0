@@ -10,17 +10,16 @@
   border: 1px solid hsl(230 35% 4%);
   box-shadow: 0 5px 10px 0 rgba(210, 216, 249, 0.5);
   opacity: 0;
-  animation: backInLeft 3s 1.6s forwards;
+  animation: backInLeft 2s 1.4s forwards;
 
   h1 {
-    margin: 35px;
+    margin-top: 15px;
     font-size: 35px;
     text-align: center;
   }
 
   h3 {
-    margin-top: 10px;
-    font-size: 15px;
+    font-size: 12px;
     opacity: 0.6;
   }
 
@@ -30,13 +29,13 @@
 
   ul {
     list-style-type: none;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
     padding: 0;
   }
   p {
-    margin-left: 20px;
-    font-size: 20px;
+    margin-left: 15px;
+    font-size: 18px;
   }
 
   // class that I will use later to do fun stuff
@@ -45,10 +44,6 @@
   }
 
   .items {
-    margin-left: 20px;
-
-    li {
-      margin-top: 5px;
-    }
+    margin-left: 15px;
   }
 }
