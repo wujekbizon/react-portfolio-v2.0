@@ -61,7 +61,7 @@ const Home = () => {
           <FontAwesomeIcon icon={faSquareEnvelope} color="hsl(231 77% 90%" />
         </a>
       </div>
-      <div className="resume">
+      <div id="resume">
         <a href="https://drive.google.com/file/d/1un5VGs5CcW6A3_w9H4ivNc6CxdSHqPsR/view?usp=sharing">
           Curriculum Vitae
         </a>

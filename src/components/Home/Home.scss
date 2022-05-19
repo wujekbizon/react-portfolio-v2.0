@@ -62,7 +62,7 @@
   animation: fadeInUp 2s 3s forwards;
 }
 
-.resume {
+#resume {
   display: block;
   position: absolute;
   bottom: 16%;
@@ -75,7 +75,7 @@
   border-radius: 7px;
   background: hsl(231 77% 90%);
   text-align: center;
-  box-shadow: 0 5px 10px 0 rgba(210, 216, 249, 0.25);
+  box-shadow: 0 5px 10px 0 rgba(210, 216, 249, 0.2);
   opacity: 0;
   animation: fadeInUp 2s 3s forwards;
 
@@ -87,7 +87,7 @@
   }
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) !important;
     box-shadow: 0 5px 30px 0 rgba(210, 216, 249, 0.2);
   }
 }

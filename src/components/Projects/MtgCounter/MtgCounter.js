@@ -12,6 +12,8 @@ const items = [
   'Option with setting a Timer',
 ];
 
+const skills = ['Javascript', 'CSS 3', 'HTML 5', 'Bulma', 'Vercel'];
+
 const MtgCounter = () => {
   return (
     <>
@@ -22,8 +24,8 @@ const MtgCounter = () => {
         items={items}
         content={'View project'}
         url={'https://js-lifecounter.vercel.app/'}
-      ></ProjectContainer>
-
+        skills={skills}
+      />
       <ImageContainer imgSrc={Mtg} url={'https://js-lifecounter.vercel.app/'} />
     </>
   );

@@ -10,11 +10,12 @@
   border: 1px solid hsl(230 35% 4%);
   box-shadow: 0 5px 10px 0 rgba(210, 216, 249, 0.5);
   opacity: 0;
-  animation: backInLeft 1.8s 1.6s forwards;
+  animation: backInLeft 3s 1.6s forwards;
 
   h1 {
     margin: 35px;
     font-size: 35px;
+    text-align: center;
   }
 
   h3 {
@@ -29,18 +30,25 @@
 
   ul {
     list-style-type: none;
-    font-size: 22px;
+    font-size: 20px;
     cursor: pointer;
-    margin-bottom: 45px;
+    padding: 0;
   }
   p {
-    margin-top: 25px;
+    margin-left: 20px;
     font-size: 20px;
-    text-align: center;
   }
 
   // class that I will use later to do fun stuff
   .active {
     text-decoration: underline;
+  }
+
+  .items {
+    margin-left: 20px;
+
+    li {
+      margin-top: 5px;
+    }
   }
 }
