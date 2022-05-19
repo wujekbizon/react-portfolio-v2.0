@@ -10,7 +10,6 @@ const text =
 const items = [
   'Search your favorites movies',
   'Compare with your friend pick',
-  'Have fun',
   'Fully responsive application',
   'Reusable',
 ];

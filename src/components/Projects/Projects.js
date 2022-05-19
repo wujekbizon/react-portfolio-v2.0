@@ -2,7 +2,7 @@ import './Projects.scss';
 import MtgCounter from './MtgCounter/MtgCounter';
 import MovieFight from './MovieFight/MovieFight';
 import YelpCamp from './YelpCamp/YelpCamp';
-
+import Portfolio from './Portfolio/Portfolio';
 const Projects = () => {
   return (
     <div>
@@ -13,6 +13,7 @@ const Projects = () => {
       <MtgCounter />
       <YelpCamp />
       <MovieFight />
+      <Portfolio />
     </div>
   );
 };
