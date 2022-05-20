@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     opacity: 0;
-    animation: fadeInDown 2s 3s forwards;
+    animation: backInDown 2s 2s forwards;
 
     a {
       font-size: 27px;
@@ -80,6 +80,73 @@
       svg {
         color: hsl(0 0% 100%);
       }
+    }
+  }
+
+  button {
+    display: none;
+  }
+}
+
+.mdclose {
+  color: hsl(0 0% 100%);
+  width: 40px;
+  height: 40px;
+}
+
+.fimenu {
+  color: hsl(0 0% 100%);
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 530px) {
+  .nav-bar {
+    button {
+      display: block;
+      position: fixed;
+      margin-top: 3px;
+      right: 10px;
+      top: 5px;
+      z-index: 10;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+
+      &:hover {
+        line {
+          color: #fa8231;
+        }
+        path {
+          color: #fa8231;
+        }
+      }
+    }
+
+    line {
+      color: #fff;
+    }
+  }
+
+  .menuNav a {
+    opacity: 0;
+  }
+
+  .menuNav.open a {
+    animation: backInDown 1s 0.2s forwards;
+    margin: 0 18px;
+    font-size: 24px;
+
+    &:after {
+      position: absolute;
+      top: 5px;
+      left: 7px;
+      font-size: 14px;
+      color: hsl(0 0% 100%);
+    }
+
+    &:first-child:after {
+      left: 0px;
     }
   }
 }
