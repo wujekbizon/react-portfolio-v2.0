@@ -123,24 +123,36 @@
 }
 
 @media (max-width: 1024px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
   .title h1 {
-    left: 27%;
-    font-size: 40px;
+    left: 20%;
+    font-size: 45px;
   }
   .name {
-    left: 26%;
-    font-size: 45px;
+    left: 15%;
+    top: 33%;
+    font-size: 57px;
   }
 
   .logo {
-    width: 33%;
+    width: 38%;
   }
 
   .jobs {
-    bottom: 50%;
-    font-size: 19px;
+    top: 42%;
+    left: 35%;
+    font-size: 24px;
   }
+
   .social-media {
+    bottom: 30%;
     a {
       font-size: 35px;
       margin: 7px;
@@ -148,7 +160,7 @@
   }
 
   #resume {
-    bottom: 15.6%;
+    bottom: 30.51%;
     width: 100px;
     height: 36px;
     border-bottom: 2px solid hsl(230 35% 4%);
@@ -161,17 +173,6 @@
 }
 
 @media (max-width: 768px) {
-  html {
-    overflow: hidden;
-  }
-
-  body {
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-  }
-
   .title h1 {
     left: 20%;
   }
@@ -219,8 +220,6 @@
   body {
     position: relative;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
   }
 
   .title h1 {
