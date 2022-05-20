@@ -201,11 +201,22 @@
 }
 
 @media (max-width: 420px) {
+  html {
+    overflow: hidden;
+  }
+
+  body {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
   .title h1 {
     font-size: 20px;
   }
   .name {
-    left: 14%;
+    left: 18%;
     font-size: 25px;
   }
   .logo {
@@ -214,11 +225,16 @@
   .jobs {
     font-size: 11px;
     bottom: 51%;
-    left: 23%;
+    left: 27%;
   }
 
   #resume {
     left: 38%;
-    bottom: 25%;
+    bottom: 30%;
+  }
+
+  .social-media {
+    left: 28%;
+    bottom: 20%;
   }
 }

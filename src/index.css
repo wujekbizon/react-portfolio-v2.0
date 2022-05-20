@@ -3,6 +3,6 @@
   font-family: 'Barlow Condensed', sans-serif;
   color: hsl(0 0% 100%);
   background: hsl(230 35% 7%);
-  overflow-x: hidden;
-  width:100%;
+  
+  width: 100%;
 }

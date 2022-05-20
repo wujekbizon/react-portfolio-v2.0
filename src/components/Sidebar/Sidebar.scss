@@ -90,14 +90,14 @@
 
 .mdclose {
   color: hsl(0 0% 100%);
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
 }
 
 .fimenu {
   color: hsl(0 0% 100%);
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
 }
 
 @media (max-width: 530px) {
@@ -105,7 +105,7 @@
     button {
       display: block;
       position: absolute;
-      right: 88%;
+      right: 86%;
       top: 8px;
       z-index: 10;
       cursor: pointer;
