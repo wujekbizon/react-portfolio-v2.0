@@ -422,7 +422,6 @@ h2 {
     }
   }
   .skills {
-    margin-bottom: 50px !important;
     width: 300px;
     height: 300px;
     top: 40%;
@@ -462,7 +461,6 @@ h2 {
     }
   }
   .skills {
-    margin-bottom: 50px !important;
     width: 300px;
     height: 300px;
     top: 68%;
@@ -531,6 +529,58 @@ h2 {
   }
 
   #filler {
-    margin-top: 70px;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .about-page {
+    top: 10%;
+    left: 17%;
+    h1 {
+      font-size: 25px;
+    }
+  }
+  .skills {
+    top: 70%;
+    left: 11%;
+    font-size: 40px;
+    padding: 20px 0 0 50px;
+  }
+
+  h2 {
+    left: 17%;
+    top: 62%;
+    font-size: 25px;
+  }
+
+  #filler {
+    margin-top: 180px;
+  }
+}
+
+@media (min-height: 768px) and (max-height: 1024px) and (orientation: landscape) {
+  .about-page {
+    top: 13.5%;
+    left: 23%;
+    h1 {
+      font-size: 25px;
+    }
+  }
+  .skills {
+    top: 95%;
+    left: 20%;
+    font-size: 40px;
+    padding: 20px 0 0 50px;
+  }
+
+  h2 {
+    left: 23%;
+    top: 86%;
+    font-size: 25px;
+  }
+
+  #filler {
+    margin-top: 80px;
   }
 }
