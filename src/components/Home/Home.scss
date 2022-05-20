@@ -22,7 +22,7 @@
 }
 
 .logo {
-  width: 28%;
+  width: 29%;
   opacity: 0;
   animation: fadeInRight 2.2s 2.3s forwards;
 }
@@ -89,5 +89,113 @@
   &:hover {
     transform: scale(1.1) !important;
     box-shadow: 0 5px 30px 0 rgba(210, 216, 249, 0.2);
+  }
+}
+
+@media (max-width: 1450px) {
+  .title h1 {
+    font-size: 55px;
+  }
+
+  .name {
+    font-size: 60px;
+  }
+
+  .jobs {
+    bottom: 46.5%;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .title h1 {
+    font-size: 45px;
+  }
+
+  .name {
+    font-size: 55px;
+  }
+
+  .jobs {
+    bottom: 48%;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title h1 {
+    left: 27%;
+    font-size: 35px;
+  }
+  .name {
+    left: 26%;
+    font-size: 45px;
+  }
+
+  .logo {
+    width: 33%;
+  }
+
+  .jobs {
+    bottom: 50%;
+    font-size: 19px;
+  }
+  .social-media {
+    a {
+      font-size: 35px;
+      margin: 7px;
+    }
+  }
+
+  #resume {
+    bottom: 15.6%;
+    width: 100px;
+    height: 36px;
+    border-bottom: 2px solid hsl(230 35% 4%);
+    border-top: 2px solid hsl(230 35% 4%);
+    padding-top: 5px;
+    a {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .title h1 {
+    left: 24%;
+  }
+
+  .name {
+    left: 22%;
+    font-size: 37px;
+  }
+
+  .jobs {
+    left: 35%;
+    bottom: 50%;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 530px) {
+  .title h1 {
+    left: 20%;
+    font-size: 25px;
+  }
+  .name {
+    left: 14%;
+    font-size: 38px;
+  }
+  .logo {
+    width: 40%;
+  }
+  .jobs {
+    bottom: 50%;
+    left: 30%;
+  }
+
+  #resume {
+    left: 38%;
+    bottom: 25%;
   }
 }
