@@ -87,8 +87,10 @@ const About = () => {
           <p className="git">
             <FontAwesomeIcon icon={faGitAlt} color="#f1502f" />
           </p>
+          <div id="filler"></div>
         </div>
       </div>
+
       <Accordion />
     </div>
   );
