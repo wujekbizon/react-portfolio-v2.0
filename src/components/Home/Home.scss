@@ -93,7 +93,16 @@
 }
 
 @media (max-width: 1450px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
   .title h1 {
+    left: 35%;
     font-size: 55px;
   }
 
@@ -123,14 +132,6 @@
 }
 
 @media (max-width: 1024px) {
-  html {
-    overflow-x: hidden;
-  }
-
-  body {
-    position: relative;
-    overflow-x: hidden;
-  }
   .title h1 {
     left: 20%;
     font-size: 45px;
@@ -142,7 +143,7 @@
   }
 
   .logo {
-    width: 38%;
+    width: 35%;
   }
 
   .jobs {
@@ -160,7 +161,7 @@
   }
 
   #resume {
-    bottom: 25.51%;
+    bottom: 25.7%;
     width: 100px;
     height: 36px;
     border-bottom: 2px solid hsl(230 35% 4%);
@@ -178,18 +179,30 @@
   }
 
   .name {
-    left: 21%;
-    font-size: 43px;
+    left: 18%;
+    font-size: 45px;
   }
 
   .jobs {
     left: 35%;
-    bottom: 50%;
+    bottom: 40%;
     font-size: 20px;
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 720px) {
+  #resume {
+    left: 44%;
+    bottom: 30%;
+  }
+
+  .social-media {
+    left: 37%;
+    bottom: 20%;
+  }
+}
+
+@media (max-width: 580px) {
   .title h1 {
     left: 20%;
     font-size: 25px;
@@ -202,26 +215,13 @@
     width: 40%;
   }
   .jobs {
+    font-size: 16px;
     bottom: 50%;
     left: 30%;
   }
-
-  #resume {
-    left: 38%;
-    bottom: 25%;
-  }
 }
 
-@media (max-width: 420px) {
-  html {
-    overflow: hidden;
-  }
-
-  body {
-    position: relative;
-    overflow: hidden;
-  }
-
+@media (max-width: 430px) {
   .title h1 {
     font-size: 20px;
   }
@@ -246,5 +246,35 @@
   .social-media {
     left: 28%;
     bottom: 20%;
+  }
+}
+
+@media (max-height: 430px) and (orientation: landscape) {
+  .title h1 {
+    left: 35%;
+    font-size: 24px;
+  }
+  .name {
+    left: 30%;
+    font-size: 35px;
+  }
+  .logo {
+    width: 25%;
+  }
+
+  .jobs {
+    font-size: 14px;
+
+    left: 40%;
+  }
+
+  #resume {
+    right: 15%;
+    bottom: 11.5%;
+  }
+
+  .social-media {
+    left: 15%;
+    bottom: 10%;
   }
 }
