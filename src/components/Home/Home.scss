@@ -199,3 +199,26 @@
     bottom: 25%;
   }
 }
+
+@media (max-width: 420px) {
+  .title h1 {
+    font-size: 20px;
+  }
+  .name {
+    left: 14%;
+    font-size: 25px;
+  }
+  .logo {
+    width: 33%;
+  }
+  .jobs {
+    font-size: 11px;
+    bottom: 51%;
+    left: 23%;
+  }
+
+  #resume {
+    left: 38%;
+    bottom: 25%;
+  }
+}
