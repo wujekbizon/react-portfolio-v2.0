@@ -125,7 +125,7 @@
 @media (max-width: 1024px) {
   .title h1 {
     left: 27%;
-    font-size: 35px;
+    font-size: 40px;
   }
   .name {
     left: 26%;
@@ -160,20 +160,31 @@
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
+  html {
+    overflow: hidden;
+  }
+
+  body {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
   .title h1 {
-    left: 24%;
+    left: 20%;
   }
 
   .name {
-    left: 22%;
-    font-size: 37px;
+    left: 21%;
+    font-size: 43px;
   }
 
   .jobs {
     left: 35%;
     bottom: 50%;
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
