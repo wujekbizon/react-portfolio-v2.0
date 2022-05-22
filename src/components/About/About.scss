@@ -614,11 +614,17 @@ h2 {
   }
 }
 
-@media (max-width: 360px) and (max-height: 740px) {
+@media (max-width: 360px) and (max-height: 760px) {
   .skills {
     top: 68%;
   }
   h2 {
     top: 59%;
+  }
+}
+
+@media (max-width: 740px) and (max-height: 350px) {
+  .skills {
+    top: 40%;
   }
 }
