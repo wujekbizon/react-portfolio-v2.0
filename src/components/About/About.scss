@@ -628,3 +628,42 @@ h2 {
     top: 40%;
   }
 }
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .skills {
+    width: 280px;
+    height: 280px;
+    padding-top: 1rem;
+    top: 75%;
+    font-size: 27px;
+  }
+
+  .grid {
+    grid-row-gap: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+    top: 66%;
+  }
+
+  .about-page {
+    h1 {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-height: 667px) and (min-width: 375px) and (orientation: landscape) {
+  .skills {
+    width: 280px;
+    height: 280px;
+    padding-top: 1rem;
+    top: 35%;
+    font-size: 27px;
+  }
+
+  .grid {
+    grid-row-gap: 25px;
+  }
+}
