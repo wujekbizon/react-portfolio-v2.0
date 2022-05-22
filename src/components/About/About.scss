@@ -499,7 +499,7 @@ h2 {
   .skills {
     width: 375px;
     height: 360px;
-    top: 68%;
+    top: 70%;
     font-size: 36px;
     padding: 2.5rem 0 0 3rem;
   }
@@ -509,7 +509,7 @@ h2 {
   }
 
   h2 {
-    top: 60%;
+    top: 62%;
     font-size: 25px;
   }
 
@@ -532,7 +532,7 @@ h2 {
   .skills {
     width: 300px;
     height: 300px;
-    top: 60%;
+    top: 62%;
     font-size: 31px;
     padding: 1.5rem 0 0 2.5rem;
   }
@@ -543,7 +543,7 @@ h2 {
   }
 
   h2 {
-    top: 53%;
+    top: 54.5%;
     font-size: 25px;
   }
 
@@ -556,5 +556,69 @@ h2 {
 @media (max-width: 360px) {
   .skills {
     left: 7%;
+  }
+}
+
+@media (max-height: 430px) and (orientation: landscape) {
+  .skills {
+    width: 300px;
+    height: 300px;
+    font-size: 27px;
+    top: 35%;
+    left: 52%;
+    padding: 1.5rem 0 0 2.5rem;
+  }
+  .grid {
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    grid-column-gap: 6px;
+    grid-row-gap: 30px;
+  }
+
+  p::after {
+    font-size: 11px;
+    margin-left: 20px;
+  }
+
+  .about-page {
+    left: 12%;
+    top: 27%;
+
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+  h2 {
+    top: 20%;
+    left: 56%;
+    font-size: 20px;
+  }
+}
+
+@media (max-height: 430px) and (min-width: 768px) and (orientation: landscape) {
+  .skills {
+    left: 56%;
+  }
+
+  h2 {
+    left: 59%;
+    top: 20.5%;
+  }
+
+  .about-page {
+    left: 15%;
+  }
+
+  #filler {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 360px) and (max-height: 740px) {
+  .skills {
+    top: 68%;
+  }
+  h2 {
+    top: 59%;
   }
 }

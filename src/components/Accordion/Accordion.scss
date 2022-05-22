@@ -105,3 +105,24 @@
     left: 7%;
   }
 }
+
+@media (max-height: 412px) and (orientation: landscape) {
+  #about-content {
+    width: 300px;
+    height: 300px;
+    font-size: 17px;
+    font-weight: 100;
+    left: 8%;
+    top: 35%;
+  }
+
+  #dropdown-header {
+    font-size: 14px;
+  }
+}
+
+@media (max-height: 430px) and (min-width: 768px) and (orientation: landscape) {
+  #about-content {
+    left: 11%;
+  }
+}
