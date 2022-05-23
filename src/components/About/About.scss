@@ -600,6 +600,45 @@ h2 {
   }
 }
 
+// 920 x 1024
+@media (max-width: 920px) and (min-height: 1024px) {
+  .skills {
+    width: 450px;
+    left: 25%;
+    top: 70%;
+    font-size: 40px;
+    padding: 1.5rem 0 0 3rem;
+  }
+
+  h2 {
+    left: 30%;
+    top: 62.5%;
+    font-size: 28px;
+  }
+
+  .grid {
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+  }
+
+  .about-page {
+    top: 15%;
+    left: 30%;
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+  p::after {
+    font-size: 17px;
+    margin-left: 5px;
+  }
+
+  #filler {
+    margin-top: 50px;
+  }
+}
+
 //  768 x 1024
 @media (max-width: 768px) {
   .skills {
@@ -631,10 +670,6 @@ h2 {
   p::after {
     font-size: 17px;
     margin-left: 5px;
-  }
-
-  #filler {
-    margin-top: 50px;
   }
 }
 

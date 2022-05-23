@@ -94,6 +94,17 @@
     left: 15%;
   }
 }
+
+// 920 x 1024
+@media (max-width: 920px) and (min-height: 1024px) {
+  #about-content {
+    width: 450px;
+    font-size: 22px;
+    top: 20%;
+    left: 25%;
+  }
+}
+
 // 768 x 1024
 @media (max-width: 768px) {
   #about-content {
