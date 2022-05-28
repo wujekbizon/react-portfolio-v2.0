@@ -28,9 +28,9 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="container contact-page">
+      <div className="container-contact contact-page">
         <div className="text-zone">
-          <h1></h1>
+          <h1>Contact me</h1>
           <p>
             I am interested in any intern or job offers as an web developer.
             Please contact with me using below form.
@@ -80,11 +80,11 @@ const Contact = () => {
           <span>grzegorz.wolfinger@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[49.7087783, 20.3086625]} zoom={10}>
+          <MapContainer center={[49.7087783, 20.4086625]} zoom={9}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[49.7087783, 20.3086625]}>
               <Popup>
-                Greg lives here, want some cup of coffee? Come on in :)
+                Greg lives here, want some coffee? Come and visit him :)
               </Popup>
             </Marker>
           </MapContainer>

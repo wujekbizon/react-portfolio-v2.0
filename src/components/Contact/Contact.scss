@@ -1,16 +1,11 @@
-.container {
+.container-contact {
   width: 100%;
-  will-change: contents;
-  height: 90%;
+  height: 100vh;
   min-height: 566px;
   position: absolute;
   opacity: 0;
-  top: 7%;
-  margin: 0 auto;
-  z-index: 1;
   transform-style: preserve-3d;
-  animation: fadeIn 1s forwards;
-  animation-delay: 1s;
+  animation: fadeIn 1s 1s forwards;
 }
 
 .contact-page {
@@ -24,12 +19,27 @@
     display: table-cell;
     max-height: 90%;
 
+    h1 {
+      font-size: 65px;
+      margin-top: 0;
+      text-decoration: underline;
+      position: relative;
+      left: 10px;
+      bottom: 20px;
+      margin-bottom: 50px;
+      text-align: center;
+      opacity: 0;
+      animation: fadeInDown 1.2s 1s forwards;
+    }
+
     p {
       font-size: 30px;
       color: hsl(0 0% 100%);
+      text-align: center;
       font-weight: 300;
       min-width: fit-content;
-      animation: pulse 1s;
+      opacity: 0;
+      animation: fadeInLeft 1.5s 1.5s forwards;
       letter-spacing: 1px;
 
       &:nth-of-type(1) {
@@ -83,10 +93,11 @@
   input[type='email'] {
     width: 100%;
     border: 0;
-    background: #222f3e;
+    background: hsl(230 35% 4%);
     height: 50px;
-    font-size: 16px;
-    color: #fff;
+    font-size: 17px;
+    font-weight: 200;
+    color: hsl(0 0% 100%);
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -94,64 +105,62 @@
   textarea {
     width: 100%;
     border: 0;
-    background: #222f3e;
+    background: hsl(230 35% 4%);
     height: 50px;
-    font-size: 16px;
-    color: #fff;
+    font-size: 17px;
+    color: hsl(0 0% 100%);
     padding: 20px;
     min-height: 150px;
     box-sizing: border-box;
   }
 
   .flat-button {
-    color: #fa8231;
-    background: 0 0;
-    font: 11px;
+    color: hsl(0 0% 100%);
+    background: hsl(230 35% 4%);
+    font-size: 18px;
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
-    border: 1px solid #fa8231;
+    border: 1px solid hsl(0 0% 100%);
     float: right;
-    border-radius: 3px;
 
     &:hover {
-      background: #fa8231;
-      color: #182c61;
+      background: hsl(0 0% 100%);
+      color: hsl(230 35% 4%);
+      border: 1px solid hsl(230 35% 4%);
     }
   }
 }
 
 .info-map {
   position: absolute;
-  background-color: #222f3e;
-  top: 100px;
+  background-color: hsl(230 35% 4%);
+  top: 20%;
   right: 25%;
-  z-index: 999999;
+  z-index: 3;
   width: 250px;
   padding: 20px;
-  color: #fff;
-  font-family: 'Helvetica';
-  font-size: 17px;
+  color: hsl(0 0% 100%);
+  font-size: 20px;
   font-weight: 300;
   text-align: center;
-  border-radius: 5px;
   opacity: 0;
   animation: fadeIn 2s 3s;
   animation-fill-mode: forwards;
 
   span {
-    font-size: 16px;
+    font-size: 20px;
     display: block;
-    padding-top: 20px;
+    padding-top: 5px;
     color: #fa8231;
   }
 }
 
 .map-wrap {
-  background: rgba(8, 253, 216, 0.1);
+  background: hsl(230 35% 4%);
   float: right;
   width: 53%;
-  height: 100%;
+  height: 100vh;
 }
 
 .leaflet-container {
@@ -164,22 +173,22 @@
 }
 
 @media (max-width: 960px) {
-  .container.contact-page .text-zone {
-    width: 80%;
+  .container-contact.contact-page .text-zone {
+    width: 85%;
   }
 
   .info-map {
     top: auto;
-    right: 5%;
+    right: 100px;
     bottom: 50px;
   }
 
   .map-wrap {
-    float: none;
-    width: 80%;
-    margin-left: 10%;
-    height: 320px;
-    clear: both;
+    position: absolute;
+    top: 80%;
+    width: 85%;
+    margin-left: 6%;
+    height: 340px;
   }
 }
 
@@ -189,13 +198,21 @@
     margin-left: 0;
   }
 
+  .map-wrap {
+    top: 82%;
+  }
   .info-map {
+    font-size: 18px;
     margin-left: 10%;
     margin-right: 0;
     padding: 10px 0 10px 0;
-    width: 80%;
-    position: static;
-    clear: both;
-    margin-bottom: 10px;
+    width: 40%;
+    bottom: 5%;
+    right: 50px;
+
+    span {
+      font-size: 17px;
+      padding-top: 10px;
+    }
   }
 }
