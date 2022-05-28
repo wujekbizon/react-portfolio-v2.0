@@ -29,23 +29,29 @@ const skills = [
 const Portfolio = () => {
   return (
     <>
-      <ProjectContainer
-        type={type}
-        projectName={'React Portfolio v 1.0'}
-        description={text}
-        items={items}
-        content={'View project'}
-        url={'https://grzegorz-wolfinger.vercel.app/'}
-        skills={skills}
-      />
-      <div className="movie-image">
-        <ImageContainer
-          imgSrc={ImagePort}
-          url={'https://grzegorz-wolfinger.vercel.app/'}
-        />
-      </div>
-      <div className="movie-btn">
-        <Link url={'https://github.com/wujekbizon/react-portfolio'} />
+      <div className="ui stackable grid container">
+        <div className="eight wide computer column">
+          <ProjectContainer
+            type={type}
+            projectName={'React Portfolio v 1.0'}
+            description={text}
+            items={items}
+            content={'View project'}
+            url={'https://grzegorz-wolfinger.vercel.app/'}
+            skills={skills}
+          />
+        </div>
+        <div className="seven wide computer column">
+          <div className="portfolioImage-container">
+            <ImageContainer
+              imgSrc={ImagePort}
+              url={'https://grzegorz-wolfinger.vercel.app/'}
+            />
+          </div>
+          <div className="portfolio-link">
+            <Link url={'https://github.com/wujekbizon/react-portfolio'} />
+          </div>
+        </div>
       </div>
     </>
   );

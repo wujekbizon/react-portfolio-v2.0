@@ -33,17 +33,15 @@ const ProjectContainer = ({
   });
 
   return (
-    <div className="ui container">
-      <div className="project">
-        <h3>{type.toUpperCase()}</h3>
-        <h1>{projectName}</h1>
-        <ul>
-          <Badge skills={skills} />
-        </ul>
-        <p>{description}</p>
-        <ul className="items">{renderedItems}</ul>
-        <Button content={content} url={url} />
-      </div>
+    <div className="project-container">
+      <h3>{type.toUpperCase()}</h3>
+      <h1>{projectName}</h1>
+      <ul>
+        <Badge skills={skills} />
+      </ul>
+      <p>{description}</p>
+      <ul className="items">{renderedItems}</ul>
+      <Button content={content} url={url} />
     </div>
   );
 };

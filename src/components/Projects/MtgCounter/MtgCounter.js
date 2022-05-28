@@ -21,17 +21,30 @@ const skills = ['Javascript', 'CSS 3', 'HTML 5', 'Bulma', 'Vercel'];
 const MtgCounter = () => {
   return (
     <>
-      <ProjectContainer
-        type={type}
-        projectName={'Mtg Life Counter'}
-        description={text}
-        items={items}
-        content={'View project'}
-        url={'https://js-lifecounter.vercel.app/'}
-        skills={skills}
-      />
-      <ImageContainer imgSrc={Mtg} url={'https://js-lifecounter.vercel.app/'} />
-      <Link url={'https://github.com/wujekbizon/jS-apps-lifeCounter'} />
+      <div className="ui stackable grid container">
+        <div className="eight wide computer column">
+          <ProjectContainer
+            type={type}
+            projectName={'Mtg Life Counter'}
+            description={text}
+            items={items}
+            content={'View project'}
+            url={'https://js-lifecounter.vercel.app/'}
+            skills={skills}
+          />
+        </div>
+        <div className=" seven wide computer column">
+          <div className="mtgImage-container">
+            <ImageContainer
+              imgSrc={Mtg}
+              url={'https://js-lifecounter.vercel.app/'}
+            />
+          </div>
+          <div className="mtg-link">
+            <Link url={'https://github.com/wujekbizon/jS-apps-lifeCounter'} />
+          </div>
+        </div>
+      </div>
     </>
   );
 };

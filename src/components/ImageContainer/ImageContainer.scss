@@ -1,18 +1,16 @@
 #image {
-  position: absolute;
-  right: 25%;
-  top: 35%;
   width: 350px;
   height: 300px;
   border: 1px solid hsl(230 35% 4%);
   border-radius: 20px;
   box-shadow: 0 5px 10px 0 rgba(210, 216, 249, 0.5);
-  transition: transform 300ms, box-shadow 300ms !important  ;
+  transition: transform 300ms, box-shadow 300ms !important;
+  margin-top: 20px;
   opacity: 0;
-  animation: fadeIn 2.3s 3.3s forwards;
+  animation: fadeInRight 2.3s 3.3s forwards;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
     box-shadow: 0 15px 60px 0 rgba(210, 216, 249, 0.25);
   }
 }

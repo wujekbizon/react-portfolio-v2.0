@@ -18,23 +18,29 @@ const skills = ['Javascript', 'CSS 3', 'HTML 5', 'Bulma', 'Vercel', 'API'];
 const MovieFight = () => {
   return (
     <>
-      <ProjectContainer
-        type={type}
-        projectName={'Movie Fight'}
-        description={text}
-        items={items}
-        content={'View project'}
-        url={'https://js-apps-movie-fight.vercel.app/'}
-        skills={skills}
-      />
-      <div className="movie-image">
-        <ImageContainer
-          imgSrc={Movie}
-          url={'https://js-apps-movie-fight.vercel.app/'}
-        />
-      </div>
-      <div className="movie-btn">
-        <Link url={'https://github.com/wujekbizon/js-apps-movieFight'} />
+      <div className="ui stackable grid container">
+        <div className="eight wide computer column">
+          <ProjectContainer
+            type={type}
+            projectName={'Movie Fight'}
+            description={text}
+            items={items}
+            content={'View project'}
+            url={'https://js-apps-movie-fight.vercel.app/'}
+            skills={skills}
+          />
+        </div>
+        <div className="seven wide computer column">
+          <div className="movieImage-container">
+            <ImageContainer
+              imgSrc={Movie}
+              url={'https://js-apps-movie-fight.vercel.app/'}
+            />
+          </div>
+          <div className="movie-link">
+            <Link url={'https://github.com/wujekbizon/js-apps-movieFight'} />
+          </div>
+        </div>
       </div>
     </>
   );

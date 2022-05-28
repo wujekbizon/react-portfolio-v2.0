@@ -34,23 +34,29 @@ const skills = [
 const YelpCamp = () => {
   return (
     <>
-      <ProjectContainer
-        type={type}
-        projectName={'Yelp Camp'}
-        description={text}
-        items={items}
-        content={'View project'}
-        url={'https://yelp-camp2022-gw.herokuapp.com/'}
-        skills={skills}
-      />
-      <div className="movie-image">
-        <ImageContainer
-          imgSrc={Yelp}
-          url={'https://yelp-camp2022-gw.herokuapp.com/'}
-        />
-      </div>
-      <div className="movie-btn">
-        <Link url={'https://github.com/wujekbizon/github-yelpcamp'} />
+      <div className="ui stackable grid container">
+        <div className="eight wide computer column">
+          <ProjectContainer
+            type={type}
+            projectName={'Yelp Camp'}
+            description={text}
+            items={items}
+            content={'View project'}
+            url={'https://yelp-camp2022-gw.herokuapp.com/'}
+            skills={skills}
+          />
+        </div>
+        <div className="seven wide computer column">
+          <div className="yelpImage-container">
+            <ImageContainer
+              imgSrc={Yelp}
+              url={'https://yelp-camp2022-gw.herokuapp.com/'}
+            />
+          </div>
+          <div className="yelp-link">
+            <Link url={'https://github.com/wujekbizon/github-yelpcamp'} />
+          </div>
+        </div>
       </div>
     </>
   );
