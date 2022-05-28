@@ -65,7 +65,7 @@ const Home = () => {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://drive.google.com/file/d/1un5VGs5CcW6A3_w9H4ivNc6CxdSHqPsR/view?usp=sharing"
+          href="https://drive.google.com/file/d/1-EWWXMH5T78O1-8iWbnSW1ZplD6waI38/view?usp=sharing"
         >
           Curriculum Vitae
         </a>
