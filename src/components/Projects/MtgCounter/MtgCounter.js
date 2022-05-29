@@ -1,6 +1,6 @@
 import './MtgCounter.scss';
 // image
-import Mtg from '../../../assets/images/Mtg.png';
+import CounterImage from '../../../assets/images/Mtg.png';
 // componets
 import ImageContainer from '../../ImageContainer/ImageContainer';
 import ProjectContainer from '../../ProjectContainer/ProjectContainer';
@@ -36,7 +36,7 @@ const MtgCounter = () => {
         <div className=" seven wide computer column">
           <div className="mtgImage-container">
             <ImageContainer
-              imgSrc={Mtg}
+              imgSrc={CounterImage}
               url={'https://js-lifecounter.vercel.app/'}
             />
           </div>

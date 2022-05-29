@@ -4,6 +4,7 @@ import MovieFight from './MovieFight/MovieFight';
 import YelpCamp from './YelpCamp/YelpCamp';
 import Portfolio from './Portfolio/Portfolio';
 import PortfolioV2 from './PortfolioV2/PortfolioV2';
+import Mtg from './Mtg/Mtg';
 
 const Projects = () => {
   return (
@@ -16,6 +17,7 @@ const Projects = () => {
       <YelpCamp />
       <MovieFight />
       <Portfolio />
+      <Mtg />
     </div>
   );
 };
