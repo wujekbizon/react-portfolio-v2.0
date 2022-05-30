@@ -778,7 +778,7 @@ h2 {
   }
 }
 // 414 x 896
-@media (max-width: 414px) {
+@media (max-width: 414px) and (max-height: 896px) {
   h1 {
     font-size: 25px;
   }
@@ -786,7 +786,7 @@ h2 {
   .skills {
     width: 300px;
     height: 300px;
-    top: 62%;
+    top: 65%;
     font-size: 31px;
     padding: 1.5rem 0 0 2.5rem;
   }
@@ -797,7 +797,7 @@ h2 {
   }
 
   h2 {
-    top: 54.5%;
+    top: 57%;
     font-size: 25px;
   }
 
