@@ -16,9 +16,20 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-left: 5px;
 }
 
 // class to use later
 .onSkill {
   letter-spacing: 1px;
+}
+
+@media (max-width: 360px) {
+  .components {
+    margin-left: 15px;
+  }
+  .badge {
+    margin-top: 2px;
+    margin-left: 2px;
+  }
 }

@@ -1,5 +1,5 @@
 .project-container {
-  margin-top: 300px;
+  margin-top: 200px;
   margin-left: 0;
   margin-bottom: 30px;
   width: 450px;
@@ -25,10 +25,6 @@
     opacity: 0.6;
   }
 
-  h4 {
-    font-size: 18px;
-  }
-
   ul {
     list-style-type: none;
     font-size: 18px;
@@ -48,5 +44,63 @@
 
   .items {
     margin-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-container {
+    margin-top: 60px;
+    margin-left: 50px;
+    width: 350px;
+    height: 750px;
+
+    h1 {
+      margin: 0;
+      font-size: 25px;
+    }
+
+    h3 {
+      font-size: 10px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    ul {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .project-container {
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .project-container {
+    margin-left: 30px;
+    width: 270px;
+
+    h1 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 13px;
+      text-align: center;
+    }
+
+    ul {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .project-container {
+    margin-left: 10px;
   }
 }

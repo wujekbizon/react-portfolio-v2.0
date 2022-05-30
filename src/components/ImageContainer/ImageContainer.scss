@@ -14,3 +14,39 @@
     box-shadow: 0 15px 60px 0 rgba(210, 216, 249, 0.25);
   }
 }
+
+@media (max-width: 480px) {
+  #image {
+    position: relative;
+    bottom: 380px;
+    margin-left: 30px;
+    width: 250px;
+    height: 180px;
+    box-shadow: 0 5px 10px 0 rgba(7, 8, 14, 0.6);
+
+    &:hover {
+      box-shadow: 0 15px 60px 0 rgba(7, 8, 14, 0.3);
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  #image {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 360px) {
+  #image {
+    margin-left: -2px;
+    bottom: 400px;
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 320px) {
+  #image {
+    margin-left: -22px;
+  }
+}

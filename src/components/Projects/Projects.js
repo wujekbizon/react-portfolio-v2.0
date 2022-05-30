@@ -12,9 +12,9 @@ const Projects = () => {
       <div className="projects-page">
         <h1>MY PROJECTS :</h1>
       </div>
+      <YelpCamp />
       <PortfolioV2 />
       <MtgCounter />
-      <YelpCamp />
       <MovieFight />
       <Portfolio />
       <Mtg />

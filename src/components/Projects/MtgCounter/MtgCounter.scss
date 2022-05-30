@@ -9,3 +9,9 @@
   left: 35%;
   bottom: 10%;
 }
+
+@media (max-width: 360px) {
+  .mtg-link {
+    bottom: 25px;
+  }
+}

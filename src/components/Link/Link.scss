@@ -29,3 +29,48 @@
   animation: fadeInUp 1.8s 3.3s forwards;
   margin-bottom: 20px;
 }
+
+@media (max-width: 480px) {
+  .link-btn {
+    width: 160px;
+    height: 40px;
+    font-size: 18px;
+    color: hsl(0 0% 100%);
+    background: hsl(230 35% 4%);
+
+    &:hover {
+      color: hsl(0 0% 100%);
+      transform: translate(10px, 10px);
+      background-color: hsl(230 35% 4%);
+    }
+  }
+
+  .box-btn {
+    position: relative;
+    bottom: 100px;
+    left: -10px;
+    width: 160px;
+    height: 40px;
+    border: 1px solid hsl(230 35% 4%);
+  }
+}
+
+@media (max-width: 360px) {
+  .link-btn {
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .box-btn {
+    width: 120px;
+    height: 30px;
+    left: -5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .box-btn {
+    left: -12px;
+  }
+}

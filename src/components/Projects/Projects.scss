@@ -1,6 +1,6 @@
 .projects-page {
   position: absolute;
-  top: 17%;
+  top: 15%;
   left: 7%;
   opacity: 0;
   animation: fadeInDown 2s 1s forwards;
@@ -8,5 +8,34 @@
   h1 {
     font-size: 45px;
     text-decoration: underline;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-page {
+    top: 8%;
+    left: 33%;
+    h1 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .projects-page {
+    top: 9%;
+    h1 {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .projects-page {
+    top: 14%;
+    left: 30%;
+    h1 {
+      font-size: 18px;
+    }
   }
 }

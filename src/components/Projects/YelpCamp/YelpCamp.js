@@ -5,8 +5,7 @@ import Link from '../../Link/Link';
 import Yelp from '../../../assets/images/YelpCamp.png';
 
 const type = 'FULL STACK DEVELOPER';
-const text =
-  "This is my biggest application I made so far. For the frontend part I've used Bootstrap Library , the backend was done by using a Express.js and MongoDB.";
+const text = 'This is my biggest application I made so far.';
 const items = [
   'Do You know any campgrounds and want to share?',
   'Welcome to the Yelp Camp',
@@ -23,12 +22,10 @@ const skills = [
   'Node.js',
   'EJS',
   'Joi',
-  'Helmet',
   'Passport',
   'Cloudinary',
   'Mapbox',
   'Heroku',
-  'Mongo Atlas',
 ];
 
 const YelpCamp = () => {

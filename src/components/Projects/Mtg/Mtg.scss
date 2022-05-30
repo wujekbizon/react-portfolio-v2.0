@@ -15,3 +15,9 @@
   left: 35%;
   bottom: 10%;
 }
+
+@media (max-width: 360px) {
+  .mtgSearch-container {
+    top: -5px;
+  }
+}
