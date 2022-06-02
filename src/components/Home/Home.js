@@ -1,4 +1,5 @@
 import './Home.scss';
+import { useState, useEffect } from 'react';
 import {
   faGithubSquare,
   faLinkedin,
@@ -7,33 +8,59 @@ import {
 import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Logo from '../../assets/images/logo_sub-v3.png';
+import AnimatedLetters from '../AnimatedLetters';
+
+const nameArray = [
+  'I',
+  "'",
+  'm',
+  ',',
+  ' ',
+  'G',
+  'r',
+  'e',
+  'g',
+  'o',
+  'r',
+  'y',
+  ' ',
+  ' ',
+];
 
 const Home = () => {
-  const nameArray = [
-    'I',
-    "'",
-    'm',
-    ',',
-    ' ',
-    'G',
-    'r',
-    'e',
-    'g',
-    'o',
-    'r',
-    'y',
-    ' ',
-  ];
+  const [letterClass, setLetterClass] = useState('text-animate');
+
+  useEffect(() => {
+    async function wait() {
+      return setTimeout(() => {
+        setLetterClass('text-animate-hover');
+      }, 4000);
+    }
+    wait();
+  }, []);
+
   return (
     <>
       <div className="title">
         <h1>Welcome to my Portfolio!</h1>
       </div>
       <div className="name">
-        {nameArray}
+        <AnimatedLetters
+          letterClass={letterClass}
+          strArray={nameArray}
+          index={1}
+        />
+
         <img className="logo" src={Logo} alt="wolfinger" />
       </div>
-      <div className="jobs">Full Stack Developer | Software Engineer</div>
+      <div className="jobs">
+        {' '}
+        <span className={`${letterClass} _17`}>F</span>ull{' '}
+        <span className={`${letterClass} _18`}>S</span>tack{' '}
+        <span className={`${letterClass} _19`}>D</span>eveloper |{' '}
+        <span className={`${letterClass} _20`}>S</span>oftware{' '}
+        <span className={`${letterClass} _21`}>E</span>ngineer
+      </div>
 
       <div className="social-media" id="media">
         <a

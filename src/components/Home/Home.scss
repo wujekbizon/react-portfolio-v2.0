@@ -7,7 +7,7 @@
   letter-spacing: 1px;
   color: hsl(231 77% 90%);
   opacity: 0;
-  animation: zoomIn 4.5s 0.5s backwards;
+  animation: zoomOut 8s 0.4s backwards;
 }
 
 .name {
@@ -17,8 +17,6 @@
   font-size: 75px;
   font-family: 'Barlow', sans-serif;
   letter-spacing: 1px;
-  opacity: 0;
-  animation: fadeInUp 2.2s 2.3s forwards;
 }
 
 .logo {
@@ -35,7 +33,18 @@
   font-size: 30px;
   letter-spacing: 1px;
   opacity: 0;
-  animation: fadeIn 2s 3s forwards;
+  animation: fadeIn 1.1s 2.4s forwards;
+  transition: all 0.3 ease-out;
+
+  ._17,
+  ._18,
+  ._19,
+  ._20,
+  ._21 {
+    opacity: 0;
+    color: #ee5a24;
+    animation: bounceIn 0.5s 0.1s forwards;
+  }
 }
 
 .social-media {
