@@ -34,7 +34,6 @@
   letter-spacing: 1px;
   opacity: 0;
   animation: fadeIn 1.1s 2.4s forwards;
-  transition: all 0.3 ease-out;
 
   ._17,
   ._18,
@@ -42,7 +41,7 @@
   ._20,
   ._21 {
     opacity: 0;
-    color: #ee5a24;
+    color: #fa8231;
     animation: bounceIn 0.5s 0.1s forwards;
   }
 }
