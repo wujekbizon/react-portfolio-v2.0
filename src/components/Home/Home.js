@@ -92,7 +92,7 @@ const Home = () => {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://drive.google.com/file/d/1-EWWXMH5T78O1-8iWbnSW1ZplD6waI38/view?usp=sharing"
+          href="https://drive.google.com/file/d/1-H9qSiM6OujaoQAnKjUHEuHSeDpYKJ8o/view?usp=sharing"
         >
           Curriculum Vitae
         </a>
