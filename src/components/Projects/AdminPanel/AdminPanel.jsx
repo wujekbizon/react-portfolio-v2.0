@@ -9,7 +9,7 @@ const text = 'React Admin Panel';
 const items = [
   'Reusable React Components',
   'Admin Panel that can be reused in many projects',
-  'Work in progress  for adding more functionality.',
+  'Work in progress to add more functionality.',
 ];
 const skills = ['React', 'Javascript', 'HTML 5', 'Sass', 'React-Router'];
 
