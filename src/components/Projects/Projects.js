@@ -5,6 +5,8 @@ import YelpCamp from './YelpCamp/YelpCamp';
 import Portfolio from './Portfolio/Portfolio';
 import PortfolioV2 from './PortfolioV2/PortfolioV2';
 import Mtg from './Mtg/Mtg';
+import AdminPanel from './AdminPanel/AdminPanel';
+import ColorPalette from './ColorPalette/ColorPalette';
 
 const Projects = () => {
   return (
@@ -13,7 +15,9 @@ const Projects = () => {
         <h1>MY PROJECTS :</h1>
       </div>
       <YelpCamp />
+      <AdminPanel />
       <PortfolioV2 />
+      <ColorPalette />
       <MtgCounter />
       <MovieFight />
       <Portfolio />
