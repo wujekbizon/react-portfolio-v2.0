@@ -11,7 +11,14 @@ const items = [
   'Admin Panel that can be reused in many projects',
   'Work in progress to add more functionality.',
 ];
-const skills = ['React', 'Javascript', 'HTML 5', 'Sass', 'React-Router'];
+const skills = [
+  'React',
+  'Redux',
+  'Javascript',
+  'HTML 5',
+  'Sass',
+  'React-Router',
+];
 
 const AdminPanel = () => {
   return (

@@ -7,6 +7,7 @@ import PortfolioV2 from './PortfolioV2/PortfolioV2';
 import Mtg from './Mtg/Mtg';
 import AdminPanel from './AdminPanel/AdminPanel';
 import ColorPalette from './ColorPalette/ColorPalette';
+import MwdStore from './MwdStore/MwdStore';
 
 const Projects = () => {
   return (
@@ -14,8 +15,9 @@ const Projects = () => {
       <div className="projects-page">
         <h1>MY PROJECTS :</h1>
       </div>
-      <YelpCamp />
+      <MwdStore />
       <AdminPanel />
+      <YelpCamp />
       <PortfolioV2 />
       <ColorPalette />
       <MtgCounter />

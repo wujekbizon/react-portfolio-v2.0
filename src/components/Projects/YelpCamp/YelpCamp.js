@@ -5,7 +5,8 @@ import Link from '../../Link/Link';
 import Yelp from '../../../assets/images/YelpCamp.png';
 
 const type = 'FULL STACK DEVELOPER';
-const text = 'This is my biggest application I made so far.';
+const text =
+  'My first fullstack project, created as a final application, on The Web Developer Bootcamp I completed.';
 const items = [
   'Do You know any campgrounds and want to share?',
   'Welcome to the Yelp Camp',
