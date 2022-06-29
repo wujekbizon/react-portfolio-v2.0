@@ -46,7 +46,7 @@ const AdminPanel = () => {
             />
           </div>
           <div className="admin-link">
-            <Link url={'https://github.com/wujekbizon/react-mwd-admin-panel'} />
+            <Link url={'https://github.com/wujekbizon/mwd-admin-panel'} />
           </div>
         </div>
       </div>
