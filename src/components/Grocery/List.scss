@@ -1,0 +1,44 @@
+@import '../../global.scss';
+
+.grocery-list {
+  .grocery-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    border-bottom: 1px solid $textColor;
+
+    .title {
+      color: $navColor;
+      font-family: $nunito;
+      font-size: 25px;
+      font-weight: 300;
+    }
+
+    .btn-container {
+      .edit-btn,
+      .delete-btn {
+        font-size: 15px;
+        border-color: transparent;
+        cursor: pointer;
+      }
+
+      .edit-btn {
+        color: $mainColor;
+        transition: $transition;
+
+        &:hover {
+          color: $textColor;
+        }
+      }
+      .delete-btn {
+        color: red;
+        transition: $transition;
+
+        &:hover {
+          color: hsl(360, 67%, 44%);
+        }
+      }
+    }
+  }
+}

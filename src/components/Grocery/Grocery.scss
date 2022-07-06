@@ -1,0 +1,97 @@
+@import '../../global.scss';
+
+.section-center {
+  width: 50%;
+  height: 90%;
+  border-left: 1px solid $navColor;
+  border-right: 1px solid $navColor;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 0px 35px 0px 35px;
+
+  .grocery-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      color: $mainColor;
+      border-bottom: 1px solid $navColor;
+      max-width: max-content;
+      letter-spacing: 1.5px;
+      font-size: 25px;
+    }
+
+    .form-control {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+
+      input {
+        width: 50%;
+        height: 40px;
+        border: none;
+        background-color: $mainColor;
+        color: $whiteColor;
+        font-size: 20px;
+        font-family: $nunito;
+        font-weight: 300;
+
+        &.active,
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: $textColor;
+          font-size: 15px;
+          font-family: $nunito;
+          font-weight: 200;
+        }
+      }
+
+      .submit-btn {
+        border: none;
+        background-color: $navColor;
+        color: $whiteColor;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 5px 15px;
+        font-size: 18px;
+        font-family: $nunito;
+        font-weight: 300;
+        letter-spacing: 1px;
+        transition: $transition;
+
+        &:hover {
+          color: $textColor;
+        }
+      }
+    }
+  }
+
+  .grocery-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .clear-btn {
+    margin-top: 30px;
+    align-self: center;
+    width: 20%;
+    padding: 5px 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid $borderColor;
+    color: $mainColor;
+    transition: $transition;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
