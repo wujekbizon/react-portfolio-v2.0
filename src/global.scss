@@ -10,3 +10,11 @@ $whiteColor: hsl(0 0% 100%);
 
 $nunito: 'Nunito Sans', sans-serif;
 $transition: all 0.3s linear;
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}

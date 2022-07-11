@@ -10,6 +10,11 @@
   overflow: auto;
   padding: 0px 35px 0px 35px;
 
+  @include mobile {
+    width: 90%;
+    padding: 0px 5px;
+  }
+
   .grocery-form {
     display: flex;
     flex-direction: column;
@@ -22,6 +27,10 @@
       max-width: max-content;
       letter-spacing: 1.5px;
       font-size: 25px;
+
+      @include mobile {
+        font-size: 20px;
+      }
     }
 
     .form-control {
@@ -40,6 +49,13 @@
         font-family: $nunito;
         font-weight: 300;
 
+        @include mobile {
+          width: 70%;
+          height: 30px;
+          font-size: 15px;
+          font-weight: 200;
+        }
+
         &.active,
         &:focus {
           outline: none;
@@ -50,6 +66,10 @@
           font-size: 15px;
           font-family: $nunito;
           font-weight: 200;
+
+          @include mobile {
+            font-size: 10px;
+          }
         }
       }
 
@@ -65,6 +85,12 @@
         font-weight: 300;
         letter-spacing: 1px;
         transition: $transition;
+
+        @include mobile {
+          font-size: 12px;
+
+          font-weight: 200;
+        }
 
         &:hover {
           color: $textColor;
@@ -89,6 +115,11 @@
     border: 1px solid $borderColor;
     color: $mainColor;
     transition: $transition;
+
+    @include mobile {
+      width: 35%;
+      font-size: 11px;
+    }
 
     &:hover {
       color: red;

@@ -13,6 +13,11 @@
       font-family: $nunito;
       font-size: 25px;
       font-weight: 300;
+
+      @include mobile {
+        font-size: 18px;
+        padding: 0px 5px;
+      }
     }
 
     .btn-container {
@@ -21,6 +26,10 @@
         font-size: 15px;
         border-color: transparent;
         cursor: pointer;
+
+        @include mobile {
+          font-size: 12px;
+        }
       }
 
       .edit-btn {

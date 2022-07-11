@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .apps {
   height: calc(100vh - 60px);
   display: flex;
@@ -13,6 +15,10 @@
       font-size: 45px;
       font-weight: 300;
       border-bottom: 1px solid white;
+
+      @include mobile {
+        font-size: 32px;
+      }
     }
   }
 
@@ -37,6 +43,10 @@
       border: 1px solid hsl(230 35% 4%);
       -webkit-box-shadow: 0px 0px 10px 1px rgba(201, 209, 217, 0.8);
       box-shadow: 0px 0px 10px 1px rgba(201, 209, 217, 0.8);
+
+      @include mobile {
+        // width: 90%;
+      }
     }
   }
 }
