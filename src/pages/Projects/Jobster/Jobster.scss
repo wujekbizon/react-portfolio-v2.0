@@ -1,21 +1,21 @@
-.adminImage-container {
+.jobsterImage-container {
   position: absolute;
   left: 80px;
   top: 38%;
 }
 
-.admin-link {
+.jobster-link {
   position: absolute;
   left: 35%;
   bottom: 10%;
 }
 
 @media (max-width: 360px) {
-  .adminImage-container {
-    top: 40px;
+  .jobsterImage-container {
+    top: 30px;
   }
 
-  .admin-link {
-    bottom: 25px;
+  .jobster-link {
+    bottom: 20px;
   }
 }

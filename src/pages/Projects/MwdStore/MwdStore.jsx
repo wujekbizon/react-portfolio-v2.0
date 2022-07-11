@@ -7,8 +7,8 @@ import Mwd from '../../../assets/images/mwd_store.png';
 const type = 'FULLSTACK DEVELOPER';
 const text = 'Client-side of my fullstack MERN application';
 const items = [
-  "I created this project for my friend who's running carpentry shop. It might be used in a future as his main store web-app.",
-  'Using Stripe payment method',
+  'E-commerce app',
+  'Stripe payment method',
   "It's using my , admin panel application , for adding , editing and removing users and products.",
   'Work in progress to add more functionality.',
 ];
