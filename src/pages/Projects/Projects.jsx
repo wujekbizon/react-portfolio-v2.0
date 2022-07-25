@@ -9,6 +9,8 @@ import AdminPanel from './AdminPanel/AdminPanel';
 import ColorPalette from './ColorPalette/ColorPalette';
 import MwdStore from './MwdStore/MwdStore';
 import Jobster from './Jobster/Jobster';
+import Smakus from './Smakus/Smakus';
+import GithubUser from './GihubUser/GithubUser';
 
 const Projects = () => {
   return (
@@ -16,7 +18,9 @@ const Projects = () => {
       <div className="projects-page">
         <h1>MY PROJECTS :</h1>
       </div>
+      <Smakus />
       <Jobster />
+      <GithubUser />
       <MwdStore />
       <AdminPanel />
       <YelpCamp />

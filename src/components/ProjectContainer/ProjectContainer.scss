@@ -31,19 +31,19 @@
     cursor: pointer;
     padding: 0;
   }
+
   p {
     font-family: 'Barlow';
     padding-left: 10px;
     font-size: 17px;
-  }
-
-  // class that I will use later to do fun stuff
-  .active {
-    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    color: hsl(230 35% 4%);
   }
 
   .items {
     margin-left: 15px;
+    cursor: default;
   }
 }
 

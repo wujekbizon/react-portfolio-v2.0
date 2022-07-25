@@ -1,0 +1,21 @@
+.smakusImage-container {
+  position: absolute;
+  left: 80px;
+  top: 38%;
+}
+
+.smakus-link {
+  position: absolute;
+  left: 35%;
+  bottom: 10%;
+}
+
+@media (max-width: 360px) {
+  .smakusImage-container {
+    top: 30px;
+  }
+
+  .smakus-link {
+    bottom: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+.githubUserImage-container {
+  position: absolute;
+  left: 80px;
+  top: 38%;
+}
+
+.githubUser-link {
+  position: absolute;
+  left: 35%;
+  bottom: 10%;
+}
+
+@media (max-width: 360px) {
+  .githubUserImage-container {
+    top: 30px;
+  }
+
+  .githubUser-link {
+    bottom: 20px;
+  }
+}

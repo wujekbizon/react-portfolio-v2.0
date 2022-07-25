@@ -1,5 +1,5 @@
 import './Contact.scss';
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { MapContainer, Popup, TileLayer, Marker } from 'react-leaflet';
 import emailjs from '@emailjs/browser';
 

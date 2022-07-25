@@ -1,3 +1,4 @@
+@import '../../global.scss';
 .btn {
   position: relative;
   right: 10px;
@@ -15,7 +16,7 @@
 }
 
 .btn:hover {
-  color: hsl(0 0% 100%);
+  color: $logoColor;
   transform: translate(10px, 10px);
   background-color: hsl(230 35% 4%);
 }
