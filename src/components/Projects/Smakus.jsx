@@ -1,8 +1,7 @@
-import './Smakus.scss';
-import ProjectContainer from '../../../components/ProjectContainer/ProjectContainer';
-import ImageContainer from '../../../components/ImageContainer/ImageContainer';
-import Link from '../../../components/Link/Link';
-import Bar from '../../../assets/images/smakus.png';
+import ProjectContainer from '../ProjectContainer/ProjectContainer';
+import ImageContainer from '../ImageContainer/ImageContainer';
+import Link from '../Link/Link';
+import Bar from '../../assets/images/smakus.png';
 
 const type = 'REAL WORLD PROJECT';
 const text = 'Food E-Commerce Website';
@@ -27,8 +26,8 @@ const skills = [
 const Smakus = () => {
   return (
     <>
-      <div className="ui stackable grid container">
-        <div className="eight wide computer column">
+      <div>
+        <div>
           <ProjectContainer
             type={type}
             projectName={'Smakus'}
@@ -39,7 +38,7 @@ const Smakus = () => {
             skills={skills}
           />
         </div>
-        <div className="seven wide computer column">
+        <div>
           <div className="smakusImage-container">
             <ImageContainer imgSrc={Bar} url={'https://smakus.vercel.app/'} />
           </div>

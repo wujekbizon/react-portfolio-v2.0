@@ -1,8 +1,7 @@
-import './AdminPanel.scss';
-import ProjectContainer from '../../../components/ProjectContainer/ProjectContainer';
-import ImageContainer from '../../../components/ImageContainer/ImageContainer';
-import Link from '../../../components/Link/Link';
-import Admin from '../../../assets/images/admin.png';
+import ProjectContainer from '../ProjectContainer/ProjectContainer';
+import ImageContainer from '../ImageContainer/ImageContainer';
+import Link from '../Link/Link';
+import Admin from '../../assets/images/admin.png';
 
 const type = 'FULLSTACK DEVELOPER';
 const text = 'React Admin Panel for my fullstack MERN application';
@@ -26,8 +25,8 @@ const skills = [
 const AdminPanel = () => {
   return (
     <>
-      <div className="ui stackable grid container">
-        <div className="eight wide computer column">
+      <div>
+        <div>
           <ProjectContainer
             type={type}
             projectName={'Admin Panel'}
@@ -38,7 +37,7 @@ const AdminPanel = () => {
             skills={skills}
           />
         </div>
-        <div className="seven wide computer column">
+        <div>
           <div className="adminImage-container">
             <ImageContainer
               imgSrc={Admin}

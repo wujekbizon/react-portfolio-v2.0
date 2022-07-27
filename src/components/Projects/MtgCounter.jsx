@@ -1,10 +1,8 @@
-import './MtgCounter.scss';
-// image
-import CounterImage from '../../../assets/images/Mtg.png';
+import CounterImage from '../../assets/images/Mtg.png';
 // componets
-import ProjectContainer from '../../../components/ProjectContainer/ProjectContainer';
-import ImageContainer from '../../../components/ImageContainer/ImageContainer';
-import Link from '../../../components/Link/Link';
+import ProjectContainer from '../ProjectContainer/ProjectContainer';
+import ImageContainer from '../ImageContainer/ImageContainer';
+import Link from '../Link/Link';
 const type = 'Personal Project';
 const text = 'My first project fully made in JavaScript with Bulma Library.';
 const items = [
@@ -20,8 +18,8 @@ const skills = ['Javascript', 'CSS 3', 'HTML 5', 'Bulma', 'Vercel'];
 const MtgCounter = () => {
   return (
     <>
-      <div className="ui stackable grid container">
-        <div className="eight wide computer column">
+      <div>
+        <div>
           <ProjectContainer
             type={type}
             projectName={'Mtg Life Counter'}
@@ -32,7 +30,7 @@ const MtgCounter = () => {
             skills={skills}
           />
         </div>
-        <div className=" seven wide computer column">
+        <div>
           <div className="mtgImage-container">
             <ImageContainer
               imgSrc={CounterImage}

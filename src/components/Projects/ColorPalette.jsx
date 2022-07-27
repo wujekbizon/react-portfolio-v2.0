@@ -1,8 +1,7 @@
-import './ColorPalette.scss';
-import ProjectContainer from '../../../components/ProjectContainer/ProjectContainer';
-import ImageContainer from '../../../components/ImageContainer/ImageContainer';
-import Link from '../../../components/Link/Link';
-import Color from '../../../assets/images/colorPalette.png';
+import ProjectContainer from '../ProjectContainer/ProjectContainer';
+import ImageContainer from '../ImageContainer/ImageContainer';
+import Link from '../Link/Link';
+import Color from '../../assets/images/colorPalette.png';
 
 const type = 'PERSONAL PROJECTS';
 const text = 'React Color Palette';
@@ -15,8 +14,8 @@ const skills = ['React', 'Javascript', 'HTML 5', 'Sass'];
 const ColorPalette = () => {
   return (
     <>
-      <div className="ui stackable grid container">
-        <div className="eight wide computer column">
+      <div>
+        <div>
           <ProjectContainer
             type={type}
             projectName={'Color Palette'}
@@ -27,7 +26,7 @@ const ColorPalette = () => {
             skills={skills}
           />
         </div>
-        <div className="seven wide computer column">
+        <div>
           <div className="colorImage-container">
             <ImageContainer
               imgSrc={Color}

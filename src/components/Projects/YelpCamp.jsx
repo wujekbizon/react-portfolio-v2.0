@@ -1,8 +1,7 @@
-import './YelpCamp.scss';
-import ProjectContainer from '../../../components/ProjectContainer/ProjectContainer';
-import ImageContainer from '../../../components/ImageContainer/ImageContainer';
-import Link from '../../../components/Link/Link';
-import Yelp from '../../../assets/images/YelpCamp.png';
+import ProjectContainer from '../ProjectContainer/ProjectContainer';
+import ImageContainer from '../ImageContainer/ImageContainer';
+import Link from '../Link/Link';
+import Yelp from '../../assets/images/YelpCamp.png';
 
 const type = 'FULL STACK DEVELOPER';
 const text =
@@ -32,8 +31,8 @@ const skills = [
 const YelpCamp = () => {
   return (
     <>
-      <div className="ui stackable grid container">
-        <div className="eight wide computer column">
+      <div>
+        <div>
           <ProjectContainer
             type={type}
             projectName={'Yelp Camp'}
@@ -44,7 +43,7 @@ const YelpCamp = () => {
             skills={skills}
           />
         </div>
-        <div className="seven wide computer column">
+        <div>
           <div className="yelpImage-container">
             <ImageContainer
               imgSrc={Yelp}

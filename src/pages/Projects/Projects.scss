@@ -1,41 +1,47 @@
-.projects-page {
-  position: absolute;
-  top: 15%;
-  left: 7%;
-  opacity: 0;
-  animation: fadeInDown 2s 1s forwards;
+@import '../../global.scss';
 
-  h1 {
-    font-size: 45px;
-    border-bottom: 1px solid white;
-  }
-}
+.projects {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-@media (max-width: 480px) {
-  .projects-page {
-    top: 8%;
-    left: 33%;
-    h1 {
-      font-size: 25px;
+  .top {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    // opacity: 0;
+    // animation: fadeInLeft 2s 1s forwards;
+
+    .title {
+      margin-right: 100px;
+
+      h2 {
+        font-size: 35px;
+        font-weight: 300;
+        font-family: $nunito;
+        border-bottom: 1px solid;
+      }
+    }
+
+    .img-container {
+      margin-left: 100px;
+
+      img {
+        height: 350px;
+      }
     }
   }
-}
 
-@media (max-width: 360px) {
-  .projects-page {
-    top: 9%;
-    h1 {
-      font-size: 20px;
-    }
-  }
-}
-
-@media (max-width: 320px) {
-  .projects-page {
-    top: 14%;
-    left: 30%;
-    h1 {
-      font-size: 18px;
-    }
+  .container {
+    flex: 3;
+    gap: 100px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: $mainColor;
   }
 }

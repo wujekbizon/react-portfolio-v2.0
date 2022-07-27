@@ -1,8 +1,7 @@
-import './Jobster.scss';
-import ProjectContainer from '../../../components/ProjectContainer/ProjectContainer';
-import ImageContainer from '../../../components/ImageContainer/ImageContainer';
-import Link from '../../../components/Link/Link';
-import Job from '../../../assets/images/jobster.png';
+import ProjectContainer from '../ProjectContainer/ProjectContainer';
+import ImageContainer from '../ImageContainer/ImageContainer';
+import Link from '../Link/Link';
+import Job from '../../assets/images/jobster.png';
 
 const type = 'FRONTEND DEVELOPER';
 const text =
@@ -25,8 +24,8 @@ const skills = [
 const Jobster = () => {
   return (
     <>
-      <div className="ui stackable grid container">
-        <div className="eight wide computer column">
+      <div>
+        <div>
           <ProjectContainer
             type={type}
             projectName={'Jobster'}
@@ -37,7 +36,7 @@ const Jobster = () => {
             skills={skills}
           />
         </div>
-        <div className="seven wide computer column">
+        <div>
           <div className="jobsterImage-container">
             <ImageContainer
               imgSrc={Job}

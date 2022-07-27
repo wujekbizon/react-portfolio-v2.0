@@ -1,9 +1,8 @@
-import './Mtg.scss';
-import MtgSearch from '../../../assets/images/mtgsearch.png';
 // components
-import ProjectContainer from '../../../components/ProjectContainer/ProjectContainer';
-import ImageContainer from '../../../components/ImageContainer/ImageContainer';
-import Link from '../../../components/Link/Link';
+import ProjectContainer from '../ProjectContainer/ProjectContainer';
+import ImageContainer from '../ImageContainer/ImageContainer';
+import Link from '../Link/Link';
+import MtgSearch from '../../assets/images/mtgsearch.png';
 
 const type = 'WORK IN PROGRESS';
 const text = 'Mtg v0.1';
@@ -19,8 +18,8 @@ const skills = ['Typescript', 'Javascript', 'React', 'Animate.css'];
 const Mtg = () => {
   return (
     <>
-      <div className="ui stackable grid container">
-        <div className="eight wide computer column mtgSearch-project">
+      <div>
+        <div>
           <ProjectContainer
             type={type}
             projectName={'Mtg Card Game'}
@@ -31,7 +30,7 @@ const Mtg = () => {
             skills={skills}
           />
         </div>
-        <div className="seven wide computer column">
+        <div>
           <div className="mtgSearch-container">
             <ImageContainer
               imgSrc={MtgSearch}

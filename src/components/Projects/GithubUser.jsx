@@ -1,8 +1,7 @@
-import './GithubUser.scss';
-import Github from '../../../assets/images/github_user.png';
-import ProjectContainer from '../../../components/ProjectContainer/ProjectContainer';
-import ImageContainer from '../../../components/ImageContainer/ImageContainer';
-import Link from '../../../components/Link/Link';
+import Github from '../../assets/images/github_user.png';
+import ProjectContainer from '../ProjectContainer/ProjectContainer';
+import ImageContainer from '../ImageContainer/ImageContainer';
+import Link from '../Link/Link';
 
 const type = 'FRONT END DEVELOPER';
 const text = 'search for any github user ';
@@ -25,8 +24,8 @@ const skills = [
 const GithubUser = () => {
   return (
     <>
-      <div className="ui stackable grid container">
-        <div className="eight wide computer column">
+      <div>
+        <div>
           <ProjectContainer
             type={type}
             projectName={'Github User'}
@@ -37,7 +36,7 @@ const GithubUser = () => {
             skills={skills}
           />
         </div>
-        <div className="seven wide computer column">
+        <div>
           <div className="githubUserImage-container">
             <ImageContainer
               imgSrc={Github}

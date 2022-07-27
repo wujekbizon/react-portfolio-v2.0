@@ -1,8 +1,7 @@
-import './MovieFight.scss';
-import ProjectContainer from '../../../components/ProjectContainer/ProjectContainer';
-import ImageContainer from '../../../components/ImageContainer/ImageContainer';
-import Link from '../../../components/Link/Link';
-import Movie from '../../../assets/images/Movie.png';
+import ProjectContainer from '../ProjectContainer/ProjectContainer';
+import ImageContainer from '../ImageContainer/ImageContainer';
+import Link from '../Link/Link';
+import Movie from '../../assets/images/Movie.png';
 
 const type = 'Personal Project';
 const text =
@@ -18,8 +17,8 @@ const skills = ['Javascript', 'CSS 3', 'HTML 5', 'Bulma', 'Vercel', 'API'];
 const MovieFight = () => {
   return (
     <>
-      <div className="ui stackable grid container">
-        <div className="eight wide computer column">
+      <div>
+        <div>
           <ProjectContainer
             type={type}
             projectName={'Movie Fight'}
@@ -30,7 +29,7 @@ const MovieFight = () => {
             skills={skills}
           />
         </div>
-        <div className="seven wide computer column">
+        <div>
           <div className="movieImage-container">
             <ImageContainer
               imgSrc={Movie}

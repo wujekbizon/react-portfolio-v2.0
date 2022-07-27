@@ -1,8 +1,7 @@
-import './MwdStore.scss';
-import ProjectContainer from '../../../components/ProjectContainer/ProjectContainer';
-import ImageContainer from '../../../components/ImageContainer/ImageContainer';
-import Link from '../../../components/Link/Link';
-import Mwd from '../../../assets/images/mwd_store.png';
+import ProjectContainer from '../ProjectContainer/ProjectContainer';
+import ImageContainer from '../ImageContainer/ImageContainer';
+import Link from '../Link/Link';
+import Mwd from '../../assets/images/mwd_store.png';
 
 const type = 'FULLSTACK DEVELOPER';
 const text = 'Client-side of my fullstack MERN application';
@@ -27,8 +26,8 @@ const skills = [
 const MwdStore = () => {
   return (
     <>
-      <div className="ui stackable grid container">
-        <div className="eight wide computer column">
+      <div>
+        <div>
           <ProjectContainer
             type={type}
             projectName={'Mwd Store'}
@@ -39,7 +38,7 @@ const MwdStore = () => {
             skills={skills}
           />
         </div>
-        <div className="seven wide computer column">
+        <div>
           <div className="mwdImage-container">
             <ImageContainer
               imgSrc={Mwd}
