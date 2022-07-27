@@ -1,14 +1,31 @@
 import './Home.scss';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Footer from '../../components/Footer/Footer';
 import Logo from '../../assets/images/logo_sub-v3.png';
 import Dev from '../../assets/images/developer.svg';
 import AnimatedLetters from '../../components/AnimatedLetters/index';
+import { init } from 'ityped';
 
 const nameArray = ['I', "'", 'M', ' ', 'G', 'R', 'E', 'G', 'O', 'R', 'Y'];
+const text = [
+  'FULL STACK DEVELOPER | SOFTWARE ENGINEER',
+  'REACT.JS/REDUX | EXPRESS.JS | MONGO DB',
+];
 
 const Home = () => {
+  const textRef = useRef();
   const [letterClass, setLetterClass] = useState('text-animate');
+  const [debouncedText, setDebouncedText] = useState(text);
+
+  useEffect(() => {
+    init(textRef.current, {
+      cursorChar: '_',
+      showCursor: true,
+      strings: debouncedText,
+      backDelay: 1800,
+      backSpeed: 50,
+    });
+  }, [debouncedText]);
 
   useEffect(() => {
     async function wait() {
@@ -22,9 +39,6 @@ const Home = () => {
   return (
     <>
       <div className="home">
-        {/* <div className="title">
-          <h1>Welcome to my Portfolio!</h1>
-        </div> */}
         <div className="left">
           <div className="name">
             <AnimatedLetters
@@ -36,13 +50,8 @@ const Home = () => {
           <div className="img-container">
             <img className="logo" src={Logo} alt="wolfinger" />
           </div>
-
           <div className="jobs">
-            <span className={`${letterClass} _17`}>F </span>ull
-            <span className={`${letterClass} _18`}>S </span>tack
-            <span className={`${letterClass} _19`}>D </span>eveloper |
-            <span className={`${letterClass} _20`}>S </span>oftware
-            <span className={`${letterClass} _21`}>E </span>ngineer
+            <span className="ityped" ref={textRef}></span>
           </div>
         </div>
         <div className="right">

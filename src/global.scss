@@ -12,10 +12,17 @@ $boxShadow: rgba(210, 216, 249, 0.25);
 $nunito: 'Nunito Sans', sans-serif;
 $transition: all 0.3s linear;
 
-$width: 768px;
+$width: 767px;
+$widthTablet: 1024px;
 
 @mixin mobile {
   @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$widthTablet}) {
     @content;
   }
 }

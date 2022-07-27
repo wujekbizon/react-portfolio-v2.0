@@ -32,7 +32,7 @@ const Accordion = () => {
     return (
       <React.Fragment key={item.title}>
         <div
-          id="dropdown-header"
+          id="header"
           onClick={() => onTitleClick(index)}
           className={`title ${active}`}
         >
@@ -47,11 +47,7 @@ const Accordion = () => {
   });
 
   return (
-    <div>
-      <div id="about-content" className="ui styled accordion">
-        {renderedItems}
-      </div>
-    </div>
+    <div className="ui styled accordion about-content">{renderedItems}</div>
   );
 };
 

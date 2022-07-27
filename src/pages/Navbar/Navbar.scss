@@ -7,16 +7,23 @@
   width: 100%;
   height: 60px;
 
+  @include mobile {
+    position: sticky;
+  }
+
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     opacity: 0;
     animation: backInDown 1s 1s forwards;
 
     a {
       font-size: 27px;
       margin: 0 40px;
+
+      @include mobile {
+        margin: 0 20px;
+      }
 
       svg {
         color: rgba(210, 216, 249, 0.8);
@@ -143,7 +150,7 @@
 
   .menuNav.open a {
     animation: backInDown 0.5s 0.2s forwards;
-    margin: 0 18px;
+    margin: 0 10px;
     font-size: 24px;
 
     &:after {
