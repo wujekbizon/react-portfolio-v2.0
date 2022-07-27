@@ -1,4 +1,4 @@
-import './Sidebar.scss';
+import './Navbar.scss';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,7 +13,7 @@ import {
 import { MdClose } from 'react-icons/md';
 import { FiMenu } from 'react-icons/fi';
 
-const Sidebar = () => {
+const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   const handleToggle = () => {
@@ -63,4 +63,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Navbar;

@@ -32,8 +32,8 @@ const Contact = () => {
         <div className="text-zone">
           <h1>Contact me</h1>
           <p>
-            I am interested in any intern or job offers as an web developer.
-            Please contact with me using below form.
+            I am interested in any intern or job offers as a web developer.
+            Please contact me using below form.
           </p>
           <p>&nbsp;</p>
           <div className="contact-form">

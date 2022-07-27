@@ -1,295 +1,72 @@
-.title h1 {
-  position: absolute;
-  top: 15%;
-  left: 35%;
-  font-size: 65px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  color: hsl(231 77% 90%);
-  opacity: 0;
-  animation: zoomOut 8s 0.4s backwards;
-}
+@import '../../global.scss';
 
-.name {
-  position: absolute;
-  top: 40%;
-  left: 30%;
-  font-size: 75px;
-  font-family: 'Barlow', sans-serif;
-  letter-spacing: 1px;
-}
+.home {
+  width: 100vw;
+  height: calc(100vh - 130px);
+  display: flex;
 
-.logo {
-  width: 29%;
-  opacity: 0;
-  animation: fadeInRight 2.2s 2.3s forwards;
-}
+  // .title h1 {
+  //   font-size: 65px;
+  //   font-weight: 300;
+  //   letter-spacing: 1px;
+  //   color: hsl(231 77% 90%);
+  //   opacity: 0;
+  //   animation: zoomOut 8s 0.4s backwards;
+  // }
 
-.jobs {
-  position: absolute;
-  bottom: 45%;
-  left: 40%;
-  color: hsl(231 77% 90%);
-  font-size: 30px;
-  letter-spacing: 1px;
-  opacity: 0;
-  animation: fadeIn 1.1s 2.4s forwards;
+  .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
-  ._17,
-  ._18,
-  ._19,
-  ._20,
-  ._21 {
-    cursor: pointer;
-    color: #fa8231;
-  }
-}
-
-.social-media {
-  position: absolute;
-  left: 30%;
-  bottom: 15%;
-
-  a {
-    display: inline-block;
-    margin: 10px;
-    font-size: 45px;
-    box-shadow: 0 5px 10px 0 rgba(210, 216, 249, 0.25);
-    transition: transform 300ms, box-shadow 300ms;
-
-    &:hover svg {
-      transform: scale(1.1);
-      box-shadow: 0 5px 30px 0 rgba(210, 216, 249, 0.2);
+    .name {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      font-size: 64px;
+      font-family: $nunito;
     }
-  }
-}
 
-#media {
-  opacity: 0;
-  animation: fadeInUp 2s 3s forwards;
-}
+    .img-container {
+      display: flex;
+      justify-content: center;
 
-#resume {
-  display: block;
-  position: absolute;
-  bottom: 16%;
-  right: 30%;
-  width: 130px;
-  height: 45px;
-  padding-top: 8px;
-  border-bottom: 3px solid hsl(230 35% 4%);
-  border-top: 3px solid hsl(230 35% 4%);
-  border-radius: 7px;
-  background: hsl(231 77% 90%);
-  text-align: center;
-  box-shadow: 0 5px 10px 0 rgba(210, 216, 249, 0.2);
-  opacity: 0;
-  animation: fadeInUp 2s 3s forwards;
+      .logo {
+        height: 65px;
+        opacity: 0;
+        animation: fadeInLeft 1.2s 1.3s forwards;
+      }
+    }
 
-  a {
-    font-size: 20px;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    color: hsl(230 35% 4%);
-  }
+    .jobs {
+      margin-top: 80px;
+      color: hsl(231 77% 90%);
+      font-size: 30px;
+      letter-spacing: 1px;
+      // opacity: 0;
+      // animation: fadeIn 1.1s 2.4s forwards;
 
-  &:hover {
-    transform: scale(1.1) !important;
-    box-shadow: 0 5px 30px 0 rgba(210, 216, 249, 0.2);
-  }
-}
-
-@media (max-width: 1450px) {
-  .title h1 {
-    left: 35%;
-    font-size: 55px;
-  }
-
-  .name {
-    font-size: 60px;
-  }
-
-  .jobs {
-    bottom: 46.5%;
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 1240px) {
-  .title h1 {
-    font-size: 45px;
-  }
-
-  .name {
-    font-size: 55px;
-  }
-
-  .jobs {
-    bottom: 48%;
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .title h1 {
-    left: 20%;
-    font-size: 45px;
-  }
-  .name {
-    left: 15%;
-    top: 33%;
-    font-size: 57px;
-  }
-
-  .logo {
-    width: 35%;
-  }
-
-  .jobs {
-    top: 42%;
-    left: 35%;
-    font-size: 24px;
-  }
-
-  .social-media {
-    bottom: 25%;
-    a {
-      font-size: 35px;
-      margin: 7px;
+      ._17,
+      ._18,
+      ._19,
+      ._20,
+      ._21 {
+        cursor: pointer;
+        color: #fa8231;
+      }
     }
   }
 
-  #resume {
-    bottom: 25.7%;
-    width: 100px;
-    height: 36px;
-    border-bottom: 2px solid hsl(230 35% 4%);
-    border-top: 2px solid hsl(230 35% 4%);
-    padding-top: 5px;
-    a {
-      font-size: 15px;
+  .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 450px;
     }
-  }
-}
-
-@media (max-width: 768px) {
-  .title h1 {
-    left: 20%;
-  }
-
-  .name {
-    left: 18%;
-    font-size: 45px;
-  }
-
-  .jobs {
-    left: 35%;
-    bottom: 40%;
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 720px) {
-  #resume {
-    left: 44%;
-    bottom: 30%;
-  }
-
-  .social-media {
-    left: 37%;
-    bottom: 20%;
-  }
-}
-
-@media (max-width: 580px) {
-  .title h1 {
-    left: 20%;
-    font-size: 25px;
-  }
-  .name {
-    left: 14%;
-    font-size: 38px;
-  }
-  .logo {
-    width: 40%;
-  }
-  .jobs {
-    font-size: 16px;
-    bottom: 50%;
-    left: 30%;
-
-    ._17,
-    ._18,
-    ._19,
-    ._20,
-    ._21 {
-      margin-right: -2px;
-    }
-  }
-}
-
-@media (max-width: 430px) {
-  .title h1 {
-    font-size: 20px;
-  }
-  .name {
-    left: 10%;
-    font-size: 28px;
-  }
-  .logo {
-    width: 40%;
-  }
-  .jobs {
-    font-size: 13px;
-    bottom: 52%;
-    left: 27%;
-
-    ._17,
-    ._18,
-    ._19,
-    ._20,
-    ._21 {
-      margin-right: -4px;
-    }
-  }
-
-  #resume {
-    left: 38%;
-    bottom: 30%;
-  }
-
-  .social-media {
-    left: 28%;
-    bottom: 20%;
-  }
-}
-
-@media (max-height: 430px) and (orientation: landscape) {
-  .title h1 {
-    left: 35%;
-    font-size: 24px;
-  }
-  .name {
-    left: 30%;
-    font-size: 35px;
-  }
-  .logo {
-    width: 25%;
-  }
-
-  .jobs {
-    font-size: 14px;
-
-    left: 40%;
-  }
-
-  #resume {
-    right: 15%;
-    bottom: 11.5%;
-  }
-
-  .social-media {
-    left: 15%;
-    bottom: 10%;
   }
 }

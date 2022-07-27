@@ -1,0 +1,92 @@
+@import '../../global.scss';
+
+.container {
+  width: 100%;
+  height: 70px;
+  background-color: $navColor;
+  display: flex;
+  align-items: center;
+
+  .social-media {
+    flex: 1;
+    opacity: 0;
+    animation: fadeInUp 1s 1s forwards;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+
+    @include mobile {
+      margin: 10px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 30px;
+      font-size: 40px;
+      box-shadow: 0 5px 10px 0 $boxShadow;
+
+      @include mobile {
+        margin-right: 5px;
+      }
+
+      svg {
+        transition: $transition;
+      }
+
+      &:hover svg {
+        transform: scale(1.1);
+        box-shadow: 0 5px 30px 0 $boxShadow;
+        color: $navColor;
+        background-color: $logoColor;
+        border-radius: 7px;
+      }
+    }
+  }
+
+  .resumeContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeInUp 1s 1s forwards;
+    margin-right: 50px;
+
+    @include mobile {
+      margin: 10px;
+    }
+
+    .resume {
+      display: block;
+      width: 130px;
+      height: 40px;
+      padding-top: 8px;
+      border-bottom: 2px solid $navColor;
+      border-top: 2px solid $navColor;
+      border-radius: 7px;
+      background: $textColor;
+      text-align: center;
+      box-shadow: 0 5px 10px 0 $boxShadow;
+      transition: $transition;
+      font-size: 20px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      color: $navColor;
+
+      @include mobile {
+        width: 60px;
+        padding: 0px;
+        font-size: 14px;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 5px 20px 0 $boxShadow;
+        background-color: $navColor;
+        color: $logoColor;
+        border-color: $logoColor;
+      }
+    }
+  }
+}
