@@ -7,6 +7,7 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Projects from './pages/Projects/Projects';
 import SmallApps from './pages/SmallApps/SmallApps';
+import Error from './pages/Error/Error';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="contact" element={<Contact />} />
         <Route path="projects" element={<Projects />} />
         <Route path="apps" element={<SmallApps />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </>
   );

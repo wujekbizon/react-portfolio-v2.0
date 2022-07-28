@@ -9,6 +9,7 @@
   text-align: center;
   margin-left: 5px;
   margin-top: 10px;
+  transition: $transition;
 
   @include mobile {
     margin: 0;
