@@ -1,60 +1,33 @@
 @import '../../global.scss';
 .btn {
   position: relative;
-  right: 10px;
-  bottom: 10px;
-  display: block;
-  width: 180px;
-  height: 60px;
+  right: 11px;
+  bottom: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 40px;
   background-color: $mainColor;
   color: $whiteColor;
   text-align: center;
-  padding-top: 17px;
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 300;
   text-transform: uppercase;
-  backface-visibility: hidden;
   transition: $transition;
+  border: 1px solid $navColor;
 }
 
 .btn:hover {
   color: $logoColor;
   transform: translate(10px, 10px);
   background-color: $navColor;
+  border-color: $logoColor;
 }
 
 .box {
   display: block;
-  width: 180px;
-  height: 60px;
+  width: 160px;
+  height: 40px;
   border: 1px solid $navColor;
-}
-
-@media (max-width: 480px) {
-  .btn {
-    width: 160px;
-    height: 40px;
-    font-size: 20px;
-    padding-top: 8px;
-  }
-
-  .box {
-    top: 10px;
-    width: 160px;
-    height: 40px;
-    left: 70px;
-  }
-}
-
-@media (max-width: 360px) {
-  .btn {
-    width: 120px;
-    height: 30px;
-    font-size: 15px;
-    padding-top: 4px;
-  }
-  .box {
-    width: 120px;
-    height: 30px;
-    left: 54px;
-  }
 }

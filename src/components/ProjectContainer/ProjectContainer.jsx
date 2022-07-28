@@ -37,15 +37,17 @@ const ProjectContainer = ({
   });
 
   return (
-    <div className="project-container">
-      <div className="contant">
+    <div className="projects-container">
+      <div className="projects-content">
         <h3>{type}</h3>
         <h1>{projectName}</h1>
         <ul>
           <Badge skills={skills} />
         </ul>
         <p>{description}</p>
-        <ul className="items">{renderedItems}</ul>
+        <div className="items-container">
+          <ul className="items">{renderedItems}</ul>
+        </div>
       </div>
       <div className="img-contanier">
         <ImageContainer url={url} imgSrc={imgSrc} />

@@ -6,7 +6,7 @@ import Dev from '../../assets/images/developer.svg';
 import AnimatedLetters from '../../components/AnimatedLetters/index';
 import { init } from 'ityped';
 
-const nameArray = ['I', "'", 'M', ' ', 'G', 'R', 'E', 'G', 'O', 'R', 'Y'];
+const nameArray = ['G', 'R', 'Z', 'E', 'G', 'O', 'R', 'Z'];
 const text = [
   'FULL STACK DEVELOPER | SOFTWARE ENGINEER',
   'REACT.JS/REDUX | EXPRESS.JS | MONGO DB',

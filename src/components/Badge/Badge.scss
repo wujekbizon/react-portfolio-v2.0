@@ -1,37 +1,29 @@
 @import '../../global.scss';
 
 .badge {
-  display: block;
-  width: 90px;
-  height: 25px;
-  border: 1px solid hsl(230 35% 4%);
-  background: hsl(230 35% 7%);
-  color: hsl(0 0% 100%);
-  text-align: center;
+  border: 1px solid $navColor;
+  background: $mainColor;
+  color: $whiteColor;
   font-size: 14px;
-  padding-top: 2px;
+  padding: 5px;
+  text-align: center;
   margin-left: 5px;
   margin-top: 10px;
+
+  &:hover {
+    border-color: $logoColor;
+    color: $logoColor;
+  }
 }
 
 .components {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-left: 5px;
+  gap: 5px;
 }
 
 // class to use later
 .onSkill {
   color: $logoColor;
-}
-
-@media (max-width: 360px) {
-  .components {
-    margin-left: 15px;
-  }
-  .badge {
-    margin-top: 2px;
-    margin-left: 2px;
-  }
 }
