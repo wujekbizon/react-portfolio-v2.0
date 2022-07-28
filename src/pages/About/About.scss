@@ -110,6 +110,7 @@
     .flex {
       position: relative;
       display: flex;
+      justify-content: space-evenly;
       flex-wrap: wrap;
 
       .item {

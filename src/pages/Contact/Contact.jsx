@@ -2,6 +2,7 @@ import './Contact.scss';
 import { useRef } from 'react';
 import { MapContainer, Popup, TileLayer, Marker } from 'react-leaflet';
 import emailjs from '@emailjs/browser';
+import Interview from '../../assets/images/interview.svg';
 
 const Contact = () => {
   const form = useRef();
@@ -28,66 +29,60 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="container-contact contact-page">
-        <div className="text-zone">
-          <h1>Contact me</h1>
-          <p>
-            I am interested in any intern or job offers as a web developer.
-            Please contact me using below form.
-          </p>
-          <p>&nbsp;</p>
-          <div className="contact-form">
+      <div className="contact">
+        <div className="left">
+          <div className="contact-content">
+            <div className="title">
+              <h1>Contact me</h1>
+            </div>
+            <div className="text">
+              <img className="contact-img" src={Interview} alt="Contact Me" />
+              <p>
+                I am interested in any intern or job offers as a web developer.
+                <br />
+                Please contact me using below form.
+              </p>
+            </div>
+          </div>
+          <div className="form-container">
             <form ref={form} onSubmit={sendEmail}>
-              <ul id="form">
-                <li className="half">
-                  <input type="text" name="name" placeholder="Name" required />
-                </li>
-                <li className="half">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                  />
-                </li>
-                <li>
-                  <input
-                    placeholder="Subject"
-                    type="text"
-                    name="subject"
-                    required
-                  />
-                </li>
-                <li>
-                  <textarea
-                    placeholder="Message"
-                    name="message"
-                    required
-                  ></textarea>
-                </li>
-                <li>
-                  <input type="submit" className="flat-button" value="SEND" />
-                </li>
-              </ul>
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <input
+                placeholder="Subject"
+                type="text"
+                name="subject"
+                required
+              />
+              <textarea
+                placeholder="Message"
+                name="message"
+                required
+              ></textarea>
+              <button type="submit" className="form-btn">
+                SEND
+              </button>
             </form>
           </div>
         </div>
-        <div className="info-map">
-          Grzegorz Wolfinger
-          <br />
-          Zamieście 99 , 34-650 Tymbark <br />
-          Poland
-          <span>grzegorz.wolfinger@gmail.com</span>
-        </div>
-        <div className="map-wrap">
-          <MapContainer center={[49.7087783, 20.4086625]} zoom={9}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[49.7087783, 20.3086625]}>
-              <Popup>
-                Greg lives here, want some coffee? Come and visit him :)
-              </Popup>
-            </Marker>
-          </MapContainer>
+        <div className="right">
+          <div className="info-map">
+            Grzegorz Wolfinger
+            <br />
+            Zamieście 99 , 34-650 Tymbark <br />
+            Poland
+            <span>grzegorz.wolfinger@gmail.com</span>
+          </div>
+          <div className="map-wrap">
+            <MapContainer center={[49.7087783, 20.4086625]} zoom={9}>
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+              <Marker position={[49.7087783, 20.3086625]}>
+                <Popup>
+                  Greg lives here, want some coffee? Come and visit him :)
+                </Popup>
+              </Marker>
+            </MapContainer>
+          </div>
         </div>
       </div>
     </>
