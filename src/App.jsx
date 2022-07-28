@@ -1,6 +1,8 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
+import { ToastContainer, Zoom } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // Components
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
@@ -21,6 +23,11 @@ const App = () => {
         <Route path="apps" element={<SmallApps />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <ToastContainer
+        position="top-center"
+        transition={Zoom}
+        draggablePercent={60}
+      />
     </>
   );
 };

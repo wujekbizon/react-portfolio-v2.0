@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import { MapContainer, Popup, TileLayer, Marker } from 'react-leaflet';
 import emailjs from '@emailjs/browser';
 import Interview from '../../assets/images/interview.svg';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
   const form = useRef();
@@ -19,11 +20,10 @@ const Contact = () => {
       )
       .then(
         () => {
-          alert('Message successfully sent!');
-          window.location.reload(false);
+          toast.success('Message successfully sent!');
         },
         () => {
-          alert('Failed to send the message, please try again');
+          toast.error('Failed to send the message, please try again');
         }
       );
   };
