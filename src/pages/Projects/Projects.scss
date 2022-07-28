@@ -6,20 +6,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 80px;
 
   .top {
     flex: 1;
     display: flex;
-    align-items: center;
     margin-top: 80px;
-    // opacity: 0;
-    // animation: fadeInLeft 2s 1s forwards;
+    opacity: 0;
+    animation: fadeInLeft 2s 0.8s forwards;
 
     .title {
-      margin-right: 100px;
+      display: flex;
+      align-items: center;
 
       h2 {
-        font-size: 35px;
+        font-size: 45px;
         font-weight: 300;
         font-family: $nunito;
         border-bottom: 1px solid;
@@ -27,21 +28,21 @@
     }
 
     .img-container {
-      margin-left: 100px;
-
+      display: flex;
+      justify-content: center;
       img {
-        height: 350px;
+        width: 40%;
       }
     }
   }
 
   .container {
     flex: 3;
-    gap: 100px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 40px;
     background-color: $mainColor;
   }
 }

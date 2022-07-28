@@ -1,8 +1,6 @@
 import ImagePortV2 from '../../assets/images/portfolio-v2.png';
 // components
 import ProjectContainer from '../ProjectContainer/ProjectContainer';
-import ImageContainer from '../ImageContainer/ImageContainer';
-import Link from '../Link/Link';
 
 const type = 'FRONTEND DEVELOPER';
 const text = 'My Personal Portfolio v2.0';
@@ -35,14 +33,10 @@ const PortfolioV2 = () => {
         content={'View project'}
         url={'https://grzegorz-wolfinger-portfoliov2.vercel.app'}
         skills={skills}
-      />
-
-      <ImageContainer
+        linkUrl={'https://github.com/wujekbizon/react-portfolio-v2.0'}
+        linkContent={'Github Code'}
         imgSrc={ImagePortV2}
-        url={'https://grzegorz-wolfinger-portfoliov2.vercel.app'}
       />
-
-      <Link url={'https://github.com/wujekbizon/react-portfolio-v2.0'} />
     </div>
   );
 };

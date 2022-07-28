@@ -1,9 +1,8 @@
 import ProjectContainer from '../ProjectContainer/ProjectContainer';
-import ImageContainer from '../ImageContainer/ImageContainer';
-import Link from '../Link/Link';
+
 import Movie from '../../assets/images/Movie.png';
 
-const type = 'Personal Project';
+const type = 'PERSONAL PROJECT';
 const text =
   "It's a Search application that's using a free movie API and makes the comparison of two chosen movies - let's the fight begin...";
 const items = [
@@ -27,18 +26,10 @@ const MovieFight = () => {
             content={'View project'}
             url={'https://js-apps-movie-fight.vercel.app/'}
             skills={skills}
+            linkUrl={'https://github.com/wujekbizon/js-apps-movieFight'}
+            linkContent={'Github Code'}
+            imgSrc={Movie}
           />
-        </div>
-        <div>
-          <div className="movieImage-container">
-            <ImageContainer
-              imgSrc={Movie}
-              url={'https://js-apps-movie-fight.vercel.app/'}
-            />
-          </div>
-          <div className="movie-link">
-            <Link url={'https://github.com/wujekbizon/js-apps-movieFight'} />
-          </div>
         </div>
       </div>
     </>

@@ -1,19 +1,7 @@
 import './Projects.scss';
 import Img from '../../assets/images/projectsImg.svg';
-import {
-  AdminPanel,
-  ColorPalette,
-  GithubUser,
-  Jobster,
-  MovieFight,
-  Mtg,
-  MtgCounter,
-  MwdStore,
-  Portfolio,
-  PortfolioV2,
-  Smakus,
-  YelpCamp,
-} from '../../components/Projects';
+import { projectsData } from '../../utils/data';
+import ProjectContainer from '../../components/ProjectContainer/ProjectContainer';
 
 const Projects = () => {
   return (
@@ -28,18 +16,36 @@ const Projects = () => {
       </div>
 
       <div className="container">
-        <Smakus />
-        <Jobster />
-        <GithubUser />
-        <MwdStore />
-        <AdminPanel />
-        <YelpCamp />
-        <PortfolioV2 />
-        <ColorPalette />
-        <MtgCounter />
-        <MovieFight />
-        <Portfolio />
-        <Mtg />
+        {projectsData.map((project) => {
+          const {
+            id,
+            type,
+            projectName,
+            text,
+            items,
+            skills,
+            content,
+            url,
+            linkUrl,
+            linkContent,
+            imgSrc,
+          } = project;
+          return (
+            <ProjectContainer
+              key={id}
+              type={type}
+              projectName={projectName}
+              skills={skills}
+              description={text}
+              items={items}
+              url={url}
+              linkUrl={linkUrl}
+              linkContent={linkContent}
+              content={content}
+              imgSrc={imgSrc}
+            />
+          );
+        })}
       </div>
     </div>
   );

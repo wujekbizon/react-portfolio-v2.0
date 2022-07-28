@@ -1,106 +1,66 @@
+@import '../../global.scss';
+
 .project-container {
-  margin-top: 50px;
-  margin-left: 0;
-  margin-bottom: 30px;
-  width: 450px;
-  height: 600px;
-  background: hsl(0 0% 100%);
-  border-radius: 20px;
-  color: hsl(230 35% 4%);
+  width: 70vw;
+  height: 100%;
+  display: flex;
+  background: $whiteColor;
+  border-radius: 10px;
+  color: $navColor;
   padding: 25px;
-  cursor: default;
-  border: 1px solid hsl(230 35% 4%);
-  box-shadow: 0 5px 10px 0 rgba(210, 216, 249, 0.5);
+  border: 1px solid $navColor;
+  box-shadow: 0 5px 10px 0 $boxShadow;
+  font-family: $nunito;
   opacity: 0;
-  animation: fadeInLeft 1s 1s forwards !important;
+  animation: fadeInLeft 1s 1s forwards;
 
-  h1 {
-    margin-top: 15px;
-    font-size: 35px;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 12px;
-    opacity: 0.6;
-  }
-
-  ul {
-    list-style-type: none;
-    font-size: 18px;
-    cursor: pointer;
-    padding: 0;
-  }
-
-  p {
-    font-family: 'Barlow';
-    padding-left: 10px;
-    font-size: 17px;
-    text-transform: uppercase;
-    text-align: center;
-    color: hsl(230 35% 4%);
-  }
-
-  .items {
-    margin-left: 15px;
-    cursor: default;
-  }
-}
-
-@media (max-width: 480px) {
-  .project-container {
-    margin-top: 60px;
-    margin-left: 50px;
-    width: 350px;
-    height: 750px;
-
+  .contant {
+    flex: 3;
     h1 {
-      margin: 0;
-      font-size: 25px;
+      margin-top: 15px;
+      font-size: 35px;
+      text-align: center;
+      text-transform: uppercase;
+      border-bottom: 1px solid $logoColor;
     }
 
     h3 {
-      font-size: 10px;
-    }
-
-    p {
-      font-size: 15px;
+      font-size: 14px;
+      color: $logoColor;
     }
 
     ul {
-      font-size: 16px;
-    }
-  }
-}
-
-@media (max-width: 414px) {
-  .project-container {
-    margin-left: auto;
-  }
-}
-
-@media (max-width: 360px) {
-  .project-container {
-    margin-left: 30px;
-    width: 270px;
-
-    h1 {
-      font-size: 20px;
+      list-style-type: none;
+      font-size: 18px;
+      cursor: pointer;
+      padding: 0;
     }
 
     p {
-      font-size: 13px;
+      padding-left: 10px;
+      font-size: 17px;
+      text-transform: uppercase;
       text-align: center;
+      color: $navColor;
     }
 
-    ul {
-      font-size: 13px;
+    .items {
+      margin-left: 15px;
+      cursor: default;
     }
   }
-}
 
-@media (max-width: 320px) {
-  .project-container {
-    margin-left: 10px;
+  .img-contanier {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 }

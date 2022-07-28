@@ -1,6 +1,4 @@
 import ProjectContainer from '../ProjectContainer/ProjectContainer';
-import ImageContainer from '../ImageContainer/ImageContainer';
-import Link from '../Link/Link';
 import Bar from '../../assets/images/smakus.png';
 
 const type = 'REAL WORLD PROJECT';
@@ -20,7 +18,7 @@ const skills = [
   'React-Leaflet',
   'Material UI',
   'React-Toasify',
-  'React-I18Next',
+  'I18Next',
   'Ityped',
 ];
 const Smakus = () => {
@@ -36,15 +34,10 @@ const Smakus = () => {
             content={'View project'}
             url={'https://smakus.vercel.app/'}
             skills={skills}
+            linkUrl={'https://github.com/wujekbizon/react-smakus'}
+            linkContent={'Github Code'}
+            imgSrc={Bar}
           />
-        </div>
-        <div>
-          <div className="smakusImage-container">
-            <ImageContainer imgSrc={Bar} url={'https://smakus.vercel.app/'} />
-          </div>
-          <div className="smakus-link">
-            <Link url={'https://github.com/wujekbizon/react-smakus'} />
-          </div>
         </div>
       </div>
     </>

@@ -1,7 +1,6 @@
 // components
 import ProjectContainer from '../ProjectContainer/ProjectContainer';
-import ImageContainer from '../ImageContainer/ImageContainer';
-import Link from '../Link/Link';
+
 import MtgSearch from '../../assets/images/mtgsearch.png';
 
 const type = 'WORK IN PROGRESS';
@@ -28,18 +27,10 @@ const Mtg = () => {
             content={'DEMO'}
             url={'https://react-ts-mtg.vercel.app/'}
             skills={skills}
+            linkUrl={'https://github.com/wujekbizon/react-ts-mtg'}
+            linkContent={'Github Code'}
+            imgSrc={MtgSearch}
           />
-        </div>
-        <div>
-          <div className="mtgSearch-container">
-            <ImageContainer
-              imgSrc={MtgSearch}
-              url={'https://react-ts-mtg.vercel.app/'}
-            />
-          </div>
-          <div className="mtgSearch-link">
-            <Link url={'https://github.com/wujekbizon/react-ts-mtg'} />
-          </div>
         </div>
       </div>
     </>

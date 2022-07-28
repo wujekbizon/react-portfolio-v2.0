@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './ProjectContainer.scss';
 // components
 import Button from '../Button/Button';
 import Badge from '../Badge/Badge';
+import ImageContainer from '../ImageContainer/ImageContainer';
 
 const ProjectContainer = ({
   projectName,
@@ -12,6 +13,9 @@ const ProjectContainer = ({
   content,
   url,
   skills,
+  linkUrl,
+  linkContent,
+  imgSrc,
 }) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -34,14 +38,22 @@ const ProjectContainer = ({
 
   return (
     <div className="project-container">
-      <h3>{type.toUpperCase()}</h3>
-      <h1>{projectName}</h1>
-      <ul>
-        <Badge skills={skills} />
-      </ul>
-      <p>{description}</p>
-      <ul className="items">{renderedItems}</ul>
-      <Button content={content} url={url} />
+      <div className="contant">
+        <h3>{type}</h3>
+        <h1>{projectName}</h1>
+        <ul>
+          <Badge skills={skills} />
+        </ul>
+        <p>{description}</p>
+        <ul className="items">{renderedItems}</ul>
+      </div>
+      <div className="img-contanier">
+        <ImageContainer url={url} imgSrc={imgSrc} />
+      </div>
+      <div className="btn-container">
+        <Button content={content} url={url} />
+        <Button content={linkContent} url={linkUrl} />
+      </div>
     </div>
   );
 };

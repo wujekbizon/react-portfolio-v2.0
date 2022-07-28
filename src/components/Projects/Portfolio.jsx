@@ -1,8 +1,6 @@
 import ImagePort from '../../assets/images/portfolio-v1.png';
 // components
 import ProjectContainer from '../ProjectContainer/ProjectContainer';
-import ImageContainer from '../ImageContainer/ImageContainer';
-import Link from '../Link/Link';
 
 const type = 'FRONTEND DEVELOPER';
 const text = 'My Portfolio ver 1.0 made in React';
@@ -38,18 +36,10 @@ const Portfolio = () => {
             content={'View project'}
             url={'https://grzegorz-wolfinger.vercel.app/'}
             skills={skills}
+            linkUrl={'https://github.com/wujekbizon/react-portfolio'}
+            linkContent={'Github Code'}
+            imgSrc={ImagePort}
           />
-        </div>
-        <div>
-          <div className="portfolioImage-container">
-            <ImageContainer
-              imgSrc={ImagePort}
-              url={'https://grzegorz-wolfinger.vercel.app/'}
-            />
-          </div>
-          <div className="portfolio-link">
-            <Link url={'https://github.com/wujekbizon/react-portfolio'} />
-          </div>
         </div>
       </div>
     </>
