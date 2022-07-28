@@ -14,9 +14,13 @@
   opacity: 0;
   animation: fadeInLeft 1s 0.8s forwards;
 
+  @include mobile {
+    flex-direction: column;
+    width: 90%;
+  }
+
   .projects-content {
     flex: 3;
-
     h1 {
       margin-top: 15px;
       font-size: 35px;
@@ -25,11 +29,22 @@
       text-transform: uppercase;
       border-bottom: 1px solid $logoColor;
       font-weight: 200;
+
+      @include mobile {
+        font-size: 25px;
+        border-bottom: none;
+        border-left: 1px solid $logoColor;
+        border-right: 1px solid $logoColor;
+      }
     }
 
     h3 {
       font-size: 16px;
       color: $logoColor;
+
+      @include mobile {
+        font-size: 12px;
+      }
     }
 
     ul {
@@ -37,6 +52,10 @@
       font-size: 16px;
       cursor: pointer;
       padding: 0;
+
+      @include mobile {
+        font-size: 14px;
+      }
     }
 
     p {
@@ -45,10 +64,18 @@
       text-align: center;
       text-transform: capitalize;
       color: $navColor;
+
+      @include mobile {
+        font-size: 16px;
+      }
     }
 
     .items-container {
       padding: 0px 80px;
+
+      @include mobile {
+        padding: 0px;
+      }
 
       .items {
         margin-left: 15px;
@@ -69,6 +96,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    @include mobile {
+      flex-direction: row;
+    }
   }
 
   .image-container {
@@ -76,5 +107,9 @@
     height: 250px;
     border: 1px solid $navColor;
     border-radius: 15px;
+
+    @include mobile {
+      display: none;
+    }
   }
 }

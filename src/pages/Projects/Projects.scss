@@ -8,6 +8,10 @@
   align-items: center;
   gap: 80px;
 
+  @include mobile {
+    gap: 20px;
+  }
+
   .top {
     flex: 1;
     display: flex;
@@ -15,15 +19,31 @@
     opacity: 0;
     animation: fadeInLeft 1s 0.8s forwards;
 
+    @include mobile {
+      width: 90%;
+      margin-top: 30px;
+      flex-direction: column;
+      border-bottom: 1px solid $logoColor;
+    }
+
     .title {
       display: flex;
       align-items: center;
+
+      @include mobile {
+        justify-content: center;
+      }
 
       h2 {
         font-size: 45px;
         font-weight: 300;
         font-family: $nunito;
         border-bottom: 1px solid;
+
+        @include mobile {
+          font-size: 25px;
+          margin-bottom: 20px;
+        }
       }
     }
 
@@ -32,6 +52,15 @@
       justify-content: center;
       img {
         width: 40%;
+
+        @include mobile {
+          width: 55%;
+        }
+      }
+
+      @include mobile {
+        font-size: 25px;
+        margin-bottom: 30px;
       }
     }
   }

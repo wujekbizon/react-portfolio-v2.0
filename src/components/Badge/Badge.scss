@@ -10,6 +10,11 @@
   margin-left: 5px;
   margin-top: 10px;
 
+  @include mobile {
+    margin: 0;
+    font-size: 12px;
+  }
+
   &:hover {
     border-color: $logoColor;
     color: $logoColor;
@@ -21,6 +26,9 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 5px;
+
+  @include mobile {
+  }
 }
 
 // class to use later

@@ -16,6 +16,14 @@
   text-transform: uppercase;
   transition: $transition;
   border: 1px solid $navColor;
+
+  @include mobile {
+    font-size: 16px;
+    width: 120px;
+    height: 30px;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .btn:hover {
@@ -23,6 +31,10 @@
   transform: translate(10px, 10px);
   background-color: $navColor;
   border-color: $logoColor;
+
+  @include mobile {
+    transform: none;
+  }
 }
 
 .box {
@@ -30,4 +42,8 @@
   width: 160px;
   height: 40px;
   border: 1px solid $navColor;
+
+  @include mobile {
+    border: none;
+  }
 }
