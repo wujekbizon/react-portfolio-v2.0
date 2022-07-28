@@ -69,8 +69,7 @@ const Contact = () => {
           <div className="info-map">
             Grzegorz Wolfinger
             <br />
-            Zamieście 99 , 34-650 Tymbark <br />
-            Poland
+            Zamieście 99 , 34-650 Tymbark Poland
             <span>grzegorz.wolfinger@gmail.com</span>
           </div>
           <div className="map-wrap">
