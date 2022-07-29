@@ -17,6 +17,11 @@
   transition: $transition;
   border: 1px solid $navColor;
 
+  @include tablet {
+    width: 140px;
+    font-size: 18px;
+  }
+
   @include mobile {
     font-size: 16px;
     width: 120px;
@@ -42,6 +47,10 @@
   width: 160px;
   height: 40px;
   border: 1px solid $navColor;
+
+  @include tablet {
+    width: 140px;
+  }
 
   @include mobile {
     width: 120px;

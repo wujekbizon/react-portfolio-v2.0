@@ -73,7 +73,11 @@
     .items-container {
       padding: 0px 80px;
 
-      @include mobile {
+      @include tablet {
+        padding: 0px 30px;
+      }
+
+      @include smTablet {
         padding: 0px;
       }
 
@@ -84,32 +88,55 @@
     }
   }
 
-  .img-contanier {
+  .right {
     flex: 2;
     display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .btn-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-    @include mobile {
-      flex-direction: row;
+    @include tablet {
+      flex-direction: column;
     }
-  }
 
-  .image-container {
-    width: 300px;
-    height: 250px;
-    border: 1px solid $navColor;
-    border-radius: 15px;
+    .img-contanier {
+      flex: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-    @include mobile {
-      display: none;
+    .btn-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      @include tablet {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      @include smTablet {
+        flex-direction: column;
+      }
+
+      @include mobile {
+        flex-direction: row;
+      }
+    }
+
+    .image-container {
+      width: 250px;
+      height: 200px;
+      border: 1px solid $navColor;
+      border-radius: 15px;
+
+      @include smTablet {
+        width: 200px;
+        height: 200px;
+      }
+
+      @include mobile {
+        display: none;
+      }
     }
   }
 }

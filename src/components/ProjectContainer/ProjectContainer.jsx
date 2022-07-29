@@ -49,12 +49,14 @@ const ProjectContainer = ({
           <ul className="items">{renderedItems}</ul>
         </div>
       </div>
-      <div className="img-contanier">
-        <ImageContainer url={url} imgSrc={imgSrc} />
-      </div>
-      <div className="btn-container">
-        <Button content={content} url={url} />
-        <Button content={linkContent} url={linkUrl} />
+      <div className="right">
+        <div className="img-contanier">
+          <ImageContainer url={url} imgSrc={imgSrc} />
+        </div>
+        <div className="btn-container">
+          <Button content={content} url={url} />
+          <Button content={linkContent} url={linkUrl} />
+        </div>
       </div>
     </div>
   );

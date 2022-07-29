@@ -15,10 +15,17 @@ $nunito: 'Nunito Sans', sans-serif;
 $transition: all 0.3s linear;
 
 $width: 767px;
+$widthSmallTablet: 1180px;
 $widthTablet: 1590px;
 
 @mixin mobile {
   @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin smTablet {
+  @media (max-width: #{$widthSmallTablet}) {
     @content;
   }
 }
