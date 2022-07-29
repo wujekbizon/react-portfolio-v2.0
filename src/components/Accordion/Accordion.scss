@@ -5,8 +5,12 @@
   font-weight: 300;
   font-family: $nunito;
   letter-spacing: 1px;
-  color: hsl(231 77% 90%);
+  color: $textColor;
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 18px;
+  }
 
   @include mobile {
     padding-top: 10px;

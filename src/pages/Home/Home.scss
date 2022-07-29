@@ -80,6 +80,9 @@
     }
 
     .logo-container {
+      display: flex;
+      justify-content: center;
+
       opacity: 0;
       animation: fadeInRight 2s 0.8s forwards;
 
@@ -89,10 +92,10 @@
       }
 
       img {
-        height: 450px;
+        width: 80%;
 
         @include mobile {
-          height: 150px;
+          height: 90%;
         }
       }
     }

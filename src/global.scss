@@ -15,7 +15,7 @@ $nunito: 'Nunito Sans', sans-serif;
 $transition: all 0.3s linear;
 
 $width: 767px;
-$widthTablet: 1024px;
+$widthTablet: 1590px;
 
 @mixin mobile {
   @media (max-width: #{$width}) {
