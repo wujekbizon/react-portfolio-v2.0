@@ -27,8 +27,14 @@
     }
 
     .title {
+      flex: 1;
       display: flex;
       align-items: center;
+      justify-content: center;
+
+      @include smTablet {
+        justify-content: flex-end;
+      }
 
       @include mobile {
         justify-content: center;
@@ -48,15 +54,16 @@
     }
 
     .img-container {
+      flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
 
       img {
-        width: 40%;
+        width: 50%;
 
         @include mobile {
-          width: 55%;
+          width: 35%;
         }
       }
 

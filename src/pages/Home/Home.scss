@@ -5,7 +5,7 @@
   height: calc(100vh - 150px);
   display: flex;
 
-  @include mobile {
+  @include smTablet {
     flex-direction: column;
   }
 
@@ -39,7 +39,7 @@
         animation: fadeInLeft 1s 0.8s forwards;
 
         @include mobile {
-          height: 36px;
+          height: 34px;
         }
       }
     }
@@ -82,20 +82,28 @@
     .logo-container {
       display: flex;
       justify-content: center;
-
+      align-items: center;
+      height: 100%;
       opacity: 0;
       animation: fadeInRight 2s 0.8s forwards;
 
-      @include mobile {
-        height: 200px;
+      @include smTablet {
         animation: fadeInUp 2s 0.8s forwards;
       }
 
+      @include smTablet {
+        align-items: flex-start;
+      }
+
       img {
-        width: 80%;
+        width: 70%;
+
+        @include smTablet {
+          width: 60%;
+        }
 
         @include mobile {
-          height: 90%;
+          width: 50%;
         }
       }
     }

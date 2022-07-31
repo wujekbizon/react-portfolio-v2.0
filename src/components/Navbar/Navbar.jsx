@@ -9,9 +9,55 @@ import {
   faDiagramProject,
   faRectangleList,
 } from '@fortawesome/free-solid-svg-icons';
+import Logo from '../Logo/Logo';
 
 import { MdClose } from 'react-icons/md';
 import { FiMenu } from 'react-icons/fi';
+
+const Menu = ({ closeMenu, navbarOpen }) => (
+  <>
+    <NavLink to="/" activeclassname="active" onClick={() => closeMenu()}>
+      {navbarOpen ? (
+        'Home'
+      ) : (
+        <FontAwesomeIcon icon={faHouseLaptop} color="hsl(231 77% 90%" />
+      )}
+    </NavLink>
+    <NavLink to="/about" className="about-link" onClick={() => closeMenu()}>
+      {navbarOpen ? (
+        'About'
+      ) : (
+        <FontAwesomeIcon icon={faHouseUser} color="hsl(231 77% 90%" />
+      )}
+    </NavLink>
+    <NavLink
+      to="/projects"
+      className="projects-link"
+      onClick={() => closeMenu()}
+    >
+      {navbarOpen ? (
+        'Projects'
+      ) : (
+        <FontAwesomeIcon icon={faDiagramProject} color="hsl(231 77% 90%" />
+      )}
+    </NavLink>
+    <NavLink to="/apps" className="apps-link" onClick={() => closeMenu()}>
+      {navbarOpen ? (
+        'Small Apps'
+      ) : (
+        <FontAwesomeIcon icon={faRectangleList} color="hsl(231 77% 90%" />
+      )}
+    </NavLink>
+
+    <NavLink to="/contact" className="contact-link" onClick={() => closeMenu()}>
+      {navbarOpen ? (
+        'Contact'
+      ) : (
+        <FontAwesomeIcon icon={faEnvelope} color="hsl(231 77% 90%" />
+      )}
+    </NavLink>
+  </>
+);
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -25,40 +71,26 @@ const Navbar = () => {
   };
 
   return (
-    <div className="nav-bar gradient__bg">
-      <nav className={`menuNav ${navbarOpen ? 'open' : ''}`}>
-        <NavLink to="/" activeclassname="active" onClick={() => closeMenu()}>
-          <FontAwesomeIcon icon={faHouseLaptop} color="hsl(231 77% 90%" />
-        </NavLink>
-        <NavLink to="/about" className="about-link" onClick={() => closeMenu()}>
-          <FontAwesomeIcon icon={faHouseUser} color="hsl(231 77% 90%" />
-        </NavLink>
-        <NavLink
-          to="/projects"
-          className="projects-link"
-          onClick={() => closeMenu()}
-        >
-          <FontAwesomeIcon icon={faDiagramProject} color="hsl(231 77% 90%" />
-        </NavLink>
-        <NavLink to="/apps" className="apps-link" onClick={() => closeMenu()}>
-          <FontAwesomeIcon icon={faRectangleList} color="hsl(231 77% 90%" />
-        </NavLink>
-
-        <NavLink
-          to="/contact"
-          className="contact-link"
-          onClick={() => closeMenu()}
-        >
-          <FontAwesomeIcon icon={faEnvelope} color="hsl(231 77% 90%" />
-        </NavLink>
-      </nav>
-      <button onClick={handleToggle}>
-        {navbarOpen ? (
-          <MdClose style={{ color: '#fff', width: '40px', height: '40px' }} />
-        ) : (
-          <FiMenu style={{ color: '#7b7b7b', width: '40px', height: '40px' }} />
+    <div className="navbar gradient__bg">
+      <div className="navbar-btn">
+        <button onClick={handleToggle}>
+          {navbarOpen ? (
+            <MdClose className="mdclose" />
+          ) : (
+            <FiMenu className="fimenu" />
+          )}
+        </button>
+        {navbarOpen && (
+          <div className="navbar-menu-container scale-up-center">
+            {/* <Logo /> */}
+            <Menu closeMenu={closeMenu} navbarOpen={navbarOpen} />
+          </div>
         )}
-      </button>
+      </div>
+      <Logo />
+      <nav className="navbar-menu">
+        <Menu closeMenu={closeMenu} />
+      </nav>
     </div>
   );
 };

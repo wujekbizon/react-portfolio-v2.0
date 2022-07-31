@@ -1,20 +1,110 @@
 @import '../../global.scss';
 
-.nav-bar {
+.navbar {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 80px;
+  padding: 20px;
+  z-index: 3;
 
-  @include mobile {
+  @include smTablet {
     position: sticky;
+    justify-content: flex-start;
   }
 
-  nav {
+  .logo-container {
+    flex: 1;
     display: flex;
     align-items: center;
-    opacity: 0;
-    animation: backInDown 1s 1s forwards;
+    justify-content: flex-start;
+
+    img {
+      width: 150px;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    @include smTablet {
+      display: none;
+    }
+  }
+
+  .navbar-btn {
+    display: none;
+    position: relative;
+
+    @include smTablet {
+      display: flex;
+    }
+
+    .navbar-menu-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      background: $sidebarColor;
+      padding: 2rem;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      margin-top: 1rem;
+      min-width: 210px;
+      border-radius: 5px;
+      box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+
+      a {
+        margin: 1rem 0;
+        color: $whiteColor;
+        font-size: 24px;
+        font-weight: 300;
+      }
+    }
+
+    button {
+      display: block;
+      z-index: 10;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      transition: $transition;
+
+      &:hover {
+        line {
+          color: #fa8231;
+        }
+        path {
+          color: #fa8231;
+        }
+      }
+    }
+
+    line {
+      color: #fff;
+      transition: $transition;
+    }
+
+    .mdclose {
+      color: hsl(0 0% 100%);
+      width: 42px;
+      height: 42px;
+    }
+
+    .fimenu {
+      color: hsl(0 0% 100%);
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  .navbar-menu {
+    flex: 2;
+    display: flex;
+    align-items: center;
+
+    @include smTablet {
+      display: none;
+    }
 
     a {
       font-size: 27px;
@@ -97,80 +187,6 @@
       svg {
         color: hsl(0 0% 100%);
       }
-    }
-  }
-
-  button {
-    display: none;
-  }
-}
-
-.mdclose {
-  color: hsl(0 0% 100%);
-  width: 42px;
-  height: 42px;
-}
-
-.fimenu {
-  color: hsl(0 0% 100%);
-  width: 42px;
-  height: 42px;
-}
-
-@media (max-width: 530px) {
-  .nav-bar {
-    button {
-      display: block;
-      position: absolute;
-      right: 86%;
-      top: 8px;
-      z-index: 10;
-      cursor: pointer;
-      background: transparent;
-      border: none;
-
-      &:hover {
-        line {
-          color: #fa8231;
-        }
-        path {
-          color: #fa8231;
-        }
-      }
-    }
-
-    line {
-      color: #fff;
-    }
-  }
-
-  .menuNav a {
-    opacity: 0;
-  }
-
-  .menuNav.open a {
-    animation: backInDown 0.5s 0.2s forwards;
-    margin: 0 10px;
-    font-size: 24px;
-
-    &:after {
-      position: absolute;
-      top: 5px;
-      left: 7px;
-      font-size: 14px;
-      color: hsl(0 0% 100%);
-    }
-
-    &:first-child:after {
-      left: 0px;
-    }
-  }
-}
-
-@media (min-width: 2560px) {
-  nav {
-    a {
-      margin: 0 160px !important;
     }
   }
 }
