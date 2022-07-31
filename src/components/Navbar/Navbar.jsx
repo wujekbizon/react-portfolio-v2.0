@@ -82,7 +82,6 @@ const Navbar = () => {
         </button>
         {navbarOpen && (
           <div className="navbar-menu-container scale-up-center">
-            {/* <Logo /> */}
             <Menu closeMenu={closeMenu} navbarOpen={navbarOpen} />
           </div>
         )}
