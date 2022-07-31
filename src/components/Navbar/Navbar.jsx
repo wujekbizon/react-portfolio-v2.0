@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="nav-bar">
+    <div className="nav-bar gradient__bg">
       <nav className={`menuNav ${navbarOpen ? 'open' : ''}`}>
         <NavLink to="/" activeclassname="active" onClick={() => closeMenu()}>
           <FontAwesomeIcon icon={faHouseLaptop} color="hsl(231 77% 90%" />

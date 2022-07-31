@@ -3,7 +3,6 @@
 .container {
   width: 100%;
   height: 70px;
-  background-color: $navColor;
   display: flex;
   align-items: center;
 
@@ -33,12 +32,13 @@
 
       svg {
         transition: $transition;
+        color: $whiteColor;
       }
 
       &:hover svg {
         transform: scale(1.1);
         box-shadow: 0 5px 30px 0 $boxShadow;
-        color: $navColor;
+        color: $background;
         background-color: $logoColor;
         border-radius: 7px;
       }
@@ -66,7 +66,7 @@
       border-bottom: 2px solid $navColor;
       border-top: 2px solid $navColor;
       border-radius: 7px;
-      background: $textColor;
+      background: $whiteColor;
       text-align: center;
       box-shadow: 0 5px 10px 0 $boxShadow;
       transition: $transition;
@@ -83,7 +83,7 @@
       &:hover {
         transform: scale(1.1);
         box-shadow: 0 5px 20px 0 $boxShadow;
-        background-color: $navColor;
+        background-color: $background;
         color: $logoColor;
         border-color: $logoColor;
       }
