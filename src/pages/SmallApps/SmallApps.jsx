@@ -3,7 +3,7 @@ import Grocery from '../../components/Grocery/Grocery';
 
 const SmallApps = () => {
   return (
-    <div className="apps">
+    <div className="apps gradient__bg">
       <div className="top">
         <h3 className="title">REACT SMALL APPS</h3>
       </div>

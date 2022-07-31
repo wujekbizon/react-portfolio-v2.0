@@ -1,5 +1,8 @@
 @import 'animate.css';
 
+$gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #fa8231 102.67%);
+$gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+
 $background: #040c18;
 $navColor: hsl(230 35% 4%);
 $sidebarColor: #031b34;
@@ -9,15 +12,23 @@ $textColor: #81afdd;
 $borderColor: #30363d;
 $lightSidebar: #c0c5cc;
 $darkColor: #5e4f45;
+$footerColor: #031b34;
 $whiteColor: hsl(0 0% 100%);
-$boxShadow: rgba(210, 216, 249, 0.35);
+$boxShadow: rgba(0, 0, 0, 0.2);
 
 $nunito: 'Nunito Sans', sans-serif;
 $transition: all 0.3s linear;
 
+$widthSmMobile: 550px;
 $width: 767px;
 $widthSmallTablet: 1180px;
 $widthTablet: 1590px;
+
+@mixin smMobile {
+  @media (max-width: #{$widthSmMobile}) {
+    @content;
+  }
+}
 
 @mixin mobile {
   @media (max-width: #{$width}) {

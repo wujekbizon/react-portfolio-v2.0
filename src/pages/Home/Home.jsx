@@ -37,31 +37,30 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      <div className="home">
-        <div className="left">
-          <div className="name">
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              index={1}
-            />
-          </div>
-          <div className="img-container">
-            <img className="logo" src={Logo} alt="wolfinger" />
-          </div>
-          <div className="jobs">
-            <span className="ityped" ref={textRef}></span>
-          </div>
+    <div className="home gradient__bg">
+      <div className="left">
+        <div className="name">
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={nameArray}
+            index={1}
+          />
         </div>
-        <div className="right">
-          <div className="logo-container">
-            <img src={Dev} alt="Developer" />
-          </div>
+        <div className="img-container">
+          <img className="logo" src={Logo} alt="wolfinger" />
+        </div>
+        <div className="jobs">
+          <span className="ityped gradient__text" ref={textRef}></span>
         </div>
       </div>
+      <div className="right">
+        <div className="logo-container">
+          <img src={Dev} alt="Developer" />
+        </div>
+      </div>
+
       <Footer />
-    </>
+    </div>
   );
 };
 

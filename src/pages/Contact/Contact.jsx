@@ -29,7 +29,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="contact">
+      <div className="contact gradient__bg">
         <div className="left">
           <div className="contact-content">
             <div className="title">

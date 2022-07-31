@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
   return (
-    <div className="container gradient__bg">
+    <div className="container">
       <div className="social-media">
         <a
           target="_blank"

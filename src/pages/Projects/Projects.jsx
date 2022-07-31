@@ -5,7 +5,7 @@ import ProjectContainer from '../../components/ProjectContainer/ProjectContainer
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects gradient__bg">
       <div className="top">
         <div className="title">
           <h2>MY PROJECTS</h2>

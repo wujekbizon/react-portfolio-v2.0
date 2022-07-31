@@ -1,3 +1,5 @@
+@import './global.scss';
+
 .scale-up-center {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
@@ -56,4 +58,11 @@
     rgba(0, 40, 83, 1) 0%,
     rgba(4, 12, 24, 1) 100%
   );
+}
+
+.gradient__text {
+  background: $gradient-text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

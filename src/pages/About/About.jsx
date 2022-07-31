@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about gradient__bg">
       <div className="left">
         <div className="title">
           <h2>About Me</h2>

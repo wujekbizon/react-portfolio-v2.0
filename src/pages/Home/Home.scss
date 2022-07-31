@@ -2,8 +2,10 @@
 
 .home {
   width: 100vw;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 80px);
   display: flex;
+
+  flex-direction: column;
 
   @include smTablet {
     flex-direction: column;
@@ -20,11 +22,16 @@
       display: flex;
       align-items: center;
       height: 80px;
-      font-size: 64px;
+      font-size: 72px;
       font-weight: 200;
       font-family: $nunito;
+      letter-spacing: 2px;
 
       @include mobile {
+        font-size: 55px;
+      }
+
+      @include smMobile {
         font-size: 36px;
       }
     }
@@ -39,22 +46,31 @@
         animation: fadeInLeft 1s 0.8s forwards;
 
         @include mobile {
+          height: 50px;
+        }
+
+        @include smMobile {
           height: 34px;
         }
       }
     }
 
     .jobs {
-      margin-top: 80px;
+      margin-top: 70px;
       padding: 15px;
       color: hsl(231 77% 90%);
       font-size: 26px;
       letter-spacing: 1px;
-      font-weight: 200;
+      font-weight: 400;
       opacity: 0;
       animation: fadeIn 1s 1.3s forwards;
 
       @include mobile {
+        font-size: 18px;
+        margin-top: 25px;
+      }
+
+      @include smMobile {
         margin-top: 40px;
         font-size: 14px;
       }
@@ -85,10 +101,10 @@
       align-items: center;
       height: 100%;
       opacity: 0;
-      animation: fadeInRight 2s 0.8s forwards;
+      animation: fadeIn 2s 0.8s forwards;
 
       @include smTablet {
-        animation: fadeInUp 2s 0.8s forwards;
+        animation: fadeIn 2s 0.8s forwards;
       }
 
       @include smTablet {
@@ -104,6 +120,10 @@
 
         @include mobile {
           width: 50%;
+        }
+
+        @include smMobile {
+          width: 45%;
         }
       }
     }
