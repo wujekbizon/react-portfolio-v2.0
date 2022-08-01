@@ -4,6 +4,8 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  animation: backInUp 0.8s 0.5s forwards;
 
   .top {
     flex: 1;
