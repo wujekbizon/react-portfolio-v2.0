@@ -1,3 +1,5 @@
+import './ImageContainer.scss';
+
 const ImageContainer = ({ imgSrc, url }) => {
   return (
     <div>

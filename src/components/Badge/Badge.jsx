@@ -12,7 +12,11 @@ const Badge = ({ skills }) => {
     const onSkill = index === activeIndex ? 'onSkill' : '';
 
     return (
-      <div key={index} onClick={() => onItemClick(index)} className="badge">
+      <div
+        key={index}
+        onClick={() => onItemClick(index)}
+        className="badge gradient__bg"
+      >
         <li className={`${onSkill}`}>{skill}</li>
       </div>
     );

@@ -1,15 +1,12 @@
 import './Projects.scss';
-import Img from '../../assets/images/projectsImg.svg';
+import Img from '../../assets/images/possibility.png';
 import { projectsData } from '../../utils/data';
 import ProjectContainer from '../../components/ProjectContainer/ProjectContainer';
 
 const Projects = () => {
   return (
-    <div className="projects gradient__bg">
+    <div className="projects">
       <div className="top">
-        <div className="title">
-          <h2>MY PROJECTS</h2>
-        </div>
         <div className="img-container">
           <img src={Img} alt="" />
         </div>

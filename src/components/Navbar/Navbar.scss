@@ -7,9 +7,9 @@
   height: 80px;
   padding: 20px;
   z-index: 3;
+  position: fixed;
 
   @include smTablet {
-    position: sticky;
     justify-content: flex-start;
   }
 

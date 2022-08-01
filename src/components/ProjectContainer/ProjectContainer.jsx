@@ -40,14 +40,11 @@ const ProjectContainer = ({
     <div className="projects-container">
       <div className="projects-content">
         <h3>{type}</h3>
-        <h1>{projectName}</h1>
+        <h1 className="gradient__text">{projectName}</h1>
         <ul>
           <Badge skills={skills} />
         </ul>
         <p>{description}</p>
-        <div className="items-container">
-          <ul className="items">{renderedItems}</ul>
-        </div>
       </div>
       <div className="right">
         <div className="img-contanier">

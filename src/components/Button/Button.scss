@@ -7,8 +7,7 @@
   align-items: center;
   justify-content: center;
   width: 160px;
-  height: 40px;
-  background-color: $mainColor;
+  height: 60px;
   color: $whiteColor;
   text-align: center;
   font-size: 20px;
@@ -19,22 +18,26 @@
 
   @include tablet {
     width: 140px;
+    height: 40px;
     font-size: 18px;
   }
 
   @include mobile {
     font-size: 16px;
     width: 120px;
-    height: 30px;
+
     right: 0;
     bottom: 0;
+  }
+
+  @include smMobile {
+    height: 30px;
   }
 }
 
 .btn:hover {
   color: $logoColor;
   transform: translate(10px, 10px);
-  background-color: $navColor;
   border-color: $logoColor;
 
   @include mobile {
@@ -45,11 +48,13 @@
 .box {
   display: block;
   width: 160px;
-  height: 40px;
+  height: 60px;
   border: 1px solid $navColor;
+  background-color: $background;
 
   @include tablet {
     width: 140px;
+    height: 40px;
   }
 
   @include mobile {
