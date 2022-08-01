@@ -17,13 +17,13 @@
     display: flex;
 
     .img-container {
-      width: 50%;
+      width: 60%;
       height: 100%;
       display: flex;
       align-items: center;
       position: fixed;
       opacity: 0;
-      animation: fadeInLeft 0.8s 0.5s;
+      animation: backInLeft 0.8s 0.5s;
       animation-fill-mode: forwards;
 
       @include smTablet {
