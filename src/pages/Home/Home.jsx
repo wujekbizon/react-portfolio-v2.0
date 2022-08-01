@@ -1,7 +1,7 @@
 import './Home.scss';
 import { useState, useEffect, useRef } from 'react';
 import Footer from '../../components/Footer/Footer';
-import About from '../About/About';
+import Navbar from '../../components/Navbar/Navbar';
 import Logo from '../../assets/images/logo_sub-v3.png';
 import Dev from '../../assets/images/developer.svg';
 import AnimatedLetters from '../../components/AnimatedLetters/index';
@@ -38,8 +38,9 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      <div className="home gradient__bg">
+    <div className="gradient__bg">
+      <Navbar />
+      <div className="home">
         <div className="left">
           <div className="name">
             <AnimatedLetters
@@ -63,8 +64,7 @@ const Home = () => {
 
         <Footer />
       </div>
-      <About />
-    </>
+    </div>
   );
 };
 

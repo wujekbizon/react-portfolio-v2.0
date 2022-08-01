@@ -6,8 +6,8 @@
   width: 100%;
   height: 80px;
   padding: 20px;
-  z-index: 3;
-  position: fixed;
+  z-index: 5;
+  position: static;
 
   @include smTablet {
     justify-content: flex-start;
@@ -53,6 +53,7 @@
       min-width: 210px;
       border-radius: 5px;
       box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+      z-index: 99;
 
       a {
         margin: 1rem 0;

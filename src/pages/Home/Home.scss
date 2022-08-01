@@ -2,9 +2,8 @@
 
 .home {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 80px);
   display: flex;
-
   flex-direction: column;
 
   @include smTablet {
@@ -17,6 +16,10 @@
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
+
+    @include mobile {
+      justify-content: center;
+    }
 
     @include smMobile {
       flex: 2;

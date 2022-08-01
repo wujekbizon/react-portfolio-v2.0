@@ -13,27 +13,21 @@
 
   .social-media {
     flex: 1;
-    opacity: 0;
-    animation: fadeInUp 0.8s 0.5s forwards;
     display: flex;
     justify-content: center;
-    margin-left: 50px;
-
-    @include mobile {
-      padding: 20px 0px;
-      margin: 10px;
-    }
+    opacity: 0;
+    animation: fadeInUp 0.8s 0.5s forwards;
 
     a {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-right: 30px;
+      margin-left: 30px;
       font-size: 40px;
       box-shadow: 0 5px 10px 0 $boxShadow;
 
-      @include mobile {
-        margin-right: 5px;
+      @include smMobile {
+        margin-left: 10px;
       }
 
       svg {
@@ -59,7 +53,6 @@
     animation: fadeInUp 0.8s 0.5s forwards;
 
     @include mobile {
-      margin: 10px;
       justify-content: center;
     }
 

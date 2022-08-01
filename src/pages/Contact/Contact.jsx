@@ -5,6 +5,8 @@ import emailjs from '@emailjs/browser';
 import Interview from '../../assets/images/interview.svg';
 import { toast } from 'react-toastify';
 import { init } from 'ityped';
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
 
 const text = [
   'I am interested in any job offers as a web developer.',
@@ -46,8 +48,9 @@ const Contact = () => {
       );
   };
   return (
-    <>
-      <div className="contact gradient__bg">
+    <div>
+      <Navbar />
+      <div className="contact">
         <div className="left">
           <div className="contact-content">
             <div className="title">
@@ -114,7 +117,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 };
 

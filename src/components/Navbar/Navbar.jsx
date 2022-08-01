@@ -59,7 +59,7 @@ const Menu = ({ closeMenu, navbarOpen }) => (
   </>
 );
 
-const Navbar = () => {
+const Navbar = ({ className }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   const handleToggle = () => {
@@ -71,7 +71,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar gradient__bg">
+    <div className={`${className} navbar`}>
       <div className="navbar-btn">
         <button onClick={handleToggle}>
           {navbarOpen ? (

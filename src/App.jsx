@@ -1,6 +1,5 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
 import { ToastContainer, Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // Components
@@ -14,7 +13,6 @@ import Error from './pages/Error/Error';
 const App = () => {
   return (
     <>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
