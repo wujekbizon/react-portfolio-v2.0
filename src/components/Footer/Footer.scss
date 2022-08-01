@@ -14,7 +14,7 @@
   .social-media {
     flex: 1;
     opacity: 0;
-    animation: fadeInUp 1s 1s forwards;
+    animation: fadeInUp 0.8s 0.5s forwards;
     display: flex;
     justify-content: center;
     margin-left: 50px;
@@ -56,8 +56,7 @@
     display: flex;
     justify-content: center;
     opacity: 0;
-    animation: fadeInUp 1s 1s forwards;
-    margin-right: 50px;
+    animation: fadeInUp 0.8s 0.5s forwards;
 
     @include mobile {
       margin: 10px;

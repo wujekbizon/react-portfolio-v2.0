@@ -6,6 +6,7 @@
   display: flex;
 
   @include mobile {
+    padding-top: 100px;
     flex-direction: column;
   }
 
@@ -17,7 +18,7 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
-    animation: backInLeft 1s 0.5s forwards;
+    animation: backInLeft 0.8s 0.5s forwards;
 
     @include mobile {
       margin-top: 30px;
@@ -70,7 +71,7 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
-    animation: backInRight 1s 0.5s forwards;
+    animation: backInRight 0.8s 0.5s forwards;
 
     @include mobile {
       margin-top: 30px;

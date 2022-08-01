@@ -47,7 +47,7 @@
       .logo {
         height: 65px;
         opacity: 0;
-        animation: fadeInLeft 1s 0.8s forwards;
+        animation: fadeInLeft 0.8s 0.5s forwards;
 
         @include mobile {
           height: 50px;
@@ -67,7 +67,7 @@
       letter-spacing: 1px;
       font-weight: 400;
       opacity: 0;
-      animation: fadeIn 1s 1.3s forwards;
+      animation: fadeIn 0.8s 0.5s forwards;
 
       @include mobile {
         font-size: 18px;
@@ -101,11 +101,7 @@
       align-items: center;
       height: 100%;
       opacity: 0;
-      animation: fadeIn 2s 0.8s forwards;
-
-      @include smTablet {
-        animation: fadeIn 2s 0.8s forwards;
-      }
+      animation: fadeIn 0.8s 0.5s forwards;
 
       img {
         width: 60%;

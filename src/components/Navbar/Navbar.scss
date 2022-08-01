@@ -18,6 +18,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    opacity: 0;
+    animation: fadeIn 0.8s 0.5s forwards;
 
     img {
       width: 200px;
@@ -104,6 +106,8 @@
     flex: 2;
     display: flex;
     align-items: center;
+    opacity: 0;
+    animation: fadeInDown 0.8s 0.5s forwards;
 
     @include smTablet {
       display: none;
@@ -143,7 +147,7 @@
         font-size: 20px;
         letter-spacing: 1px;
         position: absolute;
-        top: 30px;
+        top: 10px;
         display: flex;
         width: 100%;
         opacity: 0;

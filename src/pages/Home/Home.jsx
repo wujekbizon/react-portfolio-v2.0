@@ -1,6 +1,7 @@
 import './Home.scss';
 import { useState, useEffect, useRef } from 'react';
 import Footer from '../../components/Footer/Footer';
+import About from '../About/About';
 import Logo from '../../assets/images/logo_sub-v3.png';
 import Dev from '../../assets/images/developer.svg';
 import AnimatedLetters from '../../components/AnimatedLetters/index';
@@ -37,30 +38,33 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="home gradient__bg">
-      <div className="left">
-        <div className="name">
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            index={1}
-          />
+    <>
+      <div className="home gradient__bg">
+        <div className="left">
+          <div className="name">
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              index={1}
+            />
+          </div>
+          <div className="img-container">
+            <img className="logo" src={Logo} alt="wolfinger" />
+          </div>
+          <div className="jobs">
+            <span className="ityped gradient__text" ref={textRef}></span>
+          </div>
         </div>
-        <div className="img-container">
-          <img className="logo" src={Logo} alt="wolfinger" />
+        <div className="right">
+          <div className="logo-container">
+            <img src={Dev} alt="Developer" />
+          </div>
         </div>
-        <div className="jobs">
-          <span className="ityped gradient__text" ref={textRef}></span>
-        </div>
-      </div>
-      <div className="right">
-        <div className="logo-container">
-          <img src={Dev} alt="Developer" />
-        </div>
-      </div>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+      <About />
+    </>
   );
 };
 
