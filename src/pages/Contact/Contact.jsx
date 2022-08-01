@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 import { init } from 'ityped';
 
 const text = [
-  'I am interested in any intern or job offers as a web developer.',
+  'I am interested in any job offers as a web developer.',
   'Please contact me using below form.',
 ];
 
@@ -55,7 +55,7 @@ const Contact = () => {
             </div>
             <div className="text">
               <img className="contact-img" src={Interview} alt="Contact Me" />
-              <p>
+              <p className="gradient__text">
                 <span ref={textRef}></span>
               </p>
             </div>
