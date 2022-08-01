@@ -1,12 +1,30 @@
 import './Contact.scss';
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { MapContainer, Popup, TileLayer, Marker } from 'react-leaflet';
 import emailjs from '@emailjs/browser';
 import Interview from '../../assets/images/interview.svg';
 import { toast } from 'react-toastify';
+import { init } from 'ityped';
+
+const text = [
+  'I am interested in any intern or job offers as a web developer.',
+  'Please contact me using below form.',
+];
 
 const Contact = () => {
+  const [debouncedText, setDebouncedText] = useState(text);
   const form = useRef();
+  const textRef = useRef();
+
+  useEffect(() => {
+    init(textRef.current, {
+      cursorChar: '_',
+      showCursor: true,
+      strings: debouncedText,
+      backDelay: 1800,
+      backSpeed: 50,
+    });
+  }, [debouncedText]);
 
   const sendEmail = (event) => {
     event.preventDefault();
@@ -38,23 +56,35 @@ const Contact = () => {
             <div className="text">
               <img className="contact-img" src={Interview} alt="Contact Me" />
               <p>
-                I am interested in any intern or job offers as a web developer.
-                <br />
-                Please contact me using below form.
+                <span ref={textRef}></span>
               </p>
             </div>
           </div>
           <div className="form-container">
             <form ref={form} onSubmit={sendEmail}>
-              <input type="text" name="name" placeholder="Name" required />
-              <input type="email" name="email" placeholder="Email" required />
               <input
+                className="gradient__bg"
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                className="gradient__bg"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <input
+                className="gradient__bg"
                 placeholder="Subject"
                 type="text"
                 name="subject"
                 required
               />
               <textarea
+                className="gradient__bg"
                 placeholder="Message"
                 name="message"
                 required
