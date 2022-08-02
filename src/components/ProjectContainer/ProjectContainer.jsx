@@ -37,7 +37,7 @@ const ProjectContainer = ({
   });
 
   return (
-    <div className="projects-container">
+    <div className="projects-container gradient__container">
       <div className="projects-content">
         <h3>{type}</h3>
         <h1 className="gradient__text">{projectName}</h1>

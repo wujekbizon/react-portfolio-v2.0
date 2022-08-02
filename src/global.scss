@@ -24,6 +24,14 @@ $width: 850px;
 $widthSmallTablet: 1180px;
 $widthTablet: 1590px;
 
+$height: 480px;
+
+@mixin landscape {
+  @media (max-height: #{$height}) {
+    @content;
+  }
+}
+
 @mixin smMobile {
   @media (max-width: #{$widthSmMobile}) {
     @content;

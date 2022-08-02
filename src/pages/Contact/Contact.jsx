@@ -1,12 +1,10 @@
 import './Contact.scss';
-import { useRef, useEffect, useState } from 'react';
+import { useRef } from 'react';
 import { MapContainer, Popup, TileLayer, Marker } from 'react-leaflet';
 import emailjs from '@emailjs/browser';
 import Interview from '../../assets/images/interview.svg';
 import { toast } from 'react-toastify';
-import { init } from 'ityped';
 import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
 
 const text = [
   'I am interested in any job offers as a web developer.',
@@ -14,19 +12,7 @@ const text = [
 ];
 
 const Contact = () => {
-  const [debouncedText, setDebouncedText] = useState(text);
   const form = useRef();
-  const textRef = useRef();
-
-  useEffect(() => {
-    init(textRef.current, {
-      cursorChar: '_',
-      showCursor: true,
-      strings: debouncedText,
-      backDelay: 1800,
-      backSpeed: 50,
-    });
-  }, [debouncedText]);
 
   const sendEmail = (event) => {
     event.preventDefault();
@@ -48,7 +34,7 @@ const Contact = () => {
       );
   };
   return (
-    <div>
+    <div className="gradient__bg2">
       <Navbar />
       <div className="contact">
         <div className="left">
@@ -58,36 +44,23 @@ const Contact = () => {
             </div>
             <div className="text">
               <img className="contact-img" src={Interview} alt="Contact Me" />
-              <p className="gradient__text">
-                <span ref={textRef}></span>
+              <p>
+                I am interested in any job offers as a web developer. Please
+                contact me using below form.
               </p>
             </div>
           </div>
           <div className="form-container">
             <form ref={form} onSubmit={sendEmail}>
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="email" name="email" placeholder="Email" required />
               <input
-                className="gradient__bg"
-                type="text"
-                name="name"
-                placeholder="Name"
-                required
-              />
-              <input
-                className="gradient__bg"
-                type="email"
-                name="email"
-                placeholder="Email"
-                required
-              />
-              <input
-                className="gradient__bg"
                 placeholder="Subject"
                 type="text"
                 name="subject"
                 required
               />
               <textarea
-                className="gradient__bg"
                 placeholder="Message"
                 name="message"
                 required
@@ -117,7 +90,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

@@ -2,12 +2,15 @@
 
 .contact {
   width: 100%;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
-  background: $background;
+
+  @include landscape {
+    height: 100%;
+    flex-direction: column;
+  }
 
   @include mobile {
     height: 100%;
@@ -16,16 +19,25 @@
 
   .left {
     flex: 1;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+
+    @include smTablet {
+      padding: 0;
+    }
 
     @include mobile {
       width: 90%;
     }
 
     .contact-content {
+      height: 100%;
+      flex: 1;
       display: flex;
       flex-direction: column;
+
       opacity: 0;
       animation: backInDown 0.8s 0.5s forwards;
       gap: 80px;
@@ -36,7 +48,9 @@
 
       .title {
         display: flex;
+        height: 50%;
         justify-content: center;
+        align-items: center;
 
         h1 {
           text-align: center;
@@ -44,6 +58,10 @@
           border-bottom: 1px solid $whiteColor;
           font-weight: 300;
           text-transform: uppercase;
+
+          @include smTablet {
+            font-size: 35px;
+          }
 
           @include mobile {
             font-size: 25px;
@@ -53,13 +71,15 @@
       }
 
       .text {
-        font-family: $nunito;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        font-family: $nunito;
 
         .contact-img {
-          width: 30%;
+          width: 35%;
 
           @include mobile {
             display: none;
@@ -68,15 +88,17 @@
 
         p {
           font-size: 18px;
-          font-weight: 300;
-          margin: 30px 0px;
-          text-transform: uppercase;
+          text-transform: capitalize;
+          letter-spacing: 1px;
+          text-align: center;
+          padding: 0 100px;
+
+          @include smTablet {
+            font-size: 16px;
+          }
 
           @include mobile {
-            display: flex;
-            padding: 20px;
-            margin: 0;
-            font-size: 16px;
+            font-size: 14px;
           }
 
           @include smMobile {
@@ -87,10 +109,11 @@
     }
 
     .form-container {
+      height: 100%;
       display: flex;
+      flex: 1;
       justify-content: center;
       align-items: center;
-      gap: 5px;
       opacity: 0;
       animation: backInUp 0.8s 0.5s forwards;
 
@@ -99,7 +122,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
 
         @include mobile {
           margin-top: 20px;
@@ -109,12 +132,13 @@
           width: 70%;
           border: 0;
           outline: none;
-          height: 50px;
-          font-size: 17px;
+          height: 45px;
+          font-size: 16px;
           font-weight: 400;
           color: hsl(0 0% 100%);
           padding: 0 20px;
           box-sizing: border-box;
+          background: $footerColor;
 
           @include mobile {
             width: 90%;
@@ -139,14 +163,14 @@
           width: 70%;
           border: 0;
           height: 50px;
-          font-size: 17px;
+          font-size: 16px;
           font-weight: 400;
           color: $whiteColor;
           padding: 20px;
-          min-height: 150px;
-          box-sizing: border-box;
+          min-height: 140px;
           resize: none;
           outline: none;
+          background: $footerColor;
 
           @include mobile {
             width: 90%;
@@ -200,6 +224,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+
+    @include smTablet {
+      padding: 0;
+    }
 
     @include mobile {
       flex-direction: column;
@@ -207,7 +236,7 @@
 
     .info-map {
       position: absolute;
-      background-color: $navColor;
+      background-color: $background;
       top: 25%;
       z-index: 3;
       width: 250px;
@@ -220,12 +249,16 @@
       animation: fadeIn 0.8s 1s;
       animation-fill-mode: forwards;
 
+      @include landscape {
+        display: none;
+      }
+
       @include mobile {
-        width: 100%;
+        width: 80%;
         padding: 5px;
         font-size: 14px;
         height: 70px;
-        top: 70%;
+        top: 60%;
       }
 
       span {
@@ -242,7 +275,6 @@
     }
 
     .map-wrap {
-      // background: $navColor;
       width: 100%;
       height: 100%;
       display: flex;
@@ -252,6 +284,10 @@
       @include mobile {
         width: 100vw;
         height: 50vh;
+      }
+
+      @include landscape {
+        display: none;
       }
     }
   }
@@ -264,4 +300,8 @@
   opacity: 0;
   animation: backInRight 0.8s 0.5s;
   animation-fill-mode: forwards;
+
+  @include mobile {
+    height: 70%;
+  }
 }
