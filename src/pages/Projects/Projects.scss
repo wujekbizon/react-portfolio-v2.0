@@ -1,13 +1,14 @@
 @import '../../global.scss';
 
 .projects {
-  width: calc(100vw + 10px);
-  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
+  flex-direction: row;
   padding: 30px;
   overflow: auto;
 
-  @include mobile {
+  @include smTablet {
     flex-direction: column;
   }
 
@@ -35,11 +36,7 @@
       }
 
       img {
-        width: 70%;
-
-        @include smTablet {
-          width: 80%;
-        }
+        width: 75%;
       }
     }
 
@@ -50,10 +47,24 @@
 
   .container {
     flex: 1;
-    height: 100%;
+    padding: 30px;
+    height: 85vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 45px;
+
+    @include tablet {
+      height: 90vh;
+    }
+
+    @include smTablet {
+      min-height: 100%;
+      justify-content: flex-end;
+    }
+
+    @include mobile {
+      justify-content: center;
+    }
   }
 }

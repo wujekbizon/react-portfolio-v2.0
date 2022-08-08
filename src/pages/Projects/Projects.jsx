@@ -7,8 +7,8 @@ import Navbar from '../../components/Navbar/Navbar';
 const Projects = () => {
   return (
     <>
-      <Navbar />
-      <div className="projects">
+      <Navbar className="projects__bg" />
+      <div className="projects projects__bg ">
         <div className="top">
           <div className="img-container">
             <img src={Img} alt="" />
