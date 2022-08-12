@@ -27,15 +27,15 @@ import Color from '../assets/images/colorPalette.png';
 import Github from '../assets/images/github_user.png';
 import Job from '../assets/images/jobster.png';
 import Movie from '../assets/images/Movie.png';
-import MtgSearch from '../assets/images/mtgsearch.png';
+// import MtgSearch from '../assets/images/mtgsearch.png';
 import CounterImage from '../assets/images/Mtg.png';
 import Mwd from '../assets/images/mwd_store.png';
-import ImagePort from '../assets/images/portfolio-v1.png';
+// import ImagePort from '../assets/images/portfolio-v1.png';
 import ImagePortV2 from '../assets/images/portfolio-v2.png';
 import Bar from '../assets/images/smakus.png';
 import Yelp from '../assets/images/YelpCamp.png';
 
-export const fonstAwesomeIcons = [
+export const fontsAwesomeIcons = [
   {
     id: 1,
     className: 'javascript',

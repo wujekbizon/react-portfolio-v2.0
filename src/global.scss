@@ -1,6 +1,6 @@
 @import 'animate.css';
 
-$gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #fa8231 102.67%);
+$gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
 $gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
 
 $background: #040c18;
@@ -22,6 +22,7 @@ $transition: all 0.3s linear;
 $widthSmMobile: 550px;
 $width: 850px;
 $widthSmallTablet: 1180px;
+$widthMediumTablet: 1320px;
 $widthTablet: 1590px;
 
 $height: 480px;
@@ -50,6 +51,11 @@ $height: 480px;
   }
 }
 
+@mixin mTablet {
+  @media (max-width: #{$widthMediumTablet}) {
+    @content;
+  }
+}
 @mixin tablet {
   @media (max-width: #{$widthTablet}) {
     @content;

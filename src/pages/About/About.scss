@@ -2,321 +2,510 @@
 
 .about {
   width: 100%;
-  height: calc(100vh - 150px);
+  min-height: calc(100vh - 150px);
   display: flex;
+  flex-direction: column;
 
-  .left {
-    height: 100%;
-    flex: 1;
+  .about-top {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    animation: backInLeft 0.8s 0.5s forwards;
+    flex-direction: row;
+    padding: 4rem 6rem;
+    padding-bottom: 0;
+
+    @include tablet {
+      padding-right: 0;
+    }
+
+    @include smTablet {
+      padding-right: 6rem;
+      flex-direction: column;
+    }
+
+    @include smMobile {
+      padding: 2rem 2rem;
+    }
 
     .about-content {
-      width: 80%;
-      height: 50%;
-      font-size: 24px;
-      font-family: $nunito;
-      font-weight: 300;
-      background: $navColor;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px 0 $boxShadow;
+      flex: 1;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 150px;
+      opacity: 0;
+      animation: backInLeft 0.8s 0.5s forwards;
 
       @include tablet {
-        font-size: 20px;
+        align-items: flex-start;
+        margin-top: 70px;
       }
 
-      @include mobile {
-        width: 80%;
-        height: 100%;
-        font-size: 14px;
-        font-weight: 200;
-      }
-    }
-
-    .title {
-      h2 {
-        font-size: 35px;
-        border-bottom: 1px solid $whiteColor;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 20px;
-        font-family: $nunito;
-        font-weight: 300;
-
-        @include mobile {
-          font-size: 25px;
-        }
-      }
-    }
-  }
-
-  .right {
-    height: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    animation: backInRight 0.8s 0.5s forwards;
-
-    @include mobile {
-      margin-top: 30px;
-    }
-
-    .title {
-      h2 {
-        font-size: 35px;
-        border-bottom: 1px solid $whiteColor;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 20px;
-        font-family: $nunito;
-        font-weight: 300;
-
-        @include mobile {
-          font-size: 25px;
-        }
-      }
-    }
-
-    .skills {
-      display: flex;
-      width: 80%;
-      height: 50%;
-      background: $navColor;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px 0 $boxShadow;
-      font-size: 40px;
-      padding: 20px;
-      color: $whiteColor;
-
-      @include mobile {
-        width: 80%;
-        height: 100%;
-        margin-bottom: 30px;
-        padding: 20px 10px;
-      }
-    }
-
-    .flex {
-      position: relative;
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-
-      .item {
-        display: flex;
+      @include smTablet {
+        margin-top: 0;
         align-items: center;
+        margin-bottom: 50px;
+      }
+
+      @include smMobile {
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 62px;
+        line-height: 75px;
+        font-weight: 800;
+        text-transform: capitalize;
+        text-align: center;
+
+        @include tablet {
+          text-align: start;
+        }
+
+        @include mTablet {
+          font-size: 55px;
+        }
+
+        @include smTablet {
+          font-size: 50px;
+          text-align: center;
+        }
+
+        @include mobile {
+          font-size: 40px;
+          line-height: 50px;
+        }
+
+        @include smMobile {
+          font-size: 30px;
+          line-height: 31px;
+        }
       }
 
       p {
-        height: 80px;
-        transition: $transition;
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: $nunito;
+        color: white;
+        font-weight: 300;
+
+        @include mTablet {
+          margin-top: 20px;
+          font-size: 20px;
+        }
+
+        @include smMobile {
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+    }
+
+    .about-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+      opacity: 0;
+      animation: backInRight 0.8s 0.5s forwards;
+
+      @include smTablet {
+        margin-bottom: 170px;
+      }
+
+      .design {
+        position: absolute;
+        width: 28%;
+        padding: 15px;
+        background-color: rgba(3, 27, 52, 0.6);
+        border-radius: 5px;
         display: flex;
         align-items: center;
-        padding: 0px 15px;
+        justify-content: center;
+        right: 10%;
+        top: 22%;
+        z-index: 5;
+        transform: rotateZ(10deg);
         cursor: pointer;
+        transition: $transition;
 
-        @include tablet {
-          height: 60px;
+        @include mobile {
+          display: none;
         }
 
         &:hover {
-          transform: scale(1.2);
-
-          svg {
-            opacity: 0;
-          }
-
-          &:after {
-            opacity: 1;
-          }
+          transform: scale(1.1);
         }
 
-        @include mobile {
-          height: 50px;
-        }
-
-        svg {
-          height: 50px;
-          width: 50px;
-
-          @include tablet {
-            height: 40px;
-            width: 40px;
-          }
-
-          @include mobile {
-            height: 30px;
-            width: 30px;
-          }
-        }
-
-        @include mobile {
-          font-size: 32px;
-          pointer-events: none;
+        h1 {
+          font-size: 25px;
+          font-family: $nunito;
+          font-weight: 200;
+          color: white;
         }
       }
 
-      p:after {
-        content: '';
-        font-size: 16px;
+      .jarvis {
         position: absolute;
-        display: block;
-        width: 100%;
-        opacity: 0;
+        padding: 20px;
+        left: 25%;
+        top: 75%;
+        transform: rotateZ(0deg);
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(3, 27, 52, 0.5);
+
+        h1 {
+          font-size: 40px;
+          letter-spacing: 1px;
+          font-weight: 400;
+          font-family: $nunito;
+        }
 
         @include mobile {
           display: none;
         }
       }
 
-      p.javascript {
-        &:after,
-        :hover {
-          content: 'JAVASCRIPT';
-          color: #f0db4f;
+      img {
+        width: 85%;
+        height: 100%;
+
+        @include smMobile {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .dark-theme {
+    background-color: rgba(3, 27, 52, 0.4);
+    height: 380px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include smTablet {
+      flex-direction: column;
+    }
+
+    .copyright {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      opacity: 0;
+      animation: fadeIn 0.8s 0.5s forwards;
+
+      @include smTablet {
+        display: none;
+      }
+
+      p {
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-weight: 200;
+        font-family: $nunito;
+      }
+    }
+
+    .about-me {
+      flex: 0.7;
+      display: flex;
+      padding: 8rem;
+
+      @include smTablet {
+        display: none;
+      }
+
+      @include tablet {
+        padding: 6rem;
+      }
+
+      @include mTablet {
+        padding-right: 0;
+      }
+
+      @include smTablet {
+        align-items: flex-end;
+        text-align: center;
+        padding-right: 6rem;
+        padding-bottom: 2rem;
+      }
+
+      p {
+        font-size: 25px;
+        color: $textColor;
+
+        opacity: 0;
+        animation: backInRight 0.8s 0.5s forwards;
+
+        @include tablet {
+          font-size: 22px;
+        }
+
+        @include smTablet {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+
+  .about-bottom {
+    .right {
+      height: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      animation: backInRight 0.8s 0.5s forwards;
+
+      @include mobile {
+        margin-top: 30px;
+      }
+
+      .skills {
+        display: flex;
+        width: 80%;
+        height: 50%;
+        background: $navColor;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px 0 $boxShadow;
+        font-size: 40px;
+        padding: 20px;
+        color: $whiteColor;
+
+        @include mobile {
+          width: 80%;
+          height: 100%;
+          margin-bottom: 30px;
+          padding: 20px 10px;
         }
       }
 
-      p.styled {
-        &:after,
-        :hover {
-          content: 'STYLED';
-          color: #f0db4f;
-        }
-      }
+      .flex {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
 
-      p.mui {
-        &:after,
-        :hover {
-          content: 'MUI';
-          color: #3498db;
+        .item {
+          display: flex;
+          align-items: center;
         }
-      }
 
-      p.typescript {
-        &:after,
-        :hover {
-          content: 'TYPESCRIPT';
-          color: #007acc;
+        p {
+          height: 80px;
+          transition: $transition;
+          display: flex;
+          align-items: center;
+          padding: 0px 15px;
+          cursor: pointer;
+
+          @include tablet {
+            height: 60px;
+          }
+
+          &:hover {
+            transform: scale(1.2);
+
+            svg {
+              opacity: 0;
+            }
+
+            &:after {
+              opacity: 1;
+            }
+          }
+
+          @include mobile {
+            height: 50px;
+          }
+
+          svg {
+            height: 50px;
+            width: 50px;
+
+            @include tablet {
+              height: 40px;
+              width: 40px;
+            }
+
+            @include mobile {
+              height: 30px;
+              width: 30px;
+            }
+          }
+
+          @include mobile {
+            font-size: 32px;
+            pointer-events: none;
+          }
         }
-      }
 
-      p.react {
-        &:after,
-        :hover {
-          content: 'REACT';
-          color: #61dbfb;
+        p:after {
+          content: '';
+          font-size: 16px;
+          position: absolute;
+          display: block;
+          width: 100%;
+          opacity: 0;
+
+          @include mobile {
+            display: none;
+          }
         }
-      }
 
-      p.redux {
-        &:after,
-        :hover {
-          content: 'REDUX';
-          color: #764abc;
+        p.javascript {
+          &:after,
+          :hover {
+            content: 'JAVASCRIPT';
+            color: #f0db4f;
+          }
         }
-      }
 
-      p.css {
-        &:after,
-        :hover {
-          content: 'CSS 3';
-          color: #264de4;
+        p.styled {
+          &:after,
+          :hover {
+            content: 'STYLED';
+            color: #f0db4f;
+          }
         }
-      }
 
-      p.sass {
-        &:after,
-        :hover {
-          content: 'SASS';
-          color: #cd6799;
+        p.mui {
+          &:after,
+          :hover {
+            content: 'MUI';
+            color: #3498db;
+          }
         }
-      }
 
-      p.html {
-        &:after,
-        :hover {
-          content: 'HTML 5';
-          color: #e34c26;
+        p.typescript {
+          &:after,
+          :hover {
+            content: 'TYPESCRIPT';
+            color: #007acc;
+          }
         }
-      }
 
-      p.node {
-        &:after,
-        :hover {
-          content: 'NODE JS';
-          color: #3c873a;
+        p.react {
+          &:after,
+          :hover {
+            content: 'REACT';
+            color: #61dbfb;
+          }
         }
-      }
 
-      p.mongoDb {
-        &:after,
-        :hover {
-          content: 'MONGO DB';
-          color: #4db33d;
+        p.redux {
+          &:after,
+          :hover {
+            content: 'REDUX';
+            color: #764abc;
+          }
         }
-      }
 
-      p.git {
-        &:after,
-        :hover {
-          content: 'GIT';
-          color: #f1502f;
+        p.css {
+          &:after,
+          :hover {
+            content: 'CSS 3';
+            color: #264de4;
+          }
         }
-      }
 
-      p.gitHub {
-        &:after,
-        :hover {
-          content: 'GIT HUB';
-          color: hsl(0 0% 100%);
+        p.sass {
+          &:after,
+          :hover {
+            content: 'SASS';
+            color: #cd6799;
+          }
         }
-      }
 
-      p.bootstrap {
-        &:after,
-        :hover {
-          content: 'BOOTSTRAP';
-          color: #563d7c;
+        p.html {
+          &:after,
+          :hover {
+            content: 'HTML 5';
+            color: #e34c26;
+          }
         }
-      }
 
-      p.bulma {
-        &:after,
-        :hover {
-          content: 'BULMA';
-          color: #00d1b2;
+        p.node {
+          &:after,
+          :hover {
+            content: 'NODE JS';
+            color: #3c873a;
+          }
         }
-      }
 
-      p.npm {
-        &:after,
-        :hover {
-          content: 'NPM';
-          color: #cc3534;
+        p.mongoDb {
+          &:after,
+          :hover {
+            content: 'MONGO DB';
+            color: #4db33d;
+          }
         }
-      }
 
-      p.vercel {
-        &:after,
-        :hover {
-          content: 'VERCEL';
-          color: hsl(0 0% 100%);
+        p.git {
+          &:after,
+          :hover {
+            content: 'GIT';
+            color: #f1502f;
+          }
         }
-      }
 
-      p.code {
-        &:after,
-        :hover {
-          content: 'VISUAL STUDIO';
-          color: #0078d7;
+        p.gitHub {
+          &:after,
+          :hover {
+            content: 'GIT HUB';
+            color: hsl(0 0% 100%);
+          }
+        }
+
+        p.bootstrap {
+          &:after,
+          :hover {
+            content: 'BOOTSTRAP';
+            color: #563d7c;
+          }
+        }
+
+        p.bulma {
+          &:after,
+          :hover {
+            content: 'BULMA';
+            color: #00d1b2;
+          }
+        }
+
+        p.npm {
+          &:after,
+          :hover {
+            content: 'NPM';
+            color: #cc3534;
+          }
+        }
+
+        p.vercel {
+          &:after,
+          :hover {
+            content: 'VERCEL';
+            color: hsl(0 0% 100%);
+          }
+        }
+
+        p.code {
+          &:after,
+          :hover {
+            content: 'VISUAL STUDIO';
+            color: #0078d7;
+          }
         }
       }
     }
