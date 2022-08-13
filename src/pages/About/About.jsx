@@ -81,7 +81,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="tech-stack section__padding">
+          <div className="tech-stack">
             {/* <div>🛠</div> */}
             <h1 className="gradient__text">Tech Stack</h1>
             <p>

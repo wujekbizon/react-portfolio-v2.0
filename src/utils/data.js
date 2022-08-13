@@ -30,10 +30,10 @@ import Movie from '../assets/images/Movie.png';
 // import MtgSearch from '../assets/images/mtgsearch.png';
 import CounterImage from '../assets/images/Mtg.png';
 import Mwd from '../assets/images/mwd_store.png';
-// import ImagePort from '../assets/images/portfolio-v1.png';
 import ImagePortV2 from '../assets/images/portfolio-v2.png';
 import Bar from '../assets/images/smakus.png';
 import Yelp from '../assets/images/YelpCamp.png';
+import Geritch from '../assets/images/gericht.png';
 
 export const fontsAwesomeIcons = [
   {
@@ -144,6 +144,19 @@ export const reactIcons = [
 export const projectsData = [
   {
     id: 1,
+    type: 'UI/UX DESIGN',
+    projectName: 'Gericht Restaurant',
+    text: 'Amazing Modern UI/UX Design, using Figma design transformed into a fully functional website.',
+    items: [],
+    skills: ['Javascript', 'React', 'Css', 'react icons', 'Html 5', 'Figma'],
+    content: 'View project',
+    url: 'https://gericht-gw.vercel.app/',
+    linkUrl: 'https://github.com/wujekbizon/gericht-UI-UX',
+    linkContent: 'Github Code',
+    imgSrc: Geritch,
+  },
+  {
+    id: 2,
     type: 'REAL WORLD PROJECT',
     projectName: 'Smakus',
     text: "Food E-Commerce Website made for some local vendor, who's running small family business.",
@@ -172,7 +185,7 @@ export const projectsData = [
     imgSrc: Bar,
   },
   {
-    id: 2,
+    id: 3,
     type: 'FRONT END DEVELOPER',
     projectName: 'Jobster',
     text: 'This simply but awesome app can help me track all of my pending job applications and interviews.',
@@ -197,7 +210,7 @@ export const projectsData = [
     imgSrc: Job,
   },
   {
-    id: 3,
+    id: 4,
     type: 'FULLSTACK DEVELOPER',
     projectName: 'Mwd Store',
     text: 'Client-side of my fullstack MERN E-commerce application',
@@ -226,7 +239,7 @@ export const projectsData = [
     imgSrc: Mwd,
   },
   {
-    id: 4,
+    id: 5,
     type: 'FULL STACK DEVELOPER',
     projectName: 'Yelp Camp',
     text: 'My first fullstack application.',
@@ -256,7 +269,7 @@ export const projectsData = [
     imgSrc: Yelp,
   },
   {
-    id: 5,
+    id: 6,
     type: 'FULLSTACK DEVELOPER',
     projectName: 'Admin Panel',
     text: 'Admin Panel for my  fullstack MERN E-Commerce application',
@@ -283,7 +296,7 @@ export const projectsData = [
     imgSrc: Admin,
   },
   {
-    id: 6,
+    id: 7,
     type: 'FRONT END DEVELOPER',
     projectName: 'Github User',
     text: 'Search thru all Github Database, to find any User.',
@@ -309,7 +322,7 @@ export const projectsData = [
     imgSrc: Github,
   },
   {
-    id: 7,
+    id: 8,
     type: 'PERSONAL PROJECT',
     projectName: 'Color Palette',
     text: 'Small projects done as as job interview task',
@@ -325,7 +338,7 @@ export const projectsData = [
     imgSrc: Color,
   },
   {
-    id: 8,
+    id: 9,
     type: 'FRONT END DEVELOPER',
     projectName: 'Portfolio',
     text: 'My Personal Portfolio Website',
@@ -347,13 +360,13 @@ export const projectsData = [
       'Inkscape',
     ],
     content: 'View project',
-    url: 'https://grzegorz-wolfinger-portfoliov2.vercel.app',
+    url: 'https://g-w.vercel.app/',
     linkUrl: 'https://github.com/wujekbizon/react-portfolio-v2.0',
     linkContent: 'Github Code',
     imgSrc: ImagePortV2,
   },
   {
-    id: 9,
+    id: 10,
     type: 'PERSONAL PROJECT',
     projectName: 'Movie Fight',
     text: "Movie Search application, that's makes the comparison of two chosen movies.",
@@ -370,35 +383,6 @@ export const projectsData = [
     linkContent: 'Github Code',
     imgSrc: Movie,
   },
-  // {
-  //   id: 10,
-  //   type: 'FRONT END DEVELOPER',
-  //   projectName: 'React Portfolio v 1.0',
-  //   text: 'My Portfolio ver 1.0 made in React',
-  //   items: [
-  //     'Reusable React Components.',
-  //     'Self Designed SVG logo.',
-  //     'Animated Letters.',
-  //     'Google Map.',
-  //     'Fully responsive application.',
-  //     'Reusable Components.',
-  //   ],
-  //   skills: [
-  //     'Javascript',
-  //     'React',
-  //     'Sass',
-  //     'CSS 3',
-  //     'Vercel',
-  //     'Animate.css',
-  //     'GSAP',
-  //     'Inkscape',
-  //   ],
-  //   content: 'View project',
-  //   url: 'https://grzegorz-wolfinger.vercel.app/',
-  //   linkUrl: 'https://github.com/wujekbizon/react-portfolio',
-  //   linkContent: 'Github Code',
-  //   imgSrc: ImagePort,
-  // },
   {
     id: 11,
     type: 'PERSONAL PROJECT',
