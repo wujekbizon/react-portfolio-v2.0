@@ -263,16 +263,22 @@
 
   .about-bottom {
     display: flex;
-    height: 70vh;
-    position: relative;
 
     .tech-stack {
       flex: 1;
-
+      padding: 4rem;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
+
+      @include mobile {
+        align-items: center;
+      }
+
+      @include smMobile {
+        padding: 0;
+      }
 
       h1 {
         font-size: 62px;
@@ -280,6 +286,20 @@
         font-weight: 800;
         font-family: $nunito;
         text-transform: capitalize;
+
+        @include tablet {
+          font-size: 55px;
+        }
+
+        @include mobile {
+          font-size: 35px;
+          line-height: 50px;
+        }
+
+        @include smMobile {
+          font-size: 28px;
+          line-height: 25px;
+        }
       }
 
       p {
@@ -288,6 +308,21 @@
         font-family: $nunito;
         color: white;
         font-weight: 300;
+
+        @include tablet {
+          font-size: 20px;
+          text-align: start;
+        }
+
+        @include mobile {
+          font-size: 18px;
+          margin-top: 20px;
+          text-align: center;
+        }
+
+        @include smMobile {
+          font-size: 16px;
+        }
       }
     }
 
@@ -297,6 +332,15 @@
       align-items: center;
       justify-content: flex-start;
 
+      @include smTablet {
+        margin-right: 6rem;
+        margin-bottom: 8rem;
+      }
+
+      @include smMobile {
+        display: none;
+      }
+
       .cubespinner {
         animation-name: spincube;
         animation-timing-function: ease-in-out;
@@ -304,8 +348,12 @@
         animation-duration: 15s;
         transform-style: preserve-3d;
         transform-origin: 100px 100px 0;
-        margin-left: calc(50% - 100px);
+        margin-left: calc(50% - 50px);
         margin-bottom: 20%;
+
+        @include mobile {
+          margin-bottom: 0;
+        }
 
         div {
           position: absolute;
@@ -317,31 +365,63 @@
           display: flex;
           justify-content: center;
           align-items: center;
+
+          @include mobile {
+            width: 140px;
+            height: 140px;
+            font-size: 60px;
+          }
         }
 
         .face1 {
           transform: translateZ(100px);
           color: #6ab04c;
+
+          @include mobile {
+            transform: translateZ(70px);
+          }
         }
         .face2 {
           transform: rotateY(90deg) translateZ(100px);
           color: #f06529;
+
+          @include mobile {
+            transform: rotateY(90deg) translateZ(70px);
+          }
         }
         .face3 {
           transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
           color: #28a4d9;
+
+          @include mobile {
+            transform: rotateY(90deg) rotateX(90deg) translateZ(70px);
+          }
         }
+
         .face4 {
           transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
           color: #5ed4f4;
+
+          @include mobile {
+            transform: rotateY(180deg) rotateZ(90deg) translateZ(70px);
+          }
         }
+
         .face5 {
           transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
           color: #ec4d28;
+
+          @include mobile {
+            transform: rotateY(-90deg) rotateZ(90deg) translateZ(70px);
+          }
         }
         .face6 {
           transform: rotateX(-90deg) translateZ(100px);
           color: #efd81d;
+
+          @include mobile {
+            transform: rotateX(-90deg) translateZ(70px);
+          }
         }
       }
 
@@ -373,11 +453,23 @@
     height: 100%;
     background-color: $background;
 
+    @include smMobile {
+      margin: 1rem 2rem;
+    }
+
     .skills {
       display: flex;
       height: 100%;
       width: 100%;
       padding: 3rem;
+
+      @include smMobile {
+        padding: 1rem;
+      }
+
+      @include mobile {
+        flex-direction: column;
+      }
 
       .skills-content {
         flex: 0.8;
@@ -419,6 +511,8 @@
         position: relative;
         flex: 1;
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
         padding: 1rem;
 

@@ -58,8 +58,7 @@ const About = () => {
           </div>
         </section>
         <Brand />
-        <section className="about-bottom">
-          <div></div>
+        <section className="about-bottom section__padding">
           <div className="cube-container">
             <div className="cubespinner">
               <div className="face1 gradient__bg">
@@ -82,7 +81,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="tech-stack">
+          <div className="tech-stack section__padding">
             {/* <div>🛠</div> */}
             <h1 className="gradient__text">Tech Stack</h1>
             <p>
