@@ -55,6 +55,7 @@
         font-size: 62px;
         line-height: 75px;
         font-weight: 800;
+        font-family: $nunito;
         text-transform: capitalize;
         text-align: center;
 
@@ -189,6 +190,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    opacity: 0;
+    animation: fadeIn 0.8s 0.5s forwards;
 
     @include smTablet {
       flex-direction: column;
@@ -259,55 +262,165 @@
   }
 
   .about-bottom {
+    display: flex;
+    height: 70vh;
+    position: relative;
+
     .tech-stack {
       flex: 1;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
 
       h1 {
         font-size: 62px;
         line-height: 75px;
         font-weight: 800;
+        font-family: $nunito;
         text-transform: capitalize;
+      }
+
+      p {
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: $nunito;
+        color: white;
+        font-weight: 300;
       }
     }
 
-    .right {
-      height: 100%;
+    .cube-container {
       flex: 1;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      opacity: 0;
-      animation: backInRight 0.8s 0.5s forwards;
+      justify-content: flex-start;
 
-      @include mobile {
-        margin-top: 30px;
+      .cubespinner {
+        animation-name: spincube;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 15s;
+        transform-style: preserve-3d;
+        transform-origin: 100px 100px 0;
+        margin-left: calc(50% - 100px);
+        margin-bottom: 20%;
+
+        div {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          border: 1px solid $background;
+          background-color: $footerColor;
+          font-size: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .face1 {
+          transform: translateZ(100px);
+          color: #6ab04c;
+        }
+        .face2 {
+          transform: rotateY(90deg) translateZ(100px);
+          color: #f06529;
+        }
+        .face3 {
+          transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+          color: #28a4d9;
+        }
+        .face4 {
+          transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+          color: #5ed4f4;
+        }
+        .face5 {
+          transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+          color: #ec4d28;
+        }
+        .face6 {
+          transform: rotateX(-90deg) translateZ(100px);
+          color: #efd81d;
+        }
       }
 
-      .skills {
-        display: flex;
-        width: 80%;
-        height: 50%;
-        background: $navColor;
-        border-radius: 15px;
-        box-shadow: 0 5px 15px 0 $boxShadow;
-        font-size: 40px;
-        padding: 20px;
-        color: $whiteColor;
+      @keyframes spincube {
+        from,
+        to {
+          transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+        16% {
+          transform: rotateY(-90deg);
+        }
+        33% {
+          transform: rotateY(-90deg) rotateZ(90deg);
+        }
+        50% {
+          transform: rotateY(-180deg) rotateZ(90deg);
+        }
+        66% {
+          transform: rotateY(-270deg) rotateZ(90deg);
+        }
+        83% {
+          transform: rotateX(90deg);
+        }
+      }
+    }
+  }
 
-        @include mobile {
-          width: 80%;
-          height: 100%;
-          margin-bottom: 30px;
-          padding: 20px 10px;
+  .skills-container {
+    height: 100%;
+    background-color: $background;
+
+    .skills {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      padding: 3rem;
+
+      .skills-content {
+        flex: 0.8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2rem;
+
+        .title {
+          align-self: flex-start;
+
+          div {
+            width: 38px;
+            height: 3px;
+            background: $gradient-bar;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            margin-bottom: 0.25rem;
+          }
+
+          h1 {
+            font-family: $nunito;
+            font-size: 25px;
+            letter-spacing: -0.4px;
+            margin: 0;
+          }
+        }
+
+        p {
+          color: $textColor;
+          font-family: $nunito;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
         }
       }
 
       .flex {
         position: relative;
+        flex: 1;
         display: flex;
-        justify-content: space-evenly;
         flex-wrap: wrap;
+        padding: 1rem;
 
         .item {
           display: flex;
@@ -322,12 +435,8 @@
           padding: 0px 15px;
           cursor: pointer;
 
-          @include tablet {
-            height: 60px;
-          }
-
           &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
 
             svg {
               opacity: 0;
@@ -336,10 +445,6 @@
             &:after {
               opacity: 1;
             }
-          }
-
-          @include mobile {
-            height: 50px;
           }
 
           svg {
