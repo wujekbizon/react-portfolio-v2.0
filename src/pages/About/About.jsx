@@ -5,6 +5,7 @@ import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 import AI from '../../assets/images/ai.png';
 import Highlight from '../../components/Highlight/Highlight';
+import Brand from '../../components/Brand/Brand';
 
 const About = () => {
   return (
@@ -48,7 +49,12 @@ const About = () => {
             </p>
           </div>
         </section>
+        <Brand />
         <section className="about-bottom">
+          <div className="tech-stack">
+            <h1 className="gradient__text">Tech Stack</h1>
+          </div>
+
           <div className="right">
             <div className="skills">
               <div className="flex">

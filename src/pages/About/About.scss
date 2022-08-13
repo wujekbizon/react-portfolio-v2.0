@@ -2,7 +2,7 @@
 
 .about {
   width: 100%;
-  min-height: calc(100vh - 150px);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 
@@ -161,7 +161,7 @@
         h1 {
           font-size: 40px;
           letter-spacing: 1px;
-          font-weight: 400;
+          font-weight: 300;
           font-family: $nunito;
         }
 
@@ -209,9 +209,10 @@
 
       p {
         margin-bottom: 30px;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 200;
         font-family: $nunito;
+        color: $lightSidebar;
       }
     }
 
@@ -258,6 +259,17 @@
   }
 
   .about-bottom {
+    .tech-stack {
+      flex: 1;
+
+      h1 {
+        font-size: 62px;
+        line-height: 75px;
+        font-weight: 800;
+        text-transform: capitalize;
+      }
+    }
+
     .right {
       height: 100%;
       flex: 1;

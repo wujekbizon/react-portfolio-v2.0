@@ -17,7 +17,7 @@ const Highlight = () => {
         </Link>
       </div>
       <div className="highlight-contacts">
-        <h1>Want to hire me. Yeahh!!!</h1>
+        <h1>Want to hire me ? Yeahh!!!</h1>
 
         <p>
           You can find me via my contact page or check my{' '}

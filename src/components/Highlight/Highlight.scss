@@ -52,7 +52,7 @@
 
     p {
       margin-top: 10px;
-      color: $darkColor;
+      color: grey;
       font-size: 20px;
     }
 
@@ -69,6 +69,11 @@
       background: $textColor;
       margin-top: 25px;
       cursor: pointer;
+      transition: $transition;
+
+      &:hover {
+        transform: translateX(10px);
+      }
     }
   }
 
@@ -92,8 +97,12 @@
 
     p {
       margin-top: 10px;
-      color: $darkColor;
+      color: grey;
       font-size: 20px;
+    }
+
+    a {
+      color: $textColor;
     }
 
     .btn-highlight {
@@ -109,6 +118,11 @@
       background: $logoColor;
       margin-top: 25px;
       cursor: pointer;
+      transition: $transition;
+
+      &:hover {
+        transform: translateX(10px);
+      }
     }
   }
 }
