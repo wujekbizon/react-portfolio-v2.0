@@ -178,6 +178,7 @@ export const projectsData = [
       'Stripe',
       'Auth0',
       'Axios',
+      'React-Router v6',
     ],
     content: 'View project',
     url: 'https://gw-comfy.netlify.app/',
