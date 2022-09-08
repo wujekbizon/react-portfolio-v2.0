@@ -1,1 +1,1 @@
-[{"content":"# Hello World","type":"text","id":"w292a"}]
+[{"content":"","type":"code","id":"i6q6x"},{"content":"# Hello World","type":"text","id":"w292a"}]

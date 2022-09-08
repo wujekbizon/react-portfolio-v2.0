@@ -9,7 +9,6 @@ import Contact from './pages/Contact/Contact';
 import Projects from './pages/Projects/Projects';
 import SmallApps from './pages/SmallApps/SmallApps';
 import Error from './pages/Error/Error';
-import Wolfpad from './pages/Wolfpad/Wolfpad';
 
 const App = () => {
   return (
@@ -20,7 +19,7 @@ const App = () => {
         <Route path="contact" element={<Contact />} />
         <Route path="projects" element={<Projects />} />
         <Route path="apps" element={<SmallApps />} />
-        <Route path="wolfpad" element={<Wolfpad />} />
+
         <Route path="*" element={<Error />} />
       </Routes>
       <ToastContainer
