@@ -23,7 +23,6 @@ import {
 } from 'react-icons/si';
 
 import Admin from '../assets/images/admin.png';
-import Color from '../assets/images/colorPalette.png';
 import Github from '../assets/images/github_user.png';
 import Job from '../assets/images/jobster.png';
 import Movie from '../assets/images/Movie.png';
@@ -367,22 +366,6 @@ export const projectsData = [
   },
   {
     id: 10,
-    type: 'PERSONAL PROJECT',
-    projectName: 'Color Palette',
-    text: 'Small projects done as as job interview task',
-    items: [
-      'Reusable React Components',
-      'Small projects done as as job interview task',
-    ],
-    skills: ['React', 'Javascript', 'HTML 5', 'Sass'],
-    content: 'View project',
-    url: 'https://react-colorpalette.vercel.app/',
-    linkUrl: 'https://github.com/wujekbizon/react-Frontend_Intern-task',
-    linkContent: 'Github Code',
-    imgSrc: Color,
-  },
-  {
-    id: 11,
     type: 'FRONT END DEVELOPER',
     projectName: 'Portfolio',
     text: 'My Personal Portfolio Website',
@@ -410,7 +393,7 @@ export const projectsData = [
     imgSrc: ImagePortV2,
   },
   {
-    id: 12,
+    id: 11,
     type: 'PERSONAL PROJECT',
     projectName: 'Movie Fight',
     text: "Movie Search application, that's makes the comparison of two chosen movies.",
@@ -428,7 +411,7 @@ export const projectsData = [
     imgSrc: Movie,
   },
   {
-    id: 13,
+    id: 12,
     type: 'PERSONAL PROJECT',
     projectName: 'Mtg Counter',
     text: 'My first project fully made in JavaScript with Bulma Library.',
