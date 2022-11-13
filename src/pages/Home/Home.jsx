@@ -10,7 +10,7 @@ import { init } from 'ityped';
 const nameArray = ['G', 'R', 'Z', 'E', 'G', 'O', 'R', 'Z'];
 const text = [
   'FULL STACK DEVELOPER | SOFTWARE ENGINEER',
-  'REACT.JS/REDUX | EXPRESS.JS | MONGO DB',
+  'REACT.JS | TYPESCRIPT | NEXT.JS',
 ];
 
 const Home = () => {
