@@ -36,6 +36,7 @@ import Geritch from '../assets/images/gericht.png';
 import Comfy from '../assets/images/comfy.png';
 import RMDB from '../assets/images/rmdb.png';
 import Blog from '../assets/images/blog.png';
+import WolfAI from '../assets/images/wolfai.png';
 
 export const fontsAwesomeIcons = [
   {
@@ -147,6 +148,19 @@ export const projectsData = [
   {
     id: 1,
     type: 'FULLSTACK DEVELOPER',
+    projectName: 'Jarvis chat bot',
+    text: 'With an elegant user interface, communication with advanced GPT3 model API, and most importantly, the ability to ask the AI for help regarding JavaScript, React, or any other programming language, giving it code and translating it to another programming language, and much more.. This is WolfAI chat bot.',
+    items: [],
+    skills: ['NextJS', 'React', 'Typescript', 'OpenAI'],
+    content: 'View project',
+    url: 'https://wolfai-chat-bot.vercel.app/',
+    linkUrl: 'https://github.com/wujekbizon/nextjs-openai-bot',
+    linkContent: 'Github Code',
+    imgSrc: WolfAI,
+  },
+  {
+    id: 2,
+    type: 'FULLSTACK DEVELOPER',
     projectName: "Greg' Blog",
     text: "My personal blog, where I share anything that may help others , technologies I'm using and cool things I've made. ",
     items: [],
@@ -158,7 +172,7 @@ export const projectsData = [
     imgSrc: Blog,
   },
   {
-    id: 2,
+    id: 3,
     type: 'FULLSTACK DEVELOPER',
     projectName: 'RMDB',
     text: 'Movie Search App',
@@ -178,7 +192,7 @@ export const projectsData = [
     imgSrc: RMDB,
   },
   {
-    id: 3,
+    id: 4,
     type: 'FRONT END DEVELOPER',
     projectName: 'Comfy',
     text: 'Fully Functional E-Commerce App',
@@ -200,7 +214,7 @@ export const projectsData = [
     imgSrc: Comfy,
   },
   {
-    id: 4,
+    id: 5,
     type: 'REAL WORLD PROJECT',
     projectName: 'Smakus',
     text: "Food E-Commerce Website made for some local vendor, who's running small family business.",
@@ -229,7 +243,7 @@ export const projectsData = [
     imgSrc: Bar,
   },
   {
-    id: 5,
+    id: 6,
     type: 'UI/UX DESIGN',
     projectName: 'Gericht Restaurant',
     text: 'Amazing Modern UI/UX Design, using Figma design transformed into a fully functional website.',
@@ -242,7 +256,7 @@ export const projectsData = [
     imgSrc: Geritch,
   },
   {
-    id: 6,
+    id: 7,
     type: 'FRONT END DEVELOPER',
     projectName: 'Jobster',
     text: 'This simply but awesome app can help me track all of my pending job applications and interviews.',
@@ -267,7 +281,7 @@ export const projectsData = [
     imgSrc: Job,
   },
   {
-    id: 7,
+    id: 8,
     type: 'FULLSTACK DEVELOPER',
     projectName: 'Mwd Store',
     text: 'Client-side of my fullstack MERN E-commerce application',
@@ -296,7 +310,7 @@ export const projectsData = [
     imgSrc: Mwd,
   },
   {
-    id: 8,
+    id: 9,
     type: 'FULL STACK DEVELOPER',
     projectName: 'Yelp Camp',
     text: 'My first fullstack application.',
@@ -326,7 +340,7 @@ export const projectsData = [
     imgSrc: Yelp,
   },
   {
-    id: 9,
+    id: 10,
     type: 'FULLSTACK DEVELOPER',
     projectName: 'Admin Panel',
     text: 'Admin Panel for my  fullstack MERN E-Commerce application',
@@ -353,7 +367,7 @@ export const projectsData = [
     imgSrc: Admin,
   },
   {
-    id: 10,
+    id: 11,
     type: 'FRONT END DEVELOPER',
     projectName: 'Github User',
     text: 'Search thru all Github Database, to find any User.',
@@ -379,7 +393,7 @@ export const projectsData = [
     imgSrc: Github,
   },
   {
-    id: 11,
+    id: 12,
     type: 'FRONT END DEVELOPER',
     projectName: 'Portfolio',
     text: 'My Personal Portfolio Website',
@@ -407,7 +421,7 @@ export const projectsData = [
     imgSrc: ImagePortV2,
   },
   {
-    id: 12,
+    id: 13,
     type: 'PERSONAL PROJECT',
     projectName: 'Movie Fight',
     text: "Movie Search application, that's makes the comparison of two chosen movies.",
@@ -425,7 +439,7 @@ export const projectsData = [
     imgSrc: Movie,
   },
   {
-    id: 13,
+    id: 14,
     type: 'PERSONAL PROJECT',
     projectName: 'Mtg Counter',
     text: 'My first project fully made in JavaScript with Bulma Library.',
