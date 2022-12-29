@@ -42,7 +42,7 @@ const Footer = () => {
           className="resume"
           target="_blank"
           rel="noreferrer"
-          href="https://drive.google.com/file/d/1eSVYNcbEoQ7PqAN59VfUghAzuB056r8v/view?usp=sharing"
+          href="https://drive.google.com/file/d/1rvVlCexiUzuA6EPn10142xspD6pytMTx/view?usp=share_link"
         >
           Curriculum Vitae
         </a>
