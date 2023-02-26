@@ -22,21 +22,22 @@ import {
   SiMaterialui,
 } from 'react-icons/si';
 
-import Admin from '../assets/images/admin.png';
+// import Admin from '../assets/images/admin.png';
 import Github from '../assets/images/github_user.png';
 import Job from '../assets/images/jobster.png';
-import Movie from '../assets/images/Movie.png';
+import Cell from '../assets/images/cell.png';
+// import Movie from '../assets/images/Movie.png';
 // import MtgSearch from '../assets/images/mtgsearch.png';
-import CounterImage from '../assets/images/Mtg.png';
+// import CounterImage from '../assets/images/Mtg.png';
 import Mwd from '../assets/images/mwd_store.png';
-import ImagePortV2 from '../assets/images/portfolio-v2.png';
+// import ImagePortV2 from '../assets/images/portfolio-v2.png';
 import Bar from '../assets/images/smakus.png';
-import Yelp from '../assets/images/YelpCamp.png';
+// import Yelp from '../assets/images/YelpCamp.png';
 import Geritch from '../assets/images/gericht.png';
 import Comfy from '../assets/images/comfy.png';
 import RMDB from '../assets/images/rmdb.png';
 import Blog from '../assets/images/blog.png';
-import WolfAI from '../assets/images/wolfai.png';
+// import WolfAI from '../assets/images/wolfai.png';
 
 export const fontsAwesomeIcons = [
   {
@@ -148,15 +149,26 @@ export const projectsData = [
   {
     id: 1,
     type: 'FULLSTACK DEVELOPER',
-    projectName: 'Jarvis chat bot',
-    text: 'With an elegant user interface, communication with advanced GPT3 model API, and most importantly, the ability to ask the AI for help regarding JavaScript, React, or any other programming language, giving it code and translating it to another programming language, and much more.. This is WolfAI chat bot.',
+    projectName: 'Wolfpad 2.0',
+    text: 'Wolfpad is a powerful tool for developers of all levels. It provides an intuitive and user-friendly interface that allows users to quickly create, edit, and debug code. With an interactive coding environment, users can easily test their code in real-time and get immediate feedback on their progress.',
     items: [],
-    skills: ['NextJS', 'React', 'Typescript', 'OpenAI'],
+    skills: [
+      'NextJS',
+      'React',
+      'Typescript',
+      'Redux/Tollkit',
+      'OpenAI-Chatbot',
+      'Esbuild',
+      'MongoDb',
+      'Next-Auth',
+      'Lexical Editor',
+      'Excalidraw',
+    ],
     content: 'View project',
-    url: 'https://wolfai-chat-bot.vercel.app/',
-    linkUrl: 'https://github.com/wujekbizon/nextjs-openai-bot',
+    url: 'https://wolfpad.vercel.app/',
+    linkUrl: 'https://github.com/wujekbizon/next-wolfpad',
     linkContent: 'Github Code',
-    imgSrc: WolfAI,
+    imgSrc: Cell,
   },
   {
     id: 2,
